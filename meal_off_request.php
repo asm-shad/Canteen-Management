@@ -69,27 +69,6 @@ if(isset($_POST['ajax_action'])) {
                 $response['message'] = 'Eligible';
                 $response['employee_data'] = $employee_data;
                 
-                // Get upcoming meals
-                $upcoming_meals = $connect->query("
-                    SELECT * FROM meal_off_requests 
-                    WHERE employee_id = '$employee_id'
-                    AND meal_off_date >= CURDATE()
-                    AND status = 'Active'
-                    ORDER BY meal_off_date ASC
-                ");
-                
-                // if($upcoming_meals->num_rows > 0) {
-                //     $response['upcoming_meals'] = '<div class="upcoming-box">';
-                //     $response['upcoming_meals'] .= '<strong><i class="fa fa-calendar"></i> Upcoming Meal Offs:</strong> ';
-                //     $count = 0;
-                //     while($upcoming = $upcoming_meals->fetch_assoc()) {
-                //         if($count > 0) $response['upcoming_meals'] .= ' | ';
-                //         $response['upcoming_meals'] .= '<span class="upcoming-date">' . date('d-m-Y', strtotime($upcoming['meal_off_date'])) . '</span>';
-                //         $count++;
-                //     }
-                //     $response['upcoming_meals'] .= '</div>';
-                // }
-                
                 // Get meal off history
                 $meal_off_history = $connect->query("
                     SELECT * FROM meal_off_requests 
@@ -240,6 +219,12 @@ if(isset($_POST['submit_meal_off'])) {
             if($connect->query($insertQuery)) {
                 $success_count++;
                 $submitted_dates[] = date('d-m-Y', strtotime($meal_off_date));
+                
+                // Update meal_off_count in canteen_application table
+                $updateCountQuery = "UPDATE canteen_application 
+                                     SET meal_off_count = meal_off_count + 1 
+                                     WHERE employee_id = '$employee_id'";
+                $connect->query($updateCountQuery);
             } else {
                 $error_count++;
             }
@@ -589,21 +574,6 @@ if(isset($_POST['submit_meal_off'])) {
 
         <!-- Navigation Buttons -->
         <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 7px;">
-            <!-- <a href="rq_create.php">
-                <button type="button" class="btn btn-small btn-primary">
-                    Book Canteen
-                </button>
-            </a>
-            <a href="viewAllEmployeePosition.php" target="_blank">
-                <button type="button" class="btn btn-small btn-primary">
-                    Eligible Positions
-                </button>
-            </a>
-            <a href="meal_off_request.php">
-                <button type="button" class="btn btn-small btn-success">
-                    Meal Off
-                </button>
-            </a> -->
             <br>
         </div>
 
@@ -817,7 +787,6 @@ if(isset($_POST['submit_meal_off'])) {
                                 <button type="reset" class="btn btn-default">
                                     <i class="fa fa-refresh"></i> Reset
                                 </button>
-                                <!-- <span id="submit_status" style="margin-left:10px; color:#6c757d;">Enter Employee ID to check eligibility</span> -->
                             </span>
 
                             <!-- Meal Off History Container -->

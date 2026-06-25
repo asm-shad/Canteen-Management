@@ -458,13 +458,6 @@ height: 120px !important;
                         </button>
                     </a>
                 </div>
-                <div>
-                    <a href="meal_off_request.php">
-                        <button type="button" class="btn btn-small btn-success">
-                            Meal Off
-                        </button>
-                    </a>
-                </div>
             </div>
 
 <form role="form" id="multiphase" enctype="multipart/form-data" action="" method="post">
