@@ -1,0 +1,83 @@
+SUB_SECTION_NAME,SECTION,EMPLOYEEID,NAME,DESIGNATION,JOININGDT,GENDER,BUSINESS_UNIT_NAME,WORKING_PLACE_NAME,DEPARTMENT_NAME,CATEGORY,NATIONALITY,LEVEL_GRADE
+Dyeing,Dyeing,A032,Md. Abdul Kader,Incharge,14-Dec-08,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A055,Md. Oli Ullah,Executive,26-Oct-07,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,A091,Md.Ibrahim,Incharge,08-Feb-11,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A3052,Mirza Md. Munimul Islam,Technician,08-Dec-20,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A3095,Shukur Mahmud,Supervisor,02-Jan-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A7040,Md. Morshed Hossain,Supervisor,22-Jun-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8015,Md. Alamgir Hossein,Shift In-Charge,02-Sep-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8016,Monirul Islam,Technician,01-Sep-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8032,Md. Shohag Mia,Jr. Executive,21-Sep-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8104,Md. Rokon Ali,Technician,08-Sep-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8126,Md. Ramjan Ali,Incharge,05-Sep-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8132,Md. Obaidul Islam Tipu,Technician,18-Sep-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8171,Md. Jamal Hossen,Incharge,06-Oct-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8194,Md. Nasirul Islam,Shift In-Charge,01-Oct-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8234,Md. Faruk Mia,Asst. Incharge,10-Nov-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8283,Md. Shafiqul Islam,Q.C,20-Dec-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8292,Md. Shamim Ahmed,Q.C,21-Dec-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,A8296,Rajesh Dey Sarker,Manager,20-Dec-21,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8310,Md. Shipon Ali,Sr. Executive,07-Jan-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8317,Md. Abdul Karim,Incharge,01-Feb-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8328,Md. Ansarul Islam,Technician,09-Feb-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8333,Md. Abu Raihan,Sr. Executive,13-Feb-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8342,Md. Abu Bakar Siddique,Q.C,18-Feb-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8346,Md. Abbas Ali,Supervisor,22-Feb-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8356,Md. Tajbir Hossain Antu,Supervisor,06-Mar-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8361,Md. Amzad Hossen,Store Keeper,11-Mar-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8362,Md. Zahidul Islam,Store Keeper,11-Mar-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8364,Md. Durjoy Hossain,Supervisor,21-Mar-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8369,Md. Firoz Hossain,Jr. Executive,01-Apr-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8376,Md. Sohel Mia,Supervisor,01-Apr-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8390,Md. Jaminur Rahaman,Supervisor,11-Apr-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8402,Mahfujur Rahman,Incharge,08-May-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8406,Md. Samiul Bashir,Q.C,09-May-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8427,Md. Shafiul Islam,Q.C,12-May-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8430,Md. Shaminur Rahman,Jr. Executive,12-May-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8437,Md. Ramzan Ali,Q.C,13-May-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8457,Anisur Rahman,Shift In-Charge,18-May-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8467,Md. Rakibul Islam,Sr. In-Charge,20-May-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8482,Md. Abu Hasem,Jr. Executive,23-May-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8484,Md. Atiqur Rahman,Store Keeper,01-Jun-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8522,Md. Altaf Mahmod,Incharge,01-Jul-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8523,Md. Salim Miah,Supervisor,01-Jul-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8524,Md. Shahjahan Ali,Q.C,01-Jul-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8597,Abid Hasan,Q.C,01-Aug-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8611,Md. Shariful Islam,Q.C,04-Aug-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8612,Moniruzzaman,Q.C,04-Aug-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8647,Md. Altaf Hossain,Supervisor,04-Sep-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8651,Sohag Hossain,Q.C,06-Sep-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8653,Md. Junayed Hossain Shakil,Executive,10-Sep-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8654,Md. Mehedi Hasan,Q.C,10-Sep-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8655,Sazedul Karim,Supervisor,13-Sep-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8659,Md. Liaquat Hossain,Asst. Manager,14-Sep-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8687,Md. Forhad Gazi,Jr. Executive,06-Oct-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8695,Al Arafat Akash,Jr. Executive,10-Oct-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8707,Md. Mominur Rahman,Supervisor,15-Oct-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8710,Abu Hanif,Asst. Manager,15-Oct-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8716,Md. Omar Faruk,Office Peon,17-Oct-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8729,Zahirul Islam,Asst. Incharge,05-Nov-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8737,Md. Badsha Mia,Asst. Manager,10-Nov-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8738,Md. Asraful Islam,Asst. Manager,12-Nov-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8740,Md. Kamrul Islam,Cook,01-Dec-22,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8749,Md. Nazmul Islam,Supervisor,01-Jan-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8792,Shourov Sarker,Asst. Supervisor,22-Jan-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8795,Md. Kaiyum Khan,Manager,01-Feb-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8796,Md. Harun Or Rasid,Incharge,01-Feb-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8808,Md. Ashraful Alam,Asst. Manager,04-Feb-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8822,Md. Shah Alam,Supervisor,11-Feb-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8837,Md. Mahabul Haque,Q.C,01-Mar-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8845,Md. Abdur Rahim,Executive,11-Mar-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8857,Md. Fajlul Haque Manik,Sr. Executive,02-May-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8873,Tamim Dewan,Asst. Supervisor,03-May-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8890,Md. Humayun Kabir,Safety Asst.(Fire),14-May-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8902,Shanta Paul,Jr. Executive,15-May-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8907,Shamim Mia,Q.C,22-May-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8916,Ripon Hossan,Incharge,10-Jun-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8918,Md. Fahim Hossain,Jr. Executive,04-Jul-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8921,Md. Ariful Islam,Jr. Executive,04-Jul-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0
+Dyeing,Dyeing,S8948,Showkat Mia,Q.C,11-Jul-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8952,Md. Sizar Hosen,Asst. Incharge,12-Jul-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8957,Md. Shahadat Hossen,Asst. Incharge,13-Jul-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8963,Md. Abu Rayhan,Supervisor,17-Jul-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Staff,Bangladeshi,0
+Dyeing,Dyeing,S8989,Md. Sohel Rana,Executive,04-Aug-23,Male,Sahaba Yarn Ltd.,Ground Floor,Manufacturing,Management,Bangladeshi,0

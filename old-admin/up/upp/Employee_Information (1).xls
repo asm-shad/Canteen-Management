@@ -1,0 +1,1152 @@
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<th scope="col">
+SUB_SECTION_NAME
+</th>
+<th scope="col">
+SECTION
+</th>
+<th scope="col">
+EMPLOYEEID
+</th>
+<th scope="col">
+NAME
+</th>
+<th scope="col">
+DESIGNATION
+</th>
+<th scope="col">
+JOININGDT
+</th>
+<th scope="col">
+GENDER
+</th>
+<th scope="col">
+BUSINESS_UNIT_NAME
+</th>
+<th scope="col">
+WORKING_PLACE_NAME
+</th>
+<th scope="col">
+DEPARTMENT_NAME
+</th>
+<th scope="col">
+CATEGORY
+</th>
+<th scope="col">
+NATIONALITY
+</th>
+<th scope="col">
+LEVEL_GRADE
+</th>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LT16347
+</td>
+<td>
+Md.Mehedi Hasan
+</td>
+<td>
+Executive
+</td>
+<td>
+09-APR-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LT44613
+</td>
+<td>
+Mst. Silpi
+</td>
+<td>
+Janitor
+</td>
+<td>
+06-MAY-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+19
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02278
+</td>
+<td>
+Md. Asraful Alam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+11-APR-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Facility Maintenance
+</td>
+<td>
+Facility Maintenance
+</td>
+<td>
+LH2405
+</td>
+<td>
+Md. Alamgir Hossain
+</td>
+<td>
+Manager
+</td>
+<td>
+02-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+Information Technology
+</td>
+<td>
+Information Technology
+</td>
+<td>
+LH2402
+</td>
+<td>
+Razown Ahamed Sovuz
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+10-APR-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Information Technology
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Automated  Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+LT02277
+</td>
+<td>
+Anjan Biswas
+</td>
+<td>
+Executive
+</td>
+<td>
+09-APR-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+L45507
+</td>
+<td>
+Mohammad Saddam Hossain
+</td>
+<td>
+Technician
+</td>
+<td>
+12-APR-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2407
+</td>
+<td>
+Md. Sayem Ali Chowdhry
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+02-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2411
+</td>
+<td>
+Md. Hridoy Mahmud
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+02-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2412
+</td>
+<td>
+Md. Arif Shahriar
+</td>
+<td>
+Executive
+</td>
+<td>
+02-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LT16348
+</td>
+<td>
+Raihan Jamil
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+09-APR-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+GPQ
+</td>
+<td>
+Quality Assurance
+</td>
+<td>
+LT16352
+</td>
+<td>
+Munna Hasan
+</td>
+<td>
+G.P.Q
+</td>
+<td>
+02-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LH2409
+</td>
+<td>
+Wahidur Rahman (Liton)
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+02-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Cutting QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LH2410
+</td>
+<td>
+Md. Firoj Ahmed
+</td>
+<td>
+Asst. Manager
+</td>
+<td>
+02-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+7th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+11
+</td>
+</tr>
+<tr>
+<td>
+Quality Control
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT16368
+</td>
+<td>
+Mohi Uddin
+</td>
+<td>
+G.P.Q
+</td>
+<td>
+02-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Quality Control
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT16369
+</td>
+<td>
+Imran
+</td>
+<td>
+Executive
+</td>
+<td>
+02-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Sewing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT54141
+</td>
+<td>
+Md.Nur Alom Sarker
+</td>
+<td>
+Supervisor
+</td>
+<td>
+05-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT54142
+</td>
+<td>
+Most.Marina Akter
+</td>
+<td>
+Supervisor
+</td>
+<td>
+05-MAY-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L337255
+</td>
+<td>
+Md. Mostafa
+</td>
+<td>
+Supervisor
+</td>
+<td>
+05-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L343720
+</td>
+<td>
+Md.Sujon Miah
+</td>
+<td>
+Supervisor
+</td>
+<td>
+05-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L430787
+</td>
+<td>
+Md. Shamimuzzan
+</td>
+<td>
+Supervisor
+</td>
+<td>
+04-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L625394
+</td>
+<td>
+Md Zafar Sadek
+</td>
+<td>
+Supervisor
+</td>
+<td>
+05-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LH2403
+</td>
+<td>
+Bipul Chandro
+</td>
+<td>
+Executive
+</td>
+<td>
+12-APR-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LH2404
+</td>
+<td>
+Md. Monibur Rahman
+</td>
+<td>
+Executive
+</td>
+<td>
+12-APR-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT44584
+</td>
+<td>
+Md. Ahsan Habib
+</td>
+<td>
+Supervisor
+</td>
+<td>
+12-APR-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT54140
+</td>
+<td>
+Foigur Rahman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+04-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Technical Engineering
+</td>
+<td>
+Technical Engineering
+</td>
+<td>
+LH2408
+</td>
+<td>
+Md. Shawn Hossain
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+02-MAY-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+</table>
+<p>

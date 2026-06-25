@@ -1,0 +1,92 @@
+EMPLOYEEID,NAME,DESIGNATION,JOININGDT,LEVEL_GRADE,GENDER,CATEGORY,WORKING_PLACE_NAME,DEPARTMENT_NAME,SECTION,SUB_SECTION_NAME,NATIONALITY,BUSINESS_UNIT_NAME
+DK609,Md. Ashraful Islam,Cook-D,01-Feb-23,18,Male,Staff,Dhaka,Human Resources Management,Administration,Administration,Bangladeshi,Dhaka Office
+DK610,Md. Kamrul Hasan,Office Assistant-D,12-Feb-23,17,Male,Staff,Dhaka,Human Resources Management,Administration,Administration,Bangladeshi,Dhaka Office
+GF200454,Md. Esob Ali,Gardener,01-Feb-23,17,Male,Staff,Ground Floor,Human Resources Management,Administration,Administration,Bangladeshi,Good and Fast Packaging Co. Ltd.
+LH2388,Md. Kamruzzaman,Executive,16-Feb-23,13,Male,Management,Office,MD Office,Continuous Improvement Team,Continuous Improvement Team,Bangladeshi,Liz Fashion Industry Ltd.
+GF200481,Md. Rasel Miah,Jr. Executive,01-Mar-23,14,Male,Management,2nd Floor,Marketing and Merchandising,Coustomer Service,Coustomer Service,Bangladeshi,Good and Fast Packaging Co. Ltd.
+LH2395,Md. Nasimul Goni,Executive,05-Mar-23,13,Male,Management,Office,Marketing and Merchandising,Customer Account Management,Customer Account Management,Bangladeshi,Liz Fashion Industry Ltd.
+LH2397,Md. Jaubayer Ahamad,Jr. Executive,09-Mar-23,14,Male,Management,Office,Marketing and Merchandising,Customer Account Management,Customer Account Management,Bangladeshi,Liz Fashion Industry Ltd.
+L62492,Md. Shoikot Islam,Technician,08-Feb-23,16,Male,Staff,6th Floor,Manufacturing,Cutting,Cutting,Bangladeshi,Liz Fashion Industry Ltd.
+L62495,Md. Ariful Islam,Supervisor,16-Mar-23,16,Male,Staff,6th Floor,Manufacturing,Cutting,Cutting,Bangladeshi,Liz Fashion Industry Ltd.
+L62496,Md. Mizanur Rahman (Kamrul),Supervisor,16-Mar-23,16,Male,Staff,6th Floor,Manufacturing,Cutting,Cutting,Bangladeshi,Liz Fashion Industry Ltd.
+L62497,Md. Emdadul Haque,Supervisor,16-Mar-23,16,Male,Staff,6th Floor,Manufacturing,Cutting,Cutting,Bangladeshi,Liz Fashion Industry Ltd.
+LT02255,Md.Nuruzzaman,Technician,05-Feb-23,16,Male,Staff,Ground Floor,Manufacturing,Cutting,Cutting,Bangladeshi,Lida Textile & Dyeing Limited
+GF200453,Md. Mashruf Hossain,Jr. Executive,01-Feb-23,14,Male,Management,2nd Floor,Manufacturing,Elastic,Elastic,Bangladeshi,Good and Fast Packaging Co. Ltd.
+GF200482,Prosenjit Kumar Paul,Jr. Executive,01-Mar-23,14,Male,Management,2nd Floor,Manufacturing,Elastic,Elastic,Bangladeshi,Good and Fast Packaging Co. Ltd.
+LH2396,Md. Hamidur Rahman,Sr. Executive,05-Mar-23,12,Male,Management,Office,Human Resources Management,Facility Maintenance,Facility Maintenance,Bangladeshi,Liz Fashion Industry Ltd.
+LT16284,Md. Mehedi Hasan Suman,Jr. Executive,01-Feb-23,14,Male,Management,1st Floor,Human Resources Management,Human Resources,Human Resources,Bangladeshi,Lida Textile & Dyeing Limited
+LT16317,Shofiqul Islam Rana,Executive,15-Feb-23,13,Male,Management,1st Floor,Manufacturing,Industrial Engineering,Industrial Engineering,Bangladeshi,Lida Textile & Dyeing Limited
+LT16318,Md. Sumon Islam,Executive,22-Feb-23,13,Male,Management,1st Floor,Manufacturing,Industrial Engineering,Industrial Engineering,Bangladeshi,Lida Textile & Dyeing Limited
+LT16319,Rayhan Ahamed,Executive,22-Feb-23,13,Male,Management,1st Floor,Manufacturing,Industrial Engineering,Industrial Engineering,Bangladeshi,Lida Textile & Dyeing Limited
+LT16320,Md.Robin Patwary,Sr. Executive,01-Mar-23,12,Male,Management,1st Floor,Manufacturing,Industrial Engineering,Industrial Engineering,Bangladeshi,Lida Textile & Dyeing Limited
+LT16321,Md.Mehedi Hasan,Executive,01-Mar-23,13,Male,Management,1st Floor,Manufacturing,Industrial Engineering,Industrial Engineering,Bangladeshi,Lida Textile & Dyeing Limited
+LT16322,Md.Abdur Rahim,Executive,07-Mar-23,13,Male,Management,1st Floor,Manufacturing,Industrial Engineering,Industrial Engineering,Bangladeshi,Lida Textile & Dyeing Limited
+LH2381,Md. Sabbir Ahmad Hasan,Jr. Executive,06-Feb-23,14,Male,Management,Office,MD Office,Internal Audit,Internal Audit,Bangladeshi,Liz Fashion Industry Ltd.
+GF200479,Md. Saboj Miah,Supervisor,22-Feb-23,16,Male,Staff,Ground Floor,Supply Chain,Inventories and Stores Control,Inventory Control,Bangladeshi,Good and Fast Packaging Co. Ltd.
+LH2383,Jasia Jasmine Lima,Jr. Executive,01-Feb-23,14,Female,Management,Office,Supply Chain,Inventories and Stores Control,Inventory Control,Bangladeshi,Liz Fashion Industry Ltd.
+LT02243,Md. Sobuj Mia,Warehouse Attendant,03-Feb-23,17,Male,Staff,Ground Floor,Supply Chain,Inventories and Stores Control,Automated  Warehouse,Bangladeshi,Lida Textile & Dyeing Limited
+LT02253,Sani,Warehouse Attendant,05-Feb-23,17,Male,Staff,Ground Floor,Supply Chain,Inventories and Stores Control,Automated  Warehouse,Bangladeshi,Lida Textile & Dyeing Limited
+LT02254,Md. Mahadi Hassan,Warehouse Attendant,05-Feb-23,17,Male,Staff,Ground Floor,Supply Chain,Inventories and Stores Control,Automated  Warehouse,Bangladeshi,Lida Textile & Dyeing Limited
+LT02261,Jahidul Islam,Warehouse Attendant,08-Feb-23,17,Male,Staff,Ground Floor,Supply Chain,Inventories and Stores Control,Automated  Warehouse,Bangladeshi,Lida Textile & Dyeing Limited
+LT02262,Md.Farid Hossain,Warehouse Attendant,08-Feb-23,17,Male,Staff,Ground Floor,Supply Chain,Inventories and Stores Control,Automated  Warehouse,Bangladeshi,Lida Textile & Dyeing Limited
+LT02263,Md.Jubael Hossain,Supervisor,08-Feb-23,16,Male,Staff,Ground Floor,Supply Chain,Inventories and Stores Control,Mini Warehouse,Bangladeshi,Lida Textile & Dyeing Limited
+L14886,Suzoan Sultan,Asst. Technician,13-Mar-23,16,Male,Staff,1st Floor,Marketing and Merchandising,Laboratory,Laboratory,Bangladeshi,Liz Fashion Industry Ltd.
+L14887,Jannatun Ferdaus,Asst. Technician,13-Mar-23,16,Female,Staff,1st Floor,Marketing and Merchandising,Laboratory,Laboratory,Bangladeshi,Liz Fashion Industry Ltd.
+L14888,Md. Abu Sayed Shekh,Asst. Technician,13-Mar-23,16,Male,Staff,1st Floor,Marketing and Merchandising,Laboratory,Laboratory,Bangladeshi,Liz Fashion Industry Ltd.
+GF200489,Md. Mynul Islam,Deputy Manager,05-Mar-23,10,Male,Management,Ground Floor,Manufacturing,Maintenance,Maintenance,Bangladeshi,Good and Fast Packaging Co. Ltd.
+L0323308,Mahbubur Rahman Sumon,Incharge,08-Feb-23,15,Male,Staff,Ground Floor,Manufacturing,Maintenance,Utility,Bangladeshi,Liz Fashion Industry Ltd.-3
+L220300,Md. Sazzad Hossain,Technician,01-Feb-23,16,Female,Staff,2nd Floor,Manufacturing,Maintenance,Utility,Bangladeshi,Liz Fashion Industry Ltd.-2
+L322846,Diganta Day,Technician,15-Mar-23,16,Male,Staff,3rd Floor,Manufacturing,Maintenance,Mechanical,Bangladeshi,Liz Fashion Industry Ltd.-2
+L337225,Md. Tanbir Hassan,Technician,09-Mar-23,16,Male,Staff,3rd Floor,Manufacturing,Maintenance,Maintenance,Bangladeshi,Liz Fashion Industry Ltd.-3
+LT36607,Md. Billal Hosen,Technician,09-Mar-23,16,Male,Staff,3rd Floor,Manufacturing,Maintenance,Mechanical,Bangladeshi,Lida Textile & Dyeing Limited
+LH2389,Li Yuehui,Asst. Manager,15-Feb-23,11,Male,Management,8th Floor,Manufacturing,Manufacturing,Manufacturing,Canadian,Lida Textile & Dyeing Limited
+LH2391,Dai Tinglin,Asst. Manager,15-Feb-23,11,Male,Management,8th Floor,Manufacturing,Manufacturing,Manufacturing,Chinese,Liz Fashion Industry Ltd.
+LH2380,Kaboos Bin Hassan Quadery,Jr. Executive,01-Feb-23,14,Male,Management,Office,Marketing and Merchandising,Marketing and Merchandising,Marketing and Merchandising,Bangladeshi,Liz Fashion Industry Ltd.
+GF200472,Md. Abdul Karim Sikder,Asst. Technician,13-Feb-23,16,Male,Staff,Ground Floor,Manufacturing,Offset & Lebel Printing,Offset Printing,Bangladeshi,Good and Fast Packaging Co. Ltd.
+GF200475,Monirul Islam,Technician,15-Feb-23,16,Male,Staff,Ground Floor,Manufacturing,Offset & Lebel Printing,Offset Printing,Bangladeshi,Good and Fast Packaging Co. Ltd.
+GF200478,Md. Billal Hossan,Technician,22-Feb-23,16,Male,Staff,Ground Floor,Manufacturing,Offset & Lebel Printing,Offset Printing,Bangladeshi,Good and Fast Packaging Co. Ltd.
+GF200492,S. K. Foysal Ahmmed,Asst. Technician,16-Mar-23,16,Male,Staff,Ground Floor,Manufacturing,Offset & Lebel Printing,Offset Printing,Bangladeshi,Good and Fast Packaging Co. Ltd.
+LH2392,Nasir Uddin,Executive,22-Feb-23,13,Male,Management,Office,Supply Chain,Procurement,Procurement,Bangladeshi,Liz Fashion Industry Ltd.
+LH2398,Sajib Hossain,Executive,14-Mar-23,13,Male,Management,Office,Supply Chain,Procurement,Procurement,Bangladeshi,Liz Fashion Industry Ltd.
+LH2399,Md. Salman S Khan,Sr. Executive,15-Mar-23,12,Male,Management,Office,Supply Chain,Procurement,Procurement,Bangladeshi,Liz Fashion Industry Ltd.
+L14882,Sorifa,Technician,13-Feb-23,16,Female,Staff,1st Floor,Quality and Technical,Product Design and Development,Sample,Bangladeshi,Liz Fashion Industry Ltd.
+L14884,Md. Asadul Islam,Technician,09-Mar-23,16,Male,Staff,1st Floor,Quality and Technical,Product Design and Development,Sample,Bangladeshi,Liz Fashion Industry Ltd.
+L14890,Saidul Akon,Technician,14-Mar-23,16,Male,Staff,1st Floor,Quality and Technical,Product Design and Development,Sample,Bangladeshi,Liz Fashion Industry Ltd.
+LH2382,Al-Amin,Executive,01-Feb-23,13,Male,Management,Office,Manufacturing,Quality Control,Quality Control,Bangladeshi,Liz Fashion Industry Ltd.
+LT16283,Md. Jahidul Islam,Executive,01-Feb-23,13,Male,Management,1st Floor,Manufacturing,Quality Control,Sewing QC,Bangladeshi,Lida Textile & Dyeing Limited
+LH2385,Wang. Zhenzhuo,Technician,08-Feb-23,16,Female,Staff,8th Floor,Quality and Technical,Quality and Technical,Quality and Technical,Chinese,Lida Textile & Dyeing Limited
+LH2393,Wang Fenghua,Supervisor,23-Feb-23,16,Male,Management,8th Floor,Quality and Technical,Quality and Technical,Quality and Technical,Chinese,Liz Fashion Industry Ltd.
+L322825,Md. Sabus Mia,Supervisor,03-Feb-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-2
+L322845,Nizam Uddin,Supervisor,13-Mar-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-2
+L322855,Md.Shaihin Alom,Supervisor,16-Mar-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-2
+L337206,Ittahad Mohalder,Supervisor,01-Feb-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-3
+L337210,Md. Sohel Rana,Supervisor,03-Feb-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-3
+L337221,Md. Romjan Ali,Supervisor,12-Feb-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-3
+L337226,Md. Mostain Billah,Supervisor,09-Mar-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-3
+L343693,Md. Toslim Uddin,Supervisor,19-Feb-23,16,Male,Staff,4th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-3
+L343695,Md. Munna,Supervisor,01-Mar-23,16,Male,Staff,4th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-3
+L343698,Saiful Islam,Supervisor,03-Mar-23,16,Male,Staff,4th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-3
+L36861,Kabir Hossain,Supervisor,03-Feb-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.
+L36875,Md.Rakib Hasan Rocky,Supervisor,12-Feb-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.
+L36876,Md. Rezwan,Supervisor,12-Feb-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.
+L36877,Md. Nur Hossen,Supervisor,14-Feb-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.
+L425052,Md. Zahangir Alam,Supervisor,07-Feb-23,16,Male,Staff,4th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-2
+L425059,Md. Monarul Islam,Supervisor,15-Feb-23,16,Male,Staff,4th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-2
+L430770,Md. Suzon Ali,Supervisor,09-Mar-23,16,Male,Staff,3rd Floor-LKP,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.
+L45419,Mahfuz Rana,Supervisor,01-Feb-23,16,Male,Staff,4th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.
+L45471,Md. Faruk Hossain,Supervisor,15-Feb-23,16,Male,Staff,4th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.
+L45472,Md. Shahidul Islam,Supervisor,17-Feb-23,16,Male,Staff,4th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.
+L625180,Md Nazrul Islam,Line Chief,02-Feb-23,15,Male,Staff,6th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.-2
+LH2379,Anowar Hossain,Management Trainee,01-Feb-23,14,Male,Management,Office,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.
+LH2387,Md. Hafizur Rahman,Manager,15-Feb-23,9,Male,Management,3rd Floor-LKP,Manufacturing,Sewing,Sewing,Bangladeshi,Liz Fashion Industry Ltd.
+LT16303,Md. Mabud Rana Mondol,Supervisor,05-Feb-23,16,Male,Staff,1st Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Lida Textile & Dyeing Limited
+LT16314,Md.Taizul Islam,Supervisor,08-Feb-23,16,Male,Staff,1st Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Lida Textile & Dyeing Limited
+LT16323,R S Robiul Alam,Manager,07-Mar-23,9,Male,Management,1st Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Lida Textile & Dyeing Limited
+LT27297,Sabuz Akonda,Supervisor,02-Feb-23,16,Male,Staff,2nd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Lida Textile & Dyeing Limited
+LT27374,M. Sharif Mahabub,Supervisor,13-Feb-23,16,Male,Staff,2nd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Lida Textile & Dyeing Limited
+LT36551,Md. Hachibur Rahman,Supervisor,05-Feb-23,16,Male,Staff,3rd Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Lida Textile & Dyeing Limited
+LT44573,Md. Rashedul Islam,Supervisor,08-Feb-23,16,Male,Staff,4th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Lida Textile & Dyeing Limited
+LT44579,Mustafizur Rahman,Supervisor,16-Feb-23,16,Male,Staff,4th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Lida Textile & Dyeing Limited
+LT54104,Md.Abu Hanif,Supervisor,08-Feb-23,16,Male,Staff,5th Floor,Manufacturing,Sewing,Sewing,Bangladeshi,Lida Textile & Dyeing Limited
+LH2394,Md. Tanvir Alam,Executive,02-Mar-23,13,Male,Management,Office,Finance and Accounting,Taxation Regulatory Reporting,Taxation Regulatory Reporting,Bangladeshi,Liz Fashion Industry Ltd.
+LH2390,Zhang Guanghai,Sr. Supervisor,15-Feb-23,16,Male,Management,8th Floor,Quality and Technical,Technical Engineering,Technical Engineering,Chinese,Liz Fashion Industry Ltd.

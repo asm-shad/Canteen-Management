@@ -1,0 +1,15010 @@
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<th scope="col">
+SUB_SECTION_NAME
+</th>
+<th scope="col">
+SECTION
+</th>
+<th scope="col">
+EMPLOYEEID
+</th>
+<th scope="col">
+NAME
+</th>
+<th scope="col">
+DESIGNATION
+</th>
+<th scope="col">
+JOININGDT
+</th>
+<th scope="col">
+GENDER
+</th>
+<th scope="col">
+BUSINESS_UNIT_NAME
+</th>
+<th scope="col">
+WORKING_PLACE_NAME
+</th>
+<th scope="col">
+DEPARTMENT_NAME
+</th>
+<th scope="col">
+CATEGORY
+</th>
+<th scope="col">
+NATIONALITY
+</th>
+<th scope="col">
+LEVEL_GRADE
+</th>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+DK616
+</td>
+<td>
+Eva Nokrek
+</td>
+<td>
+Cleaner-D
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Dhaka Office
+</td>
+<td>
+Dhaka
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+GF200686
+</td>
+<td>
+Sree Lal Chan Mondol
+</td>
+<td>
+Carpenter
+</td>
+<td>
+13-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+GF200700
+</td>
+<td>
+Md. A. Razzak Hawaldar
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LH2453
+</td>
+<td>
+Munshi Asabur Rahman
+</td>
+<td>
+Asst. Manager
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+11
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LH2477
+</td>
+<td>
+Md. Emrul Kayes
+</td>
+<td>
+Manager
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LH2478
+</td>
+<td>
+Md. Abdul Gafur Khan
+</td>
+<td>
+Manager
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LH2479
+</td>
+<td>
+Mohammad Zahirul Haque
+</td>
+<td>
+Asst. Manager
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+11
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LH2498
+</td>
+<td>
+Md. Altaf Hossain
+</td>
+<td>
+Manager
+</td>
+<td>
+15-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LH2504
+</td>
+<td>
+Sree Gonesh Chandra Roy
+</td>
+<td>
+Executive
+</td>
+<td>
+19-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LH2505
+</td>
+<td>
+Md. Shahidul Islam Khan
+</td>
+<td>
+Executive
+</td>
+<td>
+17-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LH2516
+</td>
+<td>
+A.K.M Towhidul Hasan
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Security
+</td>
+<td>
+Administration
+</td>
+<td>
+LS0220
+</td>
+<td>
+Md. Hasan Tarek
+</td>
+<td>
+Supervisor
+</td>
+<td>
+14-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+7th Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Security
+</td>
+<td>
+Administration
+</td>
+<td>
+LS0244
+</td>
+<td>
+Md. Altaf Mahmud
+</td>
+<td>
+Cctv Monitor
+</td>
+<td>
+25-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LT02386
+</td>
+<td>
+Md. Abdul Hakim
+</td>
+<td>
+Executive
+</td>
+<td>
+10-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Security
+</td>
+<td>
+Administration
+</td>
+<td>
+LT02578
+</td>
+<td>
+Md. Mejba Ur Rahman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+11-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Security
+</td>
+<td>
+Administration
+</td>
+<td>
+LT02605
+</td>
+<td>
+Mahmud Hossain
+</td>
+<td>
+Manager
+</td>
+<td>
+20-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+Administration
+</td>
+<td>
+Administration
+</td>
+<td>
+LT16712
+</td>
+<td>
+Mst. Nuraya Kulsum
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Transport
+</td>
+<td>
+Administration
+</td>
+<td>
+P16795
+</td>
+<td>
+Md. Nazmul Hossain
+</td>
+<td>
+Transport Asst.
+</td>
+<td>
+20-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+LIZ Knitting &amp; Printing Industry.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Transport
+</td>
+<td>
+Administration
+</td>
+<td>
+P16820
+</td>
+<td>
+Md. Arifur Rahman
+</td>
+<td>
+Transport Asst.
+</td>
+<td>
+04-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+LIZ Knitting &amp; Printing Industry.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+House Keeping
+</td>
+<td>
+Administration
+</td>
+<td>
+P16834
+</td>
+<td>
+Md. Nazmul Hasan
+</td>
+<td>
+Asst. Supervisor
+</td>
+<td>
+17-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+LIZ Knitting &amp; Printing Industry.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Application Development
+</td>
+<td>
+Application Development
+</td>
+<td>
+LH2438
+</td>
+<td>
+Md. Foisal Ali
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+12-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Office
+</td>
+<td>
+Information Technology
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Compliance and Sustainability
+</td>
+<td>
+Compliance and Sustainability
+</td>
+<td>
+LT16805
+</td>
+<td>
+Md. Mahadi Hassan
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Continuous Improvement Team
+</td>
+<td>
+Continuous Improvement Team
+</td>
+<td>
+LH2460
+</td>
+<td>
+Md. Mannu Rahman
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+MD Office
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57377
+</td>
+<td>
+Md. Rabiul Islam
+</td>
+<td>
+Technician
+</td>
+<td>
+18-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57378
+</td>
+<td>
+Nasir Uddin
+</td>
+<td>
+Technician
+</td>
+<td>
+18-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57379
+</td>
+<td>
+Md. Maidul Islam
+</td>
+<td>
+Technician
+</td>
+<td>
+18-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57380
+</td>
+<td>
+Md. Mokallem Hossen
+</td>
+<td>
+Technician
+</td>
+<td>
+18-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57381
+</td>
+<td>
+Md. Shakil Hossain
+</td>
+<td>
+Asst. Technician
+</td>
+<td>
+19-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57382
+</td>
+<td>
+Md. Almgir Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57383
+</td>
+<td>
+Md. Shapan Mia
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57397
+</td>
+<td>
+Md. Asraful Islam
+</td>
+<td>
+Technician
+</td>
+<td>
+03-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57398
+</td>
+<td>
+Md. Rakib
+</td>
+<td>
+Technician
+</td>
+<td>
+03-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57399
+</td>
+<td>
+Zohurul
+</td>
+<td>
+Technician
+</td>
+<td>
+03-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57403
+</td>
+<td>
+Md. Mominur Rahman
+</td>
+<td>
+Technician
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57404
+</td>
+<td>
+Md. Shagor Sarder
+</td>
+<td>
+Technician
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57405
+</td>
+<td>
+Md. Shofiqul Islam
+</td>
+<td>
+Technician
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57409
+</td>
+<td>
+Md. Mamunur Rashid
+</td>
+<td>
+Technician
+</td>
+<td>
+16-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57413
+</td>
+<td>
+Md. Abu Taleb
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57419
+</td>
+<td>
+Abu Hossain
+</td>
+<td>
+Technician
+</td>
+<td>
+06-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57420
+</td>
+<td>
+Md. Israfil
+</td>
+<td>
+Technician
+</td>
+<td>
+06-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57421
+</td>
+<td>
+Md. Momin Hossen
+</td>
+<td>
+Technician
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L57422
+</td>
+<td>
+Azad Hossain
+</td>
+<td>
+Technician
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62552
+</td>
+<td>
+Md. Motiur Rahman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+18-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62553
+</td>
+<td>
+Md. Sumon Mia
+</td>
+<td>
+Technician
+</td>
+<td>
+18-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62554
+</td>
+<td>
+Md. Abdul Baten
+</td>
+<td>
+Supervisor
+</td>
+<td>
+18-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62562
+</td>
+<td>
+ Md. Sumon Ali
+</td>
+<td>
+Supervisor
+</td>
+<td>
+23-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62571
+</td>
+<td>
+Ahad Ali
+</td>
+<td>
+Technician
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62572
+</td>
+<td>
+Md. Mezbaul Sarker
+</td>
+<td>
+Supervisor
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62574
+</td>
+<td>
+Bappi Mia
+</td>
+<td>
+Technician
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62576
+</td>
+<td>
+Md. Ali Akbar
+</td>
+<td>
+Supervisor
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62577
+</td>
+<td>
+Md. Anik Hossen
+</td>
+<td>
+Supervisor
+</td>
+<td>
+10-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62578
+</td>
+<td>
+Md. Raton Mia
+</td>
+<td>
+Technician
+</td>
+<td>
+17-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62579
+</td>
+<td>
+Rajaul Haque
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62580
+</td>
+<td>
+Md.Hossen Ali
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62585
+</td>
+<td>
+Shitol Kumar Barmon
+</td>
+<td>
+Supervisor
+</td>
+<td>
+04-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62589
+</td>
+<td>
+Md. Muktar Hossain
+</td>
+<td>
+Technician
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62590
+</td>
+<td>
+Md. Masud Rana
+</td>
+<td>
+Technician
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62591
+</td>
+<td>
+Md. Nur Nabi Hossen
+</td>
+<td>
+Technician
+</td>
+<td>
+11-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L62592
+</td>
+<td>
+Hasanur Rahman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L720731
+</td>
+<td>
+Md Rasad Hossain
+</td>
+<td>
+Technician
+</td>
+<td>
+19-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+7th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L720750
+</td>
+<td>
+Nacirul Haque
+</td>
+<td>
+Supervisor
+</td>
+<td>
+21-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+7th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L720752
+</td>
+<td>
+Md Shazahan Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+21-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+7th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L720753
+</td>
+<td>
+Md Delwer Hossen
+</td>
+<td>
+Technician
+</td>
+<td>
+21-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+7th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L720756
+</td>
+<td>
+Md. Hasan Ali
+</td>
+<td>
+Supervisor
+</td>
+<td>
+23-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+7th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L720761
+</td>
+<td>
+Md Tushar Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+7th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L720764
+</td>
+<td>
+Md Sahidul Islam
+</td>
+<td>
+Technician
+</td>
+<td>
+08-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+7th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+L720780
+</td>
+<td>
+Md Jewel  Rana
+</td>
+<td>
+Technician
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+7th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LH2487
+</td>
+<td>
+Al-Amin
+</td>
+<td>
+Executive
+</td>
+<td>
+08-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LH2511
+</td>
+<td>
+Md. Arshad Mia
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02418
+</td>
+<td>
+Md. Hafijul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02437
+</td>
+<td>
+Md. Sazzad Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02438
+</td>
+<td>
+Md. Hasanuzzaman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02485
+</td>
+<td>
+Md. Mishuk Ali
+</td>
+<td>
+Asst. Supervisor
+</td>
+<td>
+16-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02511
+</td>
+<td>
+Raju Mia
+</td>
+<td>
+Technician
+</td>
+<td>
+23-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02546
+</td>
+<td>
+Abdus Samad Sheikh
+</td>
+<td>
+Supervisor
+</td>
+<td>
+06-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02547
+</td>
+<td>
+Md. Halal Ali
+</td>
+<td>
+Technician
+</td>
+<td>
+07-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02559
+</td>
+<td>
+Md. Belal Sarkar
+</td>
+<td>
+Technician
+</td>
+<td>
+08-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02567
+</td>
+<td>
+Most. Nurnahar  Akter
+</td>
+<td>
+Encoder
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02568
+</td>
+<td>
+Md. Asif Ahamed Salim
+</td>
+<td>
+Supervisor
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02569
+</td>
+<td>
+Md. Mosharof Akonod
+</td>
+<td>
+Technician
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02588
+</td>
+<td>
+Sumon Mia
+</td>
+<td>
+Asst. Supervisor
+</td>
+<td>
+12-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Cutting
+</td>
+<td>
+Cutting
+</td>
+<td>
+LT02615
+</td>
+<td>
+Harunur Rashid
+</td>
+<td>
+Supervisor
+</td>
+<td>
+02-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Digital Marketing
+</td>
+<td>
+Digital Marketing
+</td>
+<td>
+LT16807
+</td>
+<td>
+Md. Munna
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Digital Marketing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Elastic
+</td>
+<td>
+Elastic
+</td>
+<td>
+GF200634
+</td>
+<td>
+Md. Emtiaj Mahmud
+</td>
+<td>
+Manager
+</td>
+<td>
+11-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+G_Product Design &amp; Development
+</td>
+<td>
+Elastic
+</td>
+<td>
+GF200689
+</td>
+<td>
+Md. Aminul Islam
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+17-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Embroidery
+</td>
+<td>
+Embroidery
+</td>
+<td>
+GF200667
+</td>
+<td>
+Md. Aminul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Facility Maintenance
+</td>
+<td>
+Facility Maintenance
+</td>
+<td>
+LT02606
+</td>
+<td>
+Md. Pasha Sharkar
+</td>
+<td>
+Plumber
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Facility Maintenance
+</td>
+<td>
+Facility Maintenance
+</td>
+<td>
+P16675
+</td>
+<td>
+Md. Anower Khan
+</td>
+<td>
+Supervisor
+</td>
+<td>
+13-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+LIZ Knitting &amp; Printing Industry.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Financial management and Financial Reporting
+</td>
+<td>
+Financial management and Financial Reporting
+</td>
+<td>
+LH2451
+</td>
+<td>
+Sajal Ahmed
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+20-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Office
+</td>
+<td>
+Finance and Accounting
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Finishing
+</td>
+<td>
+Finishing
+</td>
+<td>
+GF200661
+</td>
+<td>
+Humayun Hasan
+</td>
+<td>
+Supervisor
+</td>
+<td>
+20-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Finishing
+</td>
+<td>
+Finishing
+</td>
+<td>
+L0323543
+</td>
+<td>
+Md. Kashem Mondal
+</td>
+<td>
+Supervisor
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Finishing
+</td>
+<td>
+Finishing
+</td>
+<td>
+L210583
+</td>
+<td>
+Md. Fahad Bhuiyan
+</td>
+<td>
+Encoder
+</td>
+<td>
+12-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Finishing
+</td>
+<td>
+Finishing
+</td>
+<td>
+L210621
+</td>
+<td>
+Md. Ashraful Alom
+</td>
+<td>
+Supervisor
+</td>
+<td>
+19-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Finishing
+</td>
+<td>
+Finishing
+</td>
+<td>
+L210622
+</td>
+<td>
+Md. Mazed Khandoker Masum
+</td>
+<td>
+Supervisor
+</td>
+<td>
+19-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Finishing
+</td>
+<td>
+Finishing
+</td>
+<td>
+LH2494
+</td>
+<td>
+S.M Mosharaf
+</td>
+<td>
+Manager
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+Label Print
+</td>
+<td>
+Finishing
+</td>
+<td>
+LT27779
+</td>
+<td>
+Md. Asikul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Label Print
+</td>
+<td>
+Finishing
+</td>
+<td>
+LT27830
+</td>
+<td>
+Md. Jahid Hasan
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Human Resources
+</td>
+<td>
+Human Resources
+</td>
+<td>
+LH2507
+</td>
+<td>
+Jinia Rahman
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+20-SEP-23
+</td>
+<td>
+Female
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Human Resources
+</td>
+<td>
+Human Resources
+</td>
+<td>
+LH2508
+</td>
+<td>
+Nusrat Jahan Sadia
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+20-SEP-23
+</td>
+<td>
+Female
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Human Resources
+</td>
+<td>
+Human Resources
+</td>
+<td>
+LH2515
+</td>
+<td>
+Touhid Ahmed Khan
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+Office
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Human Resources
+</td>
+<td>
+Human Resources
+</td>
+<td>
+LT16696
+</td>
+<td>
+Nasir Uddin
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Human Resources
+</td>
+<td>
+Human Resources
+</td>
+<td>
+LT16785
+</td>
+<td>
+Md. Fahim Uddin Biswas
+</td>
+<td>
+Executive
+</td>
+<td>
+16-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Human Resources
+</td>
+<td>
+Human Resources
+</td>
+<td>
+LT16888
+</td>
+<td>
+Md. Azam Khan
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Human Resources Management
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+LT16771
+</td>
+<td>
+Md. Ashikur Rahman
+</td>
+<td>
+Asst. Manager
+</td>
+<td>
+10-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+11
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LH2439
+</td>
+<td>
+S.M. Shahajahan Badsha
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+12-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LH2440
+</td>
+<td>
+Md. Nesar Uddin
+</td>
+<td>
+Executive
+</td>
+<td>
+12-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LH2443
+</td>
+<td>
+Jobaer Ahmed
+</td>
+<td>
+Executive
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LH2444
+</td>
+<td>
+Rajib Hossain
+</td>
+<td>
+Executive
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LH2464
+</td>
+<td>
+Md. Musfequr Rahman Buhiyan
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+13-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LH2488
+</td>
+<td>
+Md. Arif Mia
+</td>
+<td>
+Executive
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LH2492
+</td>
+<td>
+Jakir Hossain
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LH2495
+</td>
+<td>
+Md. Mahmudul Hasan
+</td>
+<td>
+Executive
+</td>
+<td>
+11-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LH2512
+</td>
+<td>
+Md. Rafiqul Islam
+</td>
+<td>
+Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Office
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16469
+</td>
+<td>
+Md.Parvez Al Robin
+</td>
+<td>
+Executive
+</td>
+<td>
+09-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16470
+</td>
+<td>
+Anamul Hasan Abir
+</td>
+<td>
+Executive
+</td>
+<td>
+09-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16471
+</td>
+<td>
+Habibur Rahuman
+</td>
+<td>
+Executive
+</td>
+<td>
+09-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16500
+</td>
+<td>
+Md.Shahadat Hossain
+</td>
+<td>
+Executive
+</td>
+<td>
+10-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16668
+</td>
+<td>
+Raisul Islam Rony
+</td>
+<td>
+Executive
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16697
+</td>
+<td>
+Kawsar Ahmed
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16698
+</td>
+<td>
+Mazedul Islam Soyeb
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16713
+</td>
+<td>
+Roksana Khatun
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+02-AUG-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16804
+</td>
+<td>
+Md. Riazul Kabir Rizvi
+</td>
+<td>
+Executive
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16806
+</td>
+<td>
+Jihadul Islam
+</td>
+<td>
+Executive
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16808
+</td>
+<td>
+Md. Nazmul Hasan
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16809
+</td>
+<td>
+Sabit Chakma
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16817
+</td>
+<td>
+Md. Minhazul Islam
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16848
+</td>
+<td>
+Mir Raisul Islam
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+11-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16853
+</td>
+<td>
+Md. Batinuzzaman
+</td>
+<td>
+Executive
+</td>
+<td>
+12-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16877
+</td>
+<td>
+Md. Shohag Babu
+</td>
+<td>
+Executive
+</td>
+<td>
+20-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16878
+</td>
+<td>
+G.M.M Amimul Ehsan
+</td>
+<td>
+Executive
+</td>
+<td>
+20-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16881
+</td>
+<td>
+Ikbal Hasan Rafi
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16882
+</td>
+<td>
+Nayan Banik
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Industrial Engineering
+</td>
+<td>
+Industrial Engineering
+</td>
+<td>
+LT16883
+</td>
+<td>
+Ezaz Ahmed Khan
+</td>
+<td>
+Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Inventory Control
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+GF200701
+</td>
+<td>
+Md. Redouy Mia
+</td>
+<td>
+Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Inventory Control
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+GF200703
+</td>
+<td>
+Sk. Alamgir Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mini Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+L04455
+</td>
+<td>
+Shariful Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+18-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mini Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+L04458
+</td>
+<td>
+Wasim Dewan
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mini Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+LT02436
+</td>
+<td>
+Abu Bakor Siddik
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+25-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Mini Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+LT02464
+</td>
+<td>
+Md. Ashraful Alam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Automated  Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+LT02465
+</td>
+<td>
+Md. Abdur Rahim
+</td>
+<td>
+Warehouse Attendant
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Automated  Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+LT02466
+</td>
+<td>
+S. M. Akash
+</td>
+<td>
+Warehouse Attendant
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Automated  Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+LT02467
+</td>
+<td>
+Jony Modak
+</td>
+<td>
+Warehouse Attendant
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Mini Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+LT02490
+</td>
+<td>
+Md. Masud Rana
+</td>
+<td>
+Supervisor
+</td>
+<td>
+18-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Automated  Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+LT02535
+</td>
+<td>
+Saddam
+</td>
+<td>
+Warehouse Attendant
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Automated  Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+LT02558
+</td>
+<td>
+Md. Layon Mondol
+</td>
+<td>
+Warehouse Attendant
+</td>
+<td>
+08-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Mini Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+LT02577
+</td>
+<td>
+Md. Nahid Reza
+</td>
+<td>
+Supervisor
+</td>
+<td>
+11-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Automated  Warehouse
+</td>
+<td>
+Inventories and Stores Control
+</td>
+<td>
+LT02603
+</td>
+<td>
+Md. Ahsan Habibi
+</td>
+<td>
+Warehouse Attendant
+</td>
+<td>
+19-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Knitting
+</td>
+<td>
+Knitting
+</td>
+<td>
+LH2509
+</td>
+<td>
+Redoy Kundu
+</td>
+<td>
+Asst. Manager
+</td>
+<td>
+25-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+LIZ Knitting &amp; Printing Industry.
+</td>
+<td>
+Office
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+11
+</td>
+</tr>
+<tr>
+<td>
+Laboratory
+</td>
+<td>
+Laboratory
+</td>
+<td>
+L14917
+</td>
+<td>
+Morium Akter Tamanna
+</td>
+<td>
+Asst. Technician
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Female
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Laboratory
+</td>
+<td>
+Laboratory
+</td>
+<td>
+L14918
+</td>
+<td>
+Tanzina Sweety
+</td>
+<td>
+Technician
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Female
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Cash Incentive
+</td>
+<td>
+Logistics
+</td>
+<td>
+LH2434
+</td>
+<td>
+Md. Nasimuzzaman
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+09-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Office
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+GF200621
+</td>
+<td>
+Md. Golap Mostofa
+</td>
+<td>
+Welder
+</td>
+<td>
+07-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+GF200622
+</td>
+<td>
+Rafiquel Islam
+</td>
+<td>
+Welder
+</td>
+<td>
+07-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+GF200624
+</td>
+<td>
+Md Mobarok Hossen
+</td>
+<td>
+Technician
+</td>
+<td>
+07-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Electrical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+GF200659
+</td>
+<td>
+Md. Milon Hossain
+</td>
+<td>
+Technician
+</td>
+<td>
+10-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Electrical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+GF200660
+</td>
+<td>
+Md. Sulyman
+</td>
+<td>
+Technician
+</td>
+<td>
+16-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Electrical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+GF200676
+</td>
+<td>
+Md. Jahirul Islam
+</td>
+<td>
+Technician
+</td>
+<td>
+07-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+GF200679
+</td>
+<td>
+Md. Yeamin
+</td>
+<td>
+Technician
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Maintenance
+</td>
+<td>
+Maintenance
+</td>
+<td>
+GF200691
+</td>
+<td>
+Md. Shafiqul Islam
+</td>
+<td>
+Manager
+</td>
+<td>
+17-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+GF200698
+</td>
+<td>
+Sabuz Miya
+</td>
+<td>
+Sr. Technician
+</td>
+<td>
+25-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+GF200702
+</td>
+<td>
+Faisal Ahmed
+</td>
+<td>
+Technician
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Maintenance
+</td>
+<td>
+Maintenance
+</td>
+<td>
+L14970
+</td>
+<td>
+Md. Dulal Hossion
+</td>
+<td>
+Technician
+</td>
+<td>
+13-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+L220317
+</td>
+<td>
+Md. Shafikul Islam
+</td>
+<td>
+Technician
+</td>
+<td>
+17-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+L317635
+</td>
+<td>
+Mohammad Miraj Hasan
+</td>
+<td>
+Technician
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Maintenance
+</td>
+<td>
+Maintenance
+</td>
+<td>
+L343789
+</td>
+<td>
+Md. Al Amin
+</td>
+<td>
+Technician
+</td>
+<td>
+02-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Maintenance
+</td>
+<td>
+Maintenance
+</td>
+<td>
+L430938
+</td>
+<td>
+Md. Polash Hossain
+</td>
+<td>
+Technician
+</td>
+<td>
+13-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+L430950
+</td>
+<td>
+Md. Shahin Sultan
+</td>
+<td>
+Technician
+</td>
+<td>
+22-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+L625753
+</td>
+<td>
+Md. Razu Mia
+</td>
+<td>
+Technician
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Maintenance
+</td>
+<td>
+Maintenance
+</td>
+<td>
+L625783
+</td>
+<td>
+Md. Liton Sarkar
+</td>
+<td>
+Technician
+</td>
+<td>
+04-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Utility
+</td>
+<td>
+Maintenance
+</td>
+<td>
+LH2485
+</td>
+<td>
+Md. Faisal Rahman
+</td>
+<td>
+Executive
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Electrical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+LT02426
+</td>
+<td>
+Md. Masud Rana
+</td>
+<td>
+Technician
+</td>
+<td>
+17-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Electrical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+LT02594
+</td>
+<td>
+Md. Zakariaa Hosin
+</td>
+<td>
+Technician
+</td>
+<td>
+14-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+LT27832
+</td>
+<td>
+Wohidul Islam
+</td>
+<td>
+Technician
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+LT27994
+</td>
+<td>
+Shuvo Ashish Kumar Sarker
+</td>
+<td>
+Technician
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+LT28117
+</td>
+<td>
+Md.Forhad Hosen
+</td>
+<td>
+Technician
+</td>
+<td>
+18-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+LT37014
+</td>
+<td>
+Md. Shahidullah
+</td>
+<td>
+Technician
+</td>
+<td>
+21-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+LT37015
+</td>
+<td>
+Md. Ariful Islam
+</td>
+<td>
+Technician
+</td>
+<td>
+21-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+LT37027
+</td>
+<td>
+Md. Mahbubur Rahman
+</td>
+<td>
+Technician
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+LT44853
+</td>
+<td>
+Md. Abdus Salam
+</td>
+<td>
+Technician
+</td>
+<td>
+21-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Mechanical
+</td>
+<td>
+Maintenance
+</td>
+<td>
+LT44864
+</td>
+<td>
+Md. Abu Hasan
+</td>
+<td>
+Technician
+</td>
+<td>
+04-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Maintenance
+</td>
+<td>
+Maintenance
+</td>
+<td>
+P16707
+</td>
+<td>
+Kamrujjaman
+</td>
+<td>
+Technician
+</td>
+<td>
+14-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+LIZ Knitting &amp; Printing Industry.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Marketing &amp; Sales
+</td>
+<td>
+Marketing &amp; Sales
+</td>
+<td>
+GF200699
+</td>
+<td>
+Md Mosleh Uddin Hai
+</td>
+<td>
+Manager
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2441
+</td>
+<td>
+Shahariar Ratul
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+13-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2447
+</td>
+<td>
+Monira Akter
+</td>
+<td>
+Fashion Designer
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Female
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2448
+</td>
+<td>
+Mehedy Hasan Pranto
+</td>
+<td>
+Executive
+</td>
+<td>
+17-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2458
+</td>
+<td>
+Sadekuzzaman Rifat
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2461
+</td>
+<td>
+Saimon Sikder
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2463
+</td>
+<td>
+Ivan Razvy
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+10-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2465
+</td>
+<td>
+Md. Ashiqur Rahman
+</td>
+<td>
+Executive
+</td>
+<td>
+13-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2467
+</td>
+<td>
+Rakib Ahmed
+</td>
+<td>
+Executive
+</td>
+<td>
+17-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2469
+</td>
+<td>
+Rafsanul Islam
+</td>
+<td>
+Executive
+</td>
+<td>
+20-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2472
+</td>
+<td>
+Md. Fahad Hossain
+</td>
+<td>
+Executive
+</td>
+<td>
+22-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2473
+</td>
+<td>
+Md. Jahid Hasan
+</td>
+<td>
+Executive
+</td>
+<td>
+22-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2476
+</td>
+<td>
+Sm Zakaria
+</td>
+<td>
+Executive
+</td>
+<td>
+25-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2481
+</td>
+<td>
+Md. Abdullah
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2482
+</td>
+<td>
+Md. Sarowar Hossain
+</td>
+<td>
+Executive
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2484
+</td>
+<td>
+Md. Obydul Islam
+</td>
+<td>
+Executive
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2486
+</td>
+<td>
+Kingshuk Chanda
+</td>
+<td>
+Executive
+</td>
+<td>
+07-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2489
+</td>
+<td>
+Naimur Rahman
+</td>
+<td>
+Executive
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2490
+</td>
+<td>
+Md. Rakib Hasan
+</td>
+<td>
+Executive
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2496
+</td>
+<td>
+Md. Shariful Islam
+</td>
+<td>
+Executive
+</td>
+<td>
+12-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2499
+</td>
+<td>
+Shishir Chandra
+</td>
+<td>
+Executive
+</td>
+<td>
+15-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2501
+</td>
+<td>
+A.B.M Hafizur Rahman
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+17-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2502
+</td>
+<td>
+Razu Sardar
+</td>
+<td>
+Executive
+</td>
+<td>
+17-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2503
+</td>
+<td>
+Tanjel Mahmud
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+19-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2510
+</td>
+<td>
+Shaikh Mahafuz Al Mahodi
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+26-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LH2514
+</td>
+<td>
+Md. Monjur Morshed
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+LT16695
+</td>
+<td>
+Md. Raihan
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+25-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Marketing and Merchandising
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Printing Office
+</td>
+<td>
+Printing
+</td>
+<td>
+LH2456
+</td>
+<td>
+Md. Billal Hossain
+</td>
+<td>
+Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+LIZ Knitting &amp; Printing Industry.
+</td>
+<td>
+Office
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Printing Office
+</td>
+<td>
+Printing
+</td>
+<td>
+LH2459
+</td>
+<td>
+Akib Mahmud Shanto
+</td>
+<td>
+Asst. Manager
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+LIZ Knitting &amp; Printing Industry.
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+11
+</td>
+</tr>
+<tr>
+<td>
+SPOT Printing
+</td>
+<td>
+Printing
+</td>
+<td>
+P16836
+</td>
+<td>
+Md.Toufik Hasan
+</td>
+<td>
+Technician
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+LIZ Knitting &amp; Printing Industry.
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+PO &amp; NON PO
+</td>
+<td>
+Procurement
+</td>
+<td>
+GF200697
+</td>
+<td>
+Md. Nurul Amin Shefath
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+24-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Procurement
+</td>
+<td>
+Procurement
+</td>
+<td>
+LH2437
+</td>
+<td>
+Ashraful Islam
+</td>
+<td>
+Executive
+</td>
+<td>
+10-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Office
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Procurement
+</td>
+<td>
+Procurement
+</td>
+<td>
+LH2442
+</td>
+<td>
+Mitu Akter
+</td>
+<td>
+Jr. Executive
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Female
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Office
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+14
+</td>
+</tr>
+<tr>
+<td>
+Procurement
+</td>
+<td>
+Procurement
+</td>
+<td>
+LH2445
+</td>
+<td>
+Prosenjit Bhakta
+</td>
+<td>
+Executive
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+Office
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Procurement
+</td>
+<td>
+Procurement
+</td>
+<td>
+LH2513
+</td>
+<td>
+Md. Nizam Uddin
+</td>
+<td>
+Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Product Design and Development
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14908
+</td>
+<td>
+Md. Sakib Hossain
+</td>
+<td>
+Asst. Technician
+</td>
+<td>
+09-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Product Design and Development
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14911
+</td>
+<td>
+Md. Rasel Miya
+</td>
+<td>
+Technician
+</td>
+<td>
+11-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14913
+</td>
+<td>
+Mst. Hosneara
+</td>
+<td>
+Technician
+</td>
+<td>
+12-JUL-23
+</td>
+<td>
+Female
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14914
+</td>
+<td>
+Mst. Hasna Hena
+</td>
+<td>
+Asst. Technician
+</td>
+<td>
+12-JUL-23
+</td>
+<td>
+Female
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14915
+</td>
+<td>
+Md. Atikul
+</td>
+<td>
+Asst. Technician
+</td>
+<td>
+12-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14923
+</td>
+<td>
+Md. Asaduzzaman
+</td>
+<td>
+Asst. Technician
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14933
+</td>
+<td>
+Md. Sayqut Miah
+</td>
+<td>
+Technician
+</td>
+<td>
+24-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14935
+</td>
+<td>
+Ala Uddin
+</td>
+<td>
+Technician
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14942
+</td>
+<td>
+Md. Deloar Hossain
+</td>
+<td>
+Technician
+</td>
+<td>
+03-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14943
+</td>
+<td>
+Md. Ashraful Malitha
+</td>
+<td>
+Technician
+</td>
+<td>
+03-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14949
+</td>
+<td>
+Al Amin
+</td>
+<td>
+Technician
+</td>
+<td>
+09-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14950
+</td>
+<td>
+Firoz
+</td>
+<td>
+Technician
+</td>
+<td>
+09-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14951
+</td>
+<td>
+Md. Rafiqul Islam
+</td>
+<td>
+Technician
+</td>
+<td>
+09-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Technical
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14958
+</td>
+<td>
+Md. Harun Or Rashid
+</td>
+<td>
+Technician
+</td>
+<td>
+22-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Technical
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14959
+</td>
+<td>
+Shree Bisnu Prosad Ray
+</td>
+<td>
+Technician
+</td>
+<td>
+22-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14962
+</td>
+<td>
+Md. Ebrahim Hossen
+</td>
+<td>
+Technician
+</td>
+<td>
+04-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Technical
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14963
+</td>
+<td>
+Md. Balal Hossain
+</td>
+<td>
+Technician
+</td>
+<td>
+04-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sample
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14967
+</td>
+<td>
+Mst. Sapla Khatun
+</td>
+<td>
+Technician
+</td>
+<td>
+11-SEP-23
+</td>
+<td>
+Female
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Technical
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14971
+</td>
+<td>
+Md. Nurul Islam
+</td>
+<td>
+Technician
+</td>
+<td>
+18-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Technical
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+L14973
+</td>
+<td>
+Suruz Uddin
+</td>
+<td>
+Technician
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Product Design and Development
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+LH2457
+</td>
+<td>
+Md. Mofassal Hossin
+</td>
+<td>
+Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Product Design and Development
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+LH2474
+</td>
+<td>
+Lin Yunjin
+</td>
+<td>
+Supervisor
+</td>
+<td>
+02-AUG-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+8th Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Management
+</td>
+<td>
+Chinese
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Product Design and Development
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+LH2475
+</td>
+<td>
+Meizhen Jiang
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-AUG-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+8th Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Management
+</td>
+<td>
+Chinese
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Technical
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+LT16495
+</td>
+<td>
+Md,Humayan Ahmed
+</td>
+<td>
+Technician
+</td>
+<td>
+09-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Product Design and Development
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+LT16818
+</td>
+<td>
+Md. Yeahadi Hasan
+</td>
+<td>
+Technician
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Product Design and Development
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+LT27993
+</td>
+<td>
+Md. Sohel Rana
+</td>
+<td>
+Technician
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Technical
+</td>
+<td>
+Product Design and Development
+</td>
+<td>
+LT44809
+</td>
+<td>
+Md. Omar Faruk
+</td>
+<td>
+Technician
+</td>
+<td>
+12-JUL-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Production Plan and Control
+</td>
+<td>
+Production Plan and Control
+</td>
+<td>
+GF200654
+</td>
+<td>
+Al- Amin
+</td>
+<td>
+Manager
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+Production Plan and Control
+</td>
+<td>
+Production Plan and Control
+</td>
+<td>
+LT16791
+</td>
+<td>
+Md. Robin Ahmed
+</td>
+<td>
+Executive
+</td>
+<td>
+20-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Production Plan and Control
+</td>
+<td>
+Production Plan and Control
+</td>
+<td>
+LT16880
+</td>
+<td>
+Shibu Rum Ray
+</td>
+<td>
+Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Supply Chain
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Quality Assurance
+</td>
+<td>
+Quality Assurance
+</td>
+<td>
+L14966
+</td>
+<td>
+Md. Shahadot Hossan
+</td>
+<td>
+G.P.Q
+</td>
+<td>
+11-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+GPQ
+</td>
+<td>
+Quality Assurance
+</td>
+<td>
+LT16714
+</td>
+<td>
+Jakir Hossain
+</td>
+<td>
+G.P.Q
+</td>
+<td>
+02-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Quality Assurance
+</td>
+<td>
+Quality Assurance
+</td>
+<td>
+LT27777
+</td>
+<td>
+Md. Abir Khann
+</td>
+<td>
+Auditor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Quality Assurance
+</td>
+<td>
+Quality Assurance
+</td>
+<td>
+LT27986
+</td>
+<td>
+Md. Salim Bapary
+</td>
+<td>
+Executive
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+G_Quality Control
+</td>
+<td>
+Quality Control
+</td>
+<td>
+GF200681
+</td>
+<td>
+Md. Sabbir Ahmed Shakil
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+12-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Quality Control Management
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Quality Control
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LH2436
+</td>
+<td>
+Md. Rashedul Azam
+</td>
+<td>
+Asst. Manager
+</td>
+<td>
+10-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+11
+</td>
+</tr>
+<tr>
+<td>
+Quality Control
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LH2446
+</td>
+<td>
+Md. Mahamud Noby
+</td>
+<td>
+Asst. Manager
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+11
+</td>
+</tr>
+<tr>
+<td>
+Quality Control
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LH2450
+</td>
+<td>
+Liu Guangrong
+</td>
+<td>
+Sr. Supervisor
+</td>
+<td>
+08-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+8th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Chinese
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Quality Control
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LH2452
+</td>
+<td>
+Md. Suzon Sheikh
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+25-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Quality Control
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LH2454
+</td>
+<td>
+Mst. Shilpi Akter
+</td>
+<td>
+Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Female
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Quality Control
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LH2480
+</td>
+<td>
+Md. Alamgir Hossain
+</td>
+<td>
+Executive
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+Office
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Quality Control
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LH2493
+</td>
+<td>
+Md. Saddam Hossen Soman
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Quality Control
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LH2500
+</td>
+<td>
+Md. Nur Hossen Nahid
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+17-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+Office
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Cutting QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT02614
+</td>
+<td>
+Md. Khokon Ahmed
+</td>
+<td>
+Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Sewing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT27780
+</td>
+<td>
+Md. Shohag Rana
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT27905
+</td>
+<td>
+Abdul Alim
+</td>
+<td>
+Supervisor
+</td>
+<td>
+10-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT27936
+</td>
+<td>
+Tofajul Hossen
+</td>
+<td>
+Supervisor
+</td>
+<td>
+18-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT28121
+</td>
+<td>
+Md.Alamin
+</td>
+<td>
+Supervisor
+</td>
+<td>
+19-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Finishing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT37028
+</td>
+<td>
+K.M. Faruque
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT44829
+</td>
+<td>
+Md. Ibrahim Khalilullah
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT44857
+</td>
+<td>
+Md. Farhad Hossain
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Sewing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT54370
+</td>
+<td>
+Md.Ziaur Rahman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing QC
+</td>
+<td>
+Quality Control
+</td>
+<td>
+LT54424
+</td>
+<td>
+Monjurul
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Quality and Technical
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+LH2449
+</td>
+<td>
+Xiaobo Luo
+</td>
+<td>
+General Manager
+</td>
+<td>
+04-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+8th Floor
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Management
+</td>
+<td>
+Chinese
+</td>
+<td>
+5
+</td>
+</tr>
+<tr>
+<td>
+Residence
+</td>
+<td>
+Residence
+</td>
+<td>
+LR00028
+</td>
+<td>
+Md. Liton Mondoal
+</td>
+<td>
+Gardener
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+Residence
+</td>
+<td>
+Human Resources Management
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L317547
+</td>
+<td>
+Md. Shafikul
+</td>
+<td>
+Supervisor
+</td>
+<td>
+11-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L317560
+</td>
+<td>
+Emamul Molla
+</td>
+<td>
+Supervisor
+</td>
+<td>
+11-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L317573
+</td>
+<td>
+Shuhanur Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L317596
+</td>
+<td>
+Md. Rokunuzzaman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L322943
+</td>
+<td>
+Md. Salim Mallik
+</td>
+<td>
+Supervisor
+</td>
+<td>
+14-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L322947
+</td>
+<td>
+Md. Jwel Rana
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L322948
+</td>
+<td>
+Md.Mizanur Rahman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L322953
+</td>
+<td>
+Md. Mukul Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+19-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L323016
+</td>
+<td>
+Md. Kamal Hosen
+</td>
+<td>
+Supervisor
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L323034
+</td>
+<td>
+Ashim Khumar
+</td>
+<td>
+Supervisor
+</td>
+<td>
+17-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L337325
+</td>
+<td>
+Md. Jahangir Alam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+13-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L337375
+</td>
+<td>
+Md. Shimul Hossen
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L337382
+</td>
+<td>
+Md. Shahidul Islam Babu
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L337414
+</td>
+<td>
+Govinida Chandra Sarkar
+</td>
+<td>
+Supervisor
+</td>
+<td>
+12-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L337418
+</td>
+<td>
+Kamrul Hasan
+</td>
+<td>
+Supervisor
+</td>
+<td>
+14-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L343795
+</td>
+<td>
+Md. Abdul Ali
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L343796
+</td>
+<td>
+Md. Al Amin Sarkar
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L343828
+</td>
+<td>
+Khandaker Nurul Alam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L343852
+</td>
+<td>
+Md. Shariar Alom Badhon
+</td>
+<td>
+Supervisor
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L343853
+</td>
+<td>
+Md. Hossain Islam (Swapan)
+</td>
+<td>
+Supervisor
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L343856
+</td>
+<td>
+Shamim Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+13-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L37000
+</td>
+<td>
+Md. Samim Hossen
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L37014
+</td>
+<td>
+Md. Rashed Rana
+</td>
+<td>
+Supervisor
+</td>
+<td>
+20-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L37019
+</td>
+<td>
+Md. Borhan Ussin
+</td>
+<td>
+Supervisor
+</td>
+<td>
+23-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L425170
+</td>
+<td>
+Shekh Al Amin
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L425214
+</td>
+<td>
+Md. Jony Khan
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L425235
+</td>
+<td>
+Mahidra Nath Roy
+</td>
+<td>
+Supervisor
+</td>
+<td>
+20-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L4301022
+</td>
+<td>
+Md. Badol Mia
+</td>
+<td>
+Supervisor
+</td>
+<td>
+02-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L430871
+</td>
+<td>
+Md. Rahimul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+13-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L430874
+</td>
+<td>
+Md. Nur Hossen
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L430904
+</td>
+<td>
+Nurul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L430948
+</td>
+<td>
+Murshed Alam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+22-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L430949
+</td>
+<td>
+Md. Rony Mia
+</td>
+<td>
+Supervisor
+</td>
+<td>
+22-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L430955
+</td>
+<td>
+Shahabur Rahman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+24-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L45588
+</td>
+<td>
+Sabuz Akonda
+</td>
+<td>
+Supervisor
+</td>
+<td>
+11-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L45657
+</td>
+<td>
+Md. Rahim Badsha
+</td>
+<td>
+Supervisor
+</td>
+<td>
+08-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L45672
+</td>
+<td>
+Bikash Sheel
+</td>
+<td>
+Supervisor
+</td>
+<td>
+20-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L45692
+</td>
+<td>
+Md. Jahangir Alam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L45710
+</td>
+<td>
+Md. Mahbubur Rahman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+12-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L45711
+</td>
+<td>
+Adnan Alahe
+</td>
+<td>
+Supervisor
+</td>
+<td>
+12-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L524201
+</td>
+<td>
+Md. Nure Alam Siddik
+</td>
+<td>
+Supervisor
+</td>
+<td>
+12-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L625651
+</td>
+<td>
+Mst. Parul Akter
+</td>
+<td>
+Asst. Technician
+</td>
+<td>
+23-JUL-23
+</td>
+<td>
+Female
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L625740
+</td>
+<td>
+Foigur Rahman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+20-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L625779
+</td>
+<td>
+Md.Bellal Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+03-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L625788
+</td>
+<td>
+Md Siful Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+L625798
+</td>
+<td>
+Raton Biswas
+</td>
+<td>
+Supervisor
+</td>
+<td>
+14-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-2
+</td>
+<td>
+6th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LH2466
+</td>
+<td>
+Md. Shahin Alom
+</td>
+<td>
+Executive
+</td>
+<td>
+16-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LH2470
+</td>
+<td>
+Md. Saiful Islam
+</td>
+<td>
+Executive
+</td>
+<td>
+21-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LH2471
+</td>
+<td>
+Md. Rubal Islam
+</td>
+<td>
+Executive
+</td>
+<td>
+21-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LH2483
+</td>
+<td>
+Md. Hafizur Rahman
+</td>
+<td>
+Asst. Manager
+</td>
+<td>
+01-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+3rd Floor-LKP
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+11
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LH2497
+</td>
+<td>
+Md. Mozahedul Islam
+</td>
+<td>
+Sr. Executive
+</td>
+<td>
+13-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.-3
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT16656
+</td>
+<td>
+Polash Talukdar
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT16657
+</td>
+<td>
+Md. Adil Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT16673
+</td>
+<td>
+Md. Rezaul Korim
+</td>
+<td>
+Supervisor
+</td>
+<td>
+17-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT16680
+</td>
+<td>
+Md Shorab Ali
+</td>
+<td>
+Supervisor
+</td>
+<td>
+18-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT16772
+</td>
+<td>
+Kamrul Hasan Rasel
+</td>
+<td>
+Supervisor
+</td>
+<td>
+10-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT16780
+</td>
+<td>
+Ananda Talukder
+</td>
+<td>
+Supervisor
+</td>
+<td>
+13-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT16846
+</td>
+<td>
+Md. Anisur Rahman
+</td>
+<td>
+Supervisor
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT16884
+</td>
+<td>
+Md. Rejaul Islam
+</td>
+<td>
+Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT16885
+</td>
+<td>
+Md. Sumon Babu
+</td>
+<td>
+Executive
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT16889
+</td>
+<td>
+Md. Shahin Mia
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT16890
+</td>
+<td>
+Md. Najmul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+1st Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT27791
+</td>
+<td>
+Md. Ali Hasan
+</td>
+<td>
+Supervisor
+</td>
+<td>
+17-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT27802
+</td>
+<td>
+Abdus Samad
+</td>
+<td>
+Supervisor
+</td>
+<td>
+18-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT27803
+</td>
+<td>
+Sohag Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+19-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT27804
+</td>
+<td>
+Didarul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+19-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT27805
+</td>
+<td>
+Md. Sazib Hosain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+20-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT27807
+</td>
+<td>
+Sumon Mia
+</td>
+<td>
+Supervisor
+</td>
+<td>
+20-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT27831
+</td>
+<td>
+Md. Maznu Miah
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT27890
+</td>
+<td>
+Ms.Aziul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+07-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT27920
+</td>
+<td>
+Md. Sabuj Mia
+</td>
+<td>
+Supervisor
+</td>
+<td>
+13-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT28061
+</td>
+<td>
+Mst. Easmin Khatun
+</td>
+<td>
+Supervisor
+</td>
+<td>
+08-SEP-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+2nd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT36895
+</td>
+<td>
+Md.Juwel Rana
+</td>
+<td>
+Supervisor
+</td>
+<td>
+11-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT36942
+</td>
+<td>
+Md. Kamrul Hasan
+</td>
+<td>
+Supervisor
+</td>
+<td>
+13-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT37009
+</td>
+<td>
+Md. Robiul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+20-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT37101
+</td>
+<td>
+Md. Al-Amin
+</td>
+<td>
+Supervisor
+</td>
+<td>
+06-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+3rd Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT44794
+</td>
+<td>
+Foysal Mia
+</td>
+<td>
+Supervisor
+</td>
+<td>
+11-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT44842
+</td>
+<td>
+Md. Akash
+</td>
+<td>
+Supervisor
+</td>
+<td>
+17-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT45006
+</td>
+<td>
+Md. Shariful Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+14-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT45019
+</td>
+<td>
+Md. Arif Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+19-SEP-23
+</td>
+<td>
+Female
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT45020
+</td>
+<td>
+Ibna Shaid
+</td>
+<td>
+Supervisor
+</td>
+<td>
+19-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT45029
+</td>
+<td>
+Sobahan Kadir
+</td>
+<td>
+Manager
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+4th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT54339
+</td>
+<td>
+Md.Ziaur Rahman Pahdan
+</td>
+<td>
+Supervisor
+</td>
+<td>
+13-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT54369
+</td>
+<td>
+Kha. Rasel Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+16-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT54384
+</td>
+<td>
+Md. Asikul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+17-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT54385
+</td>
+<td>
+Sazzad Hossain
+</td>
+<td>
+Supervisor
+</td>
+<td>
+17-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT54386
+</td>
+<td>
+Md. Rakibul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+17-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT54453
+</td>
+<td>
+Md. Abdur Rahman
+</td>
+<td>
+Executive
+</td>
+<td>
+04-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT54487
+</td>
+<td>
+Monoranjon Kumer Ray
+</td>
+<td>
+Supervisor
+</td>
+<td>
+23-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT54534
+</td>
+<td>
+Md. Faridul Islam
+</td>
+<td>
+Supervisor
+</td>
+<td>
+07-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Sewing
+</td>
+<td>
+Sewing
+</td>
+<td>
+LT54574
+</td>
+<td>
+Md. Selim Mia
+</td>
+<td>
+Supervisor
+</td>
+<td>
+01-OCT-23
+</td>
+<td>
+Male
+</td>
+<td>
+Lida Textile &amp; Dyeing Limited
+</td>
+<td>
+5th Floor
+</td>
+<td>
+Manufacturing
+</td>
+<td>
+Staff
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+16
+</td>
+</tr>
+<tr>
+<td>
+Taxation Regulatory Reporting
+</td>
+<td>
+Taxation Regulatory Reporting
+</td>
+<td>
+LH2468
+</td>
+<td>
+Md. Ariful Islam
+</td>
+<td>
+Manager
+</td>
+<td>
+20-AUG-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Finance and Accounting
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+Technical Engineering
+</td>
+<td>
+Technical Engineering
+</td>
+<td>
+LH2491
+</td>
+<td>
+Md. Sabbir Hossain
+</td>
+<td>
+Executive
+</td>
+<td>
+10-SEP-23
+</td>
+<td>
+Male
+</td>
+<td>
+Liz Fashion Industry Ltd.
+</td>
+<td>
+Office
+</td>
+<td>
+Quality and Technical
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+<tr>
+<td>
+Technical Support
+</td>
+<td>
+Technical Support
+</td>
+<td>
+GF200620
+</td>
+<td>
+Md. Raseduzzaman
+</td>
+<td>
+Executive
+</td>
+<td>
+07-JUL-23
+</td>
+<td>
+Male
+</td>
+<td>
+Good and Fast Packaging Co. Ltd.
+</td>
+<td>
+Ground Floor
+</td>
+<td>
+Technical
+</td>
+<td>
+Management
+</td>
+<td>
+Bangladeshi
+</td>
+<td>
+13
+</td>
+</tr>
+</table>
+<p>

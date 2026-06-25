@@ -1,0 +1,2266 @@
+<?php
+
+class cls_meassage
+{
+	public function con()
+	{
+		$connect = new cls_dbconfig();
+		return $connect->connection();
+	}
+	public function all_show_meassge_notifaction()
+	{
+		$result = $this->con()->query("SELECT * FROM canteen_header");
+		return $result;
+	}
+
+	// section !=''
+
+	// public function all_show_approve_for_waiting($username){
+	// 	$result = $this->con()->query("SELECT r.id, r.reference, r.requesterID, r.requesterName, r.designation, r.section, r.department, r.company, r.costDivision, r.PurchaseFor, r.ruqest_date, r.approvedStatus, ur.user_name, ur.category FROM canteen_header r 
+	// 		LEFT JOIN canteen_line a ON r.reference =a.reference
+	// 		LEFT JOIN user_role ur ON ur.category=r.PurchaseFor 
+	// 		WHERE ur.user_name='$username' GROUP BY r.reference ");
+
+	// 	return $result;
+	// }
+
+	public function all_show_approve_for_waiting($username)
+	{
+		$result = $this->con()->query("SELECT MIN(r.id) AS id, r.reference, MIN(r.requesterID) AS requesterID, MIN(r.requesterName) AS requesterName, MIN(r.designation) AS designation, MIN(r.section) AS section, MIN(r.department) AS department, MIN(r.company) AS company, MIN(r.costDivision) AS costDivision, MIN(r.PurchaseFor) AS PurchaseFor, MIN(r.ruqest_date) AS ruqest_date, MIN(r.approvedStatus) AS approvedStatus, ur.user_name, ur.category FROM canteen_header r LEFT JOIN canteen_line a ON r.reference = a.reference LEFT JOIN user_role ur ON ur.category = r.PurchaseFor WHERE ur.user_name = '$username' GROUP BY r.reference, ur.user_name, ur.category ORDER BY id ASC ");
+
+		return $result;
+	}
+
+	// 	public function show_approved_waitine_edit($username){
+	// 	$result = $this->con()->query("SELECT r.id, r.reference, r.requesterID, r.requesterName, r.designation, r.section, r.department, r.company, r.costDivision, r.PurchaseFor, r.ruqest_date, r.approvedStatus, ur.user_name, ur.category FROM canteen_header r 
+	// 		LEFT JOIN canteen_line a ON r.reference =a.reference
+	// 		LEFT JOIN user_role ur ON ur.category=r.PurchaseFor 
+	// 		WHERE ur.user_name='$username' and r.approvedStatus='2' GROUP BY r.reference ");
+
+	// 	return $result;
+	// }
+
+
+	public function show_approved_waitine_edit($username)
+	{
+		$result = $this->con()->query("SELECT MIN(r.id) AS id, r.reference, MIN(r.requesterID) AS requesterID, MIN(r.requesterName) AS requesterName, MIN(r.designation) AS designation, MIN(r.section) AS section, MIN(r.department) AS department, MIN(r.company) AS company, MIN(r.costDivision) AS costDivision, MIN(r.PurchaseFor) AS PurchaseFor, MIN(r.ruqest_date) AS ruqest_date, MIN(r.approvedStatus) AS approvedStatus, ur.user_name, ur.category FROM canteen_header r LEFT JOIN canteen_line a ON r.reference = a.reference LEFT JOIN user_role ur ON ur.category = r.PurchaseFor WHERE ur.user_name='$username' AND r.approvedStatus='2' GROUP BY r.reference, ur.user_name, ur.category ORDER BY id ASC");
+
+		return $result;
+	}
+
+	public function all_show_consumption($username)
+	{
+		$result = $this->con()->query("SELECT cm.id, cm.canteenName, cm.ItemName, cm.DailyConsumption, cm.WeeklyConsumption, cm.MonthlyConsumption, cm.ConsumptionUOM, ur.user_name FROM consumption cm LEFT JOIN user_role ur ON ur.category=cm.canteenName WHERE ur.user_name='$username' ");
+		return $result;
+	}
+
+	public function all_show_consumption_admin()
+	{
+		$result = $this->con()->query("SELECT * FROM consumption ");
+		return $result;
+	}
+
+	public function add_consumption($canteenName, $itemName, $DailyConsumption, $WeeklyConsumption, $MonthlyConsumption, $ConsumptionUOM, $username)
+	{
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM consumption WHERE canteenName='$canteenName' and ItemName='$itemName'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO consumption (canteenName, ItemName , DailyConsumption, WeeklyConsumption, MonthlyConsumption, ConsumptionUOM, actionUser) VALUES ('$canteenName', '$itemName', '$DailyConsumption','$WeeklyConsumption','$MonthlyConsumption','$ConsumptionUOM','$username')");
+			return $result;
+		} else {
+
+			return $no;
+		}
+	}
+
+	public function update_consumption($DailyConsumption, $WeeklyConsumption, $MonthlyConsumption, $ConsumptionUOM, $hiddenID, $username)
+	{
+
+		$result = $this->con()->query("UPDATE consumption SET DailyConsumption = '$DailyConsumption', WeeklyConsumption = '$WeeklyConsumption', MonthlyConsumption = '$MonthlyConsumption', ConsumptionUOM = '$ConsumptionUOM', actionUser = '$username' WHERE id='$hiddenID'");
+		return $result;
+	}
+
+
+
+	//company
+
+	public function show_all_company()
+	{
+		// shohag 24
+		// $result = $this->con()->query("SELECT * FROM mrd_library WHERE LibraryName='company'");
+		// return $result;
+
+		$result = $this->con()->query("SELECT c.* FROM company_library c JOIN ( SELECT companyID, MAX(id) AS max_id FROM company_library WHERE status='1' GROUP BY companyID ) t ON c.companyID = t.companyID AND c.id = t.max_id ORDER BY c.id ASC ");
+		return $result;
+	}
+	// add department
+
+	public function add_department($companyID, $departmentID, $department, $departmentcode, $username)
+	{
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM department_library WHERE departmentID  = '$departmentID'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO department_library (companyID, departmentID , department_Name, department_code, status, create_user) VALUES ('$companyID', '$departmentID', '$department', '$departmentcode','1', '$username')");
+			return $result;
+		} else {
+
+			return $no;
+		}
+	}
+
+	public function show_all_department()
+	{
+		$result = $this->con()->query("SELECT * FROM department_library");
+		return $result;
+	}
+
+	public function edit_department($companyID, $departmentID, $department, $departmentcode, $status, $username, $hiddenID)
+	{
+
+		$date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+
+		$nowdate =  $date->format('Y-m-d H:i:s');
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM department_library WHERE departmentID  = '$departmentID'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("UPDATE department_library SET companyID = '$companyID', departmentID = '$departmentID', department_Name = '$department', department_code = '$departmentcode', status = '$status', update_user = '$username', update_date = '$nowdate'  WHERE id='$hiddenID'");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE department_library SET companyID = '$companyID', departmentID = '$departmentID', department_Name = '$department', department_code = '$departmentcode', status = '$status', update_user = '$username', update_date = '$nowdate'  WHERE id='$hiddenID'");
+			return $result;
+		}
+	}
+
+	public function add_category($companyID, $category, $categorycode, $username)
+	{
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM canteen_library WHERE companyName  = '$companyID' AND name = '$category'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO canteen_library (companyName, name, code, status, create_user) VALUES ('$companyID', '$category', '$categorycode','1', '$username')");
+			return $result;
+		} else {
+
+			return $no;
+		}
+	}
+
+	public function edit_category($hiddenID, $companyID, $category, $categorycode, $username)
+	{
+
+		$date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+
+		$nowdate =  $date->format('Y-m-d H:i:s');
+
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM canteen_library WHERE companyName='$companyID' and name = '$category'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("UPDATE canteen_library SET companyName = '$companyID', name = '$category', code = '$categorycode', create_user = '$username' WHERE id='$hiddenID'");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE canteen_library SET companyName = '$companyID', name = '$category', code = '$categorycode', create_user = '$username' WHERE id='$hiddenID'");
+			return $result;
+		}
+	}
+
+	public function show_all_cagetory()
+	{
+		$result = $this->con()->query("SELECT * FROM canteen_library");
+		return $result;
+	}
+
+
+	public function add_section($companyID, $department, $sectionID, $section, $sectioncode, $username)
+	{
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM section_library WHERE sectionID = '$sectionID'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO section_library (companyID, departmentID, sectionID, section_code, section_name, status, creation_user) VALUES ('$companyID', '$department', '$sectionID', '$sectioncode', '$section', '1', '$username')");
+			return $result;
+		} else {
+
+			return $no;
+		}
+	}
+
+	public function show_all_section()
+	{
+		$result = $this->con()->query("SELECT * FROM section_library");
+		return $result;
+	}
+
+	public function edit_section($companyID, $department, $sectionID, $section, $sectioncode, $username, $hiddenID)
+	{
+
+		$date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+
+		$nowdate =  $date->format('Y-m-d H:i:s');
+
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM section_library WHERE sectionID = '$sectionID'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("UPDATE section_library SET companyID = '$companyID', departmentID = '$department', sectionID = '$sectionID', section_code = '$sectioncode', section_name='$section', update_user = '$username', update_date = '$nowdate'  WHERE id='$hiddenID'");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE section_library SET companyID = '$companyID', departmentID = '$department', sectionID = '$sectionID', section_code = '$sectioncode', section_name='$section', update_user = '$username', update_date = '$nowdate'  WHERE id='$hiddenID'");
+			return $result;
+		}
+	}
+
+
+	public function show_all_role_user()
+	{
+		$result = $this->con()->query("SELECT * FROM user WHERE user_role='1'");
+		return $result;
+	}
+
+	public function add_assign_category($roleusername, $employeeID, $companyID, $companyname, $category, $user_type, $username)
+	{
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_name = '$roleusername' AND companyID='$companyID' AND category='$category' AND user_type='$user_type'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO user_role (employeeID, user_name, companyID, companyname, category, user_type, status, create_user) VALUES ('$employeeID', '$roleusername', '$companyID', '$companyname', '$category', '$user_type', '1', '$username')");
+			return $result;
+		} else {
+
+			return $no;
+		}
+	}
+
+
+	public function edit_assign_category($roleusername, $employeeID, $companyID, $companyname, $category, $user_type, $username, $hiddenID)
+	{
+
+		$date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+
+		$nowdate =  $date->format('Y-m-d H:i:s');
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_name = '$roleusername' AND companyID='$companyID' AND category='$category'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("UPDATE user_role SET employeeID='$employeeID', user_name='$roleusername', companyID='$companyID', companyname='$companyname', category='$category',  update_user='$username', user_type='$user_type', update_date='$nowdate' where id='$hiddenID' ");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE user_role SET employeeID='$employeeID', user_name='$roleusername', companyID='$companyID',companyname='$companyname', category='$category', user_type='$user_type',  update_user='$username', update_date='$nowdate' where id='$hiddenID' ");
+			return $result;
+		}
+	}
+
+
+	public function show_all_category_role()
+	{
+		$result = $this->con()->query("SELECT * FROM user_role WHERE category !=''");
+		return $result;
+	}
+
+
+	public function add_assign_department($roleusername, $employeeID, $companyID, $companyname, $department, $departmentname, $username)
+	{
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_name = '$roleusername' AND companyID='$companyID' AND departmentID='$department' AND user_type='Head of department'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO user_role (employeeID, user_name, companyID,companyname, departmentID, departmentname, user_type, status, create_user) VALUES ('$employeeID', '$roleusername', '$companyID', '$companyname', '$department', '$departmentname', 'Head of department', '1', '$username')");
+			return $result;
+		} else {
+
+			return $no;
+		}
+	}
+
+	public function edit_assign_department($roleusername, $employeeID, $companyID, $companyname, $department, $departmentname, $username, $hiddenID)
+	{
+
+		$date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+
+		$nowdate =  $date->format('Y-m-d H:i:s');
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_name = '$roleusername' AND companyID='$companyID' AND departmentID='$department'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("UPDATE user_role SET employeeID='$employeeID', user_name='$roleusername', companyID='$companyID',companyname='$companyname', departmentID='$department', departmentname='$departmentname',  update_user='$username', update_date='$nowdate' where id='$hiddenID' ");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE user_role SET employeeID='$employeeID', user_name='$roleusername', companyID='$companyID',companyname='$companyname', departmentID='$department', departmentname='$departmentname',  update_user='$username', update_date='$nowdate' where id='$hiddenID' ");
+			return $result;
+		}
+	}
+
+	// user assign module
+
+	public function add_assign_module($roleusername, $employeeID, $companyID, $companyname, $usermodule, $username)
+	{
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_name = '$roleusername' AND companyID='$companyID' AND user_type='$usermodule'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO user_role (employeeID, user_name, companyID,companyname, user_type, status, create_user) VALUES ('$employeeID', '$roleusername', '$companyID', '$companyname', '$usermodule', '1', '$username')");
+			return $result;
+		} else {
+
+			return $no;
+		}
+	}
+
+
+	public function edit_assign_module($roleusername, $employeeID, $companyID, $companyname, $usermodule, $username, $hiddenID)
+	{
+
+		$date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+
+		$nowdate =  $date->format('Y-m-d H:i:s');
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_name = '$roleusername' AND companyID='$companyID' AND user_type='$usermodule'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("UPDATE user_role SET employeeID='$employeeID', user_name='$roleusername', companyID='$companyID',companyname='$companyname', user_type='$usermodule', update_user='$username', update_date='$nowdate' where id='$hiddenID' ");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE user_role SET employeeID='$employeeID', user_name='$roleusername', companyID='$companyID',companyname='$companyname', user_type='$usermodule', update_user='$username', update_date='$nowdate' where id='$hiddenID' ");
+			return $result;
+		}
+	}
+
+
+	public function show_all_department_role()
+	{
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_type='Head of department'");
+		return $result;
+	}
+
+	// Bulk 
+
+	// public function show_all_bulk_role(){
+	// 	$result = $this->con()->query("SELECT * FROM user_role WHERE user_type='IT Verify'");
+	// 	return $result;
+	// }
+
+
+
+	public function show_all_section_role()
+	{
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_type='Head of section'");
+		return $result;
+	}
+
+	public function add_assign_section($roleusername, $employeeID, $companyID, $companyname, $department, $departmentname, $section, $sectionname, $username)
+	{
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_name = '$roleusername' AND companyID='$companyID' AND departmentID='$department' AND sectionID='$section'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO user_role (employeeID, user_name, companyID,companyname, departmentID, departmentname, sectionID, scetionname, user_type, status, create_user) VALUES ('$employeeID', '$roleusername', '$companyID', '$companyname', '$department', '$departmentname', '$section', '$sectionname', 'Head of section', '1', '$username')");
+			return $result;
+		} else {
+
+			return $no;
+		}
+	}
+
+	public function edit_assign_section($roleusername, $employeeID, $companyID, $companyname, $department, $departmentname, $section, $sectionname, $username, $hiddenID)
+	{
+
+		$date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+
+		$nowdate =  $date->format('Y-m-d H:i:s');
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_name = '$roleusername' AND companyID='$companyID' AND departmentID='$department'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("UPDATE user_role SET employeeID='$employeeID', user_name='$roleusername', companyID='$companyID',companyname='$companyname', departmentID='$department', departmentname='$departmentname', sectionID='$section', scetionname='$sectionname', update_user='$username', update_date='$nowdate' where id='$hiddenID' ");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE user_role SET employeeID='$employeeID', user_name='$roleusername', companyID='$companyID',companyname='$companyname', departmentID='$department', departmentname='$departmentname', sectionID='$section', scetionname='$sectionname', update_user='$username', update_date='$nowdate' where id='$hiddenID' ");
+			return $result;
+		}
+	}
+
+
+	public function add_roleuser_signature($roleusername, $employeeID, $pic, $username)
+	{
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM roleuser_signature WHERE username = '$roleusername'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO roleuser_signature (username, employeeID, signature, status, create_user) VALUES ('$roleusername', '$employeeID', '$pic', '1', '$username')");
+			return $result;
+		} else {
+
+			return $no;
+		}
+	}
+
+
+	public function show_all_role_user_signature()
+	{
+		//shohag 24
+		// $result = $this->con()->query("SELECT * FROM roleuser_signature");
+		// return $result;
+	}
+
+
+	public function show_cv($id)
+	{
+		$result = $this->con()->query("SELECT * FROM canteen_header where id='$id'");
+		return $result;
+	}
+
+	// public function insert_approve($requiID,$username,$employeeID,$vrfy_code){
+
+
+	// 	$result = $this->con()->query("SELECT * FROM approve_verify WHERE requisition_id = '$requiID' and approve_userID = '$employeeID' and username='$username'");
+	// 	$check = $result->num_rows;
+	// 	$row = $result->fetch_assoc();
+
+	// 	$rqiid = $row['requisition_id'];
+
+	// 	if($check == 0){
+
+	// 	$result = $this->con()->query("INSERT INTO approve_verify (requisition_id, username,approve_userID, verifycode, status) VALUES ('$requiID', '$username', '$employeeID', '$vrfy_code', '1')");
+	// 	return $result;
+	// 	}else{
+
+	// 		 $result = $this->con()->query("UPDATE approve_verify SET verifycode ='$vrfy_code' WHERE requisition_id='$requiID' and approve_userID = '$employeeID' and username='$username' and status='1'");
+	// 		 return $result;
+
+	// 	}
+
+	// }
+
+	public function generatetokenn_session($username, $gentoken, $vrfy_code)
+	{
+
+		$result = $this->con()->query("INSERT INTO tbl_generatetokenn (username,gen_token,verifycode, actionStatus) VALUES ('$username', '$gentoken', '$vrfy_code', '1')");
+		return $result;
+	}
+
+
+	// public function approve_submit_access($verifycode,$username,$employeeID,$hiddenID){
+	// 	$no = "no";
+	// 	$yes = "yes";
+
+
+	// 	$result = $this->con()->query("SELECT * FROM approve_verify WHERE requisition_id='$hiddenID' and approve_userID = '$employeeID' and verifycode ='$verifycode' and status='1' ");
+	// 	$check = $result->num_rows;
+	// 	if($check == 0){
+	// 		return $no;
+	// 	}else{
+
+	// 		 $result = $this->con()->query("UPDATE approve_verify SET status ='2' WHERE requisition_id='$hiddenID' and username='$username' and approve_userID = '$employeeID' and verifycode ='$verifycode'");
+	// 		 $result = $this->con()->query("UPDATE it_requisition SET approved_status ='1' WHERE id='$hiddenID' and status = '1'");
+
+	// 		return $yes;
+
+	// 	}
+	// }
+
+	// public function insert_dprt_head_approve($requiID,$employeeID,$vrfy_code){
+	// 	$result = $this->con()->query("SELECT * FROM approve_verify WHERE requisition_id = '$requiID' and approve_userID = '$employeeID'");
+	// 	$check = $result->num_rows;
+	// 	$row = $result->fetch_assoc();
+
+	// 	$rqiid = $row['requisition_id'];
+
+	// 	if($check == 0){
+
+	// 	$result = $this->con()->query("INSERT INTO approve_verify (requisition_id, approve_userID, verifycode, status) VALUES ('$requiID', '$employeeID', '$vrfy_code', '1')");
+	// 	return $result;
+	// 	}else{
+
+	// 		 $result = $this->con()->query("UPDATE approve_verify SET verifycode ='$vrfy_code' WHERE requisition_id='$requiID' and approve_userID = '$employeeID' and status='1'");
+	// 		 return $result;
+
+	// 	}
+	// }
+
+
+	public function insert_head_of_deprtment_approve($requiID, $reqrefer, $username, $employeeID, $vrfy_code)
+	{
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID = '$requiID' and userID = '$employeeID' and username='$username' and approvalType='Admin Concern' ");
+		$check = $result->num_rows;
+		$row = $result->fetch_assoc();
+
+		$rqiid = $row['requID'];
+
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO approve_verify (requID, reference, username, userID, verifycode, status, approvalType, processName) VALUES ('$requiID', '$reqrefer', '$username', '$employeeID', '$vrfy_code', '0', 'Admin Concern', 'Admin Concern Approve')");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET verifycode ='$vrfy_code' WHERE requID='$requiID' and userID = '$employeeID' and username='$username' and status='0' and approvalType='Admin Concern'");
+			return $result;
+		}
+	}
+
+
+
+	public function approve_depart_submit_access($hiddenID, $verifycode, $username, $employeeID)
+	{
+		$no = "no";
+		$yes = "yes";
+
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID='$hiddenID'  and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and status='0' and approvalType='Admin Concern'");
+		$check = $result->num_rows;
+		if ($check == 0) {
+			return $no;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET status ='1' WHERE requID='$hiddenID' and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and approvalType='Admin Concern' ");
+			$result = $this->con()->query("UPDATE canteen_header SET approvedStatus ='1' WHERE id='$hiddenID' and status = '1'");
+
+			$results = $this->con()->query("UPDATE tbl_generatetokenn SET actionStatus ='2' WHERE username='$username' and verifycode ='$verifycode' ");
+
+			return $yes;
+		}
+	}
+
+	// HR Head approve 
+
+
+	public function insert_head_of_HRhead_approve($requiID, $reqrefer, $username, $employeeID, $vrfy_code)
+	{
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID = '$requiID' and userID = '$employeeID' and username='$username' and approvalType='Head of HR'");
+		$check = $result->num_rows;
+		$row = $result->fetch_assoc();
+
+		$rqiid = $row['requID'];
+
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO approve_verify (requID, reference, username, userID, verifycode, status, approvalType, processName) VALUES ('$requiID', '$reqrefer', '$username', '$employeeID', '$vrfy_code', '0', 'Head of HR', 'HR Head Approve')");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET verifycode ='$vrfy_code' WHERE requID='$requiID' and userID = '$employeeID' and username='$username' and status='0' and approvalType='Head of HR'");
+			return $result;
+		}
+	}
+
+	public function approve_HRhead_submit_access($hiddenID, $verifycode, $username, $employeeID)
+	{
+		$no = "no";
+		$yes = "yes";
+
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID='$hiddenID'  and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and status='0' and approvalType='Head of HR'");
+		$check = $result->num_rows;
+		if ($check == 0) {
+			return $no;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET status ='1' WHERE requID='$hiddenID' and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and approvalType='Head of HR' ");
+			$result = $this->con()->query("UPDATE canteen_header SET approvedStatus ='2' WHERE id='$hiddenID' and status = '1'");
+
+			$results = $this->con()->query("UPDATE tbl_generatetokenn SET actionStatus ='2' WHERE username='$username' and verifycode ='$verifycode' ");
+
+			return $yes;
+		}
+	}
+
+	public function HRhead_reject($requisitionid, $referencen, $username, $stage, $reject)
+	{
+
+		$result = $this->con()->query("UPDATE canteen_header SET approvedStatus ='0', rejectUser='$username', rejectFrom='$stage', rejectReason='$reject' WHERE id='$requisitionid' AND reference='$referencen'");
+		return $result;
+	}
+
+
+
+	public function approve_Bill_HRhead_submit_access($hiddenID, $verifycode, $username, $employeeID)
+	{
+		$no = "no";
+		$yes = "yes";
+
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID='$hiddenID'  and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and status='0' and approvalType='Head of HR' and processName = 'Bill HRM' ");
+		$check = $result->num_rows;
+		if ($check == 0) {
+			return $no;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET status ='1' WHERE requID='$hiddenID' and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and approvalType='Head of HR' and processName = 'Bill HRM' ");
+			$result = $this->con()->query("UPDATE canteen_header SET approvedStatus ='5' WHERE id='$hiddenID' and status = '1'");
+
+			$results = $this->con()->query("UPDATE tbl_generatetokenn SET actionStatus ='2' WHERE username='$username' and verifycode ='$verifycode' ");
+
+			return $yes;
+		}
+	}
+
+
+
+	public function approve_verify_reject($requisitionid, $referencen)
+	{
+
+		$result = $this->con()->query("DELETE FROM approve_verify WHERE requID='$requisitionid' and reference='$referencen'");
+		return $result;
+	}
+
+	public function escalate_to_boss($requitid, $reqrefer, $username)
+	{
+
+		$result = $this->con()->query("UPDATE canteen_header SET approvedStatus ='3' WHERE id='$requitid' AND reference='$reqrefer'");
+		return $result;
+	}
+
+	public function insert_Admin_Bill_approve($requiID, $reqrefer, $username, $employeeID, $vrfy_code)
+	{
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID = '$requiID' and userID = '$employeeID' and username='$username' and approvalType='Admin Concern' and processName = 'Admin Concern Approve Bill'");
+		$check = $result->num_rows;
+		$row = $result->fetch_assoc();
+
+		$rqiid = $row['requID'];
+
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO approve_verify (requID, reference, username, userID, verifycode, status, approvalType, processName) VALUES ('$requiID', '$reqrefer', '$username', '$employeeID', '$vrfy_code', '0', 'Admin Concern', 'Admin Concern Approve Bill')");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET verifycode ='$vrfy_code' WHERE requID='$requiID' and userID = '$employeeID' and username='$username' and status='0' and approvalType='Admin Concern' and processName='Admin Concern Approve Bill'");
+			return $result;
+		}
+	}
+
+
+	public function approve_Bill_Admin_submit_access($hiddenID, $verifycode, $username, $employeeID)
+	{
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID='$hiddenID'  and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and status='0' and approvalType='Admin Concern' and processName = 'Admin Concern Approve Bill' ");
+		$check = $result->num_rows;
+		if ($check == 0) {
+			return $no;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET status ='1' WHERE requID='$hiddenID' and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and approvalType='Admin Concern' and processName = 'Admin Concern Approve Bill' ");
+
+			$result = $this->con()->query("UPDATE canteen_header SET approvedStatus ='4' WHERE id='$hiddenID' and status = '1'");
+
+			$results = $this->con()->query("UPDATE tbl_generatetokenn SET actionStatus ='2' WHERE username='$username' and verifycode ='$verifycode' ");
+
+			return $yes;
+		}
+	}
+
+
+
+	public function insert_head_of_HRhead_Bill_approve($requiID, $reqrefer, $username, $employeeID, $vrfy_code)
+	{
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID = '$requiID' and userID = '$employeeID' and username='$username' and approvalType='Head of HR' and processName = 'Bill HRM' ");
+		$check = $result->num_rows;
+		$row = $result->fetch_assoc();
+
+		$rqiid = $row['requID'];
+
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO approve_verify (requID, reference, username, userID, verifycode, status, approvalType, processName) VALUES ('$requiID', '$reqrefer', '$username', '$employeeID', '$vrfy_code', '0', 'Head of HR', 'Bill HRM')");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET verifycode ='$vrfy_code' WHERE requID='$requiID' and userID = '$employeeID' and username='$username' and status='0' and approvalType='Head of HR' and processName='Bill HRM'");
+			return $result;
+		}
+	}
+
+	public function approve_verify_remove($requitid, $reqrefer, $username)
+	{
+
+		$result = $this->con()->query("DELETE FROM approve_verify WHERE requID='$requitid' and reference='$reqrefer' and username='$username' and status='0'");
+		return $result;
+	}
+
+
+	// Boss approve 
+
+
+	public function insert_Boss_approve($requiID, $reqrefer, $username, $employeeID, $vrfy_code)
+	{
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID = '$requiID' and userID = '$employeeID' and username='$username' and approvalType='Boss'");
+		$check = $result->num_rows;
+		$row = $result->fetch_assoc();
+
+		$rqiid = $row['requID'];
+
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO approve_verify (requID, reference, username, userID, verifycode, status, approvalType) VALUES ('$requiID', '$reqrefer', '$username', '$employeeID', '$vrfy_code', '0', 'Boss')");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET verifycode ='$vrfy_code' WHERE requID='$requiID' and userID = '$employeeID' and username='$username' and status='0' and approvalType='Boss'");
+			return $result;
+		}
+	}
+
+
+	public function approve_Boss_submit_access($hiddenID, $verifycode, $username, $employeeID)
+	{
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID='$hiddenID' and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and status='0' and approvalType='Boss'");
+		$check = $result->num_rows;
+		if ($check == 0) {
+			return $no;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET status ='1' WHERE requID='$hiddenID' and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and approvalType='Boss' ");
+			$result = $this->con()->query("UPDATE canteen_header SET approvedStatus ='2' WHERE id='$hiddenID' and status = '1'");
+
+			$results = $this->con()->query("UPDATE tbl_generatetokenn SET actionStatus ='2' WHERE username='$username' and verifycode ='$verifycode' ");
+
+			return $yes;
+		}
+	}
+
+	public function Boss_reject($requisitionid, $referencen, $username, $stage, $reject)
+	{
+
+		$result = $this->con()->query("UPDATE canteen_header SET approvedStatus ='9', rejectUser='$username', rejectFrom='$stage', rejectReason='$reject' WHERE id='$requisitionid' AND reference='$referencen'");
+		return $result;
+	}
+
+
+	// Audit Bill pass
+
+	public function insert_audit_bill_approve($requiID, $reqrefer, $username, $employeeID, $vrfy_code)
+	{
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID = '$requiID' and userID = '$employeeID' and username='$username' and approvalType='Internal Audit' and processName = 'Audit Bill Pass'");
+		$check = $result->num_rows;
+		$row = $result->fetch_assoc();
+
+		$rqiid = $row['requID'];
+
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO approve_verify (requID, reference, username, userID, verifycode, status, approvalType, processName) VALUES ('$requiID', '$reqrefer', '$username', '$employeeID', '$vrfy_code', '0', 'Internal Audit', 'Audit Bill Pass')");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET verifycode ='$vrfy_code' WHERE requID='$requiID' and userID = '$employeeID' and username='$username' and status='0' and approvalType='Internal Audit' and processName = 'Audit Bill Pass'");
+			return $result;
+		}
+	}
+
+	public function audit_bill_verufy_code($hiddenID, $verifycode, $username, $employeeID)
+	{
+		$no = "no";
+		$yes = "yes";
+
+
+		$result = $this->con()->query("SELECT * FROM approve_verify WHERE requID='$hiddenID'  and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and status='0' and approvalType='Internal Audit' and processName = 'Audit Bill Pass' ");
+		$check = $result->num_rows;
+		if ($check == 0) {
+			return $no;
+		} else {
+
+			$result = $this->con()->query("UPDATE approve_verify SET status ='1' WHERE requID='$hiddenID' and username='$username' and userID = '$employeeID' and verifycode ='$verifycode' and approvalType='Internal Audit' and processName = 'Audit Bill Pass' ");
+			$result = $this->con()->query("UPDATE canteen_header SET approvedStatus='6' WHERE id='$hiddenID' and status = '1'");
+
+			$results = $this->con()->query("UPDATE tbl_generatetokenn SET actionStatus ='2' WHERE username='$username' and verifycode ='$verifycode' ");
+
+			return $yes;
+		}
+	}
+
+
+	// public function show_it_requisition_for_role_div($username){
+	// 	$result = $this->con()->query("SELECT * FROM user_role where user_name='$username'  GROUP BY user_type ORDER by id ASC");
+	// 	return $result;
+	// }
+
+	public function show_it_requisition_for_role_div($username)
+	{
+		$result = $this->con()->query("SELECT ur.* FROM user_role ur JOIN ( SELECT user_type, MAX(id) AS max_id FROM user_role WHERE user_name='$username' GROUP BY user_type ) t ON ur.user_type = t.user_type AND ur.id = t.max_id ORDER BY ur.id ASC");
+		return $result;
+	}
+
+
+
+
+
+	// public function show_it_requisition_for_role($username){
+	// 	$result = $this->con()->query("SELECT * FROM user_role where user_name='$username'  GROUP BY user_type ORDER by id ASC");
+	// 	return $result;
+	// }
+
+	public function show_it_requisition_for_role($username)
+	{
+		$result = $this->con()->query("SELECT ur.* FROM user_role ur JOIN ( SELECT user_type, MAX(id) AS max_id FROM user_role WHERE user_name='$username' GROUP BY user_type ) t ON ur.user_type = t.user_type AND ur.id = t.max_id ORDER BY ur.id ASC");
+		return $result;
+	}
+
+	// public function show_it_requisition_for_role_user($username){
+	// 	$result = $this->con()->query("SELECT * FROM user_role where user_name='$username'  GROUP BY user_type ORDER by id ASC");
+	// 	return $result;
+	// }
+
+	public function show_it_requisition_for_role_user($username)
+	{
+		$result = $this->con()->query("SELECT ur.* FROM user_role ur JOIN ( SELECT user_type, MAX(id) AS max_id FROM user_role WHERE user_name='$username' GROUP BY user_type ) t ON ur.user_type = t.user_type AND ur.id = t.max_id ORDER BY ur.id ASC");
+		return $result;
+	}
+
+
+	// public function sql_requisition_alreadyapproved(){
+
+	// 	$result = $this->con()->query("SELECT r.id, r.reference, r.requesterID, r.requesterName, r.designation, r.section, r.department, r.costDivision, r.ruqest_date, r.approvedStatus FROM canteen_header r LEFT JOIN canteen_line a ON r.reference =a.reference where r.approvedStatus='3' GROUP BY r.reference");
+	// 	return $result;
+
+	// }
+
+	public function sql_requisition_alreadyapproved()
+	{
+
+		$result = $this->con()->query("SELECT MAX(r.id) AS id, r.reference, MAX(r.requesterID) AS requesterID, MAX(r.requesterName) AS requesterName, MAX(r.designation) AS designation, MAX(r.section) AS section, MAX(r.department) AS department, MAX(r.costDivision) AS costDivision, MAX(r.ruqest_date) AS ruqest_date, MAX(r.approvedStatus) AS approvedStatus FROM canteen_header r LEFT JOIN canteen_line a ON r.reference = a.reference WHERE r.approvedStatus='3' GROUP BY r.reference ORDER BY id ASC");
+		return $result;
+	}
+
+
+	// public function sql_requisition_bulk_alreadyapproved(){
+
+	// 	$result = $this->con()->query("SELECT r.id, r.reference, r.employeeID, r.emp_name, r.designation, r.section, r.department, r.costcenter, r.ruqest_date, r.approved_status FROM it_requisition r LEFT JOIN tbl_accessories a ON r.reference =a.reference_id where a.bulk_id != '' and r.approved_status='3' GROUP BY  r.reference");
+	// 	return $result;
+
+	// }
+
+
+	public function it_reject($requisitionid, $username, $stage, $reject)
+	{
+
+		$result = $this->con()->query("UPDATE canteen_header SET approvedStatus ='9', status='0', rejectUser='$username', rejectFrom='$stage', rejectReason='$reject' WHERE id='$requisitionid'");
+		return $result;
+
+
+
+		// $result = $this->con()->query("DELETE FROM approve_verify WHERE id='$requisitionid'");
+		// return $result;
+
+		// $result = $this->con()->query("DELETE FROM depart_approve_verify WHERE id='$requisitionid'");
+		// return $result;
+
+	}
+
+	// Bulk reject
+
+
+	// public function it_approve_verify_reject($requisitionid){
+
+	// 		$result = $this->con()->query("DELETE FROM it_approve_verify WHERE requisition_id='$requisitionid'");
+	// 		return $result;
+
+	// 	}
+
+
+
+	// 	public function depart_approve_verify_reject($requisitionid){
+
+	// 		$result = $this->con()->query("DELETE FROM depart_approve_verify WHERE requisition_id='$requisitionid'");
+	// 		return $result;
+
+	// 	}
+
+
+	public function add_systemuser($employeeID, $empname, $email, $designation, $companyID, $department, $section, $userid, $pass, $pic, $username)
+	{
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user WHERE username = '$userid'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO user (name, employeeID , designation, department, section, costcenter, email, user_role, username, password, signature, status, create_user) VALUES ('$empname', '$employeeID', '$designation', '$department','$section', '$companyID', '$email', '1', '$userid', '$pass', '$pic', '1', '$username')");
+			return $result;
+		} else {
+
+			return $no;
+		}
+	}
+
+
+
+
+	public function edit_systemuser($employeeID, $empname, $email, $designation, $companyID, $department, $section, $userid, $pic, $username, $hiddenID)
+	{
+
+		$date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+
+		$nowdate =  $date->format('Y-m-d H:i:s');
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user WHERE username = '$userid'");
+
+
+
+		if ($pic != "") {
+			$imgdate =  date("Y-m-d");;
+
+			$rrrr = rand('111', '999');
+
+			$rttr = md5($rrrr);
+
+			$rrr = uniqid();
+
+			$rr = $imgdate . "-" . $rrr . "" . $rttr;
+
+			$imgges = "$rr.jpg";
+			$picname = "uploads/$rr.jpg";
+			$source = $pic;
+
+			$destinations = "uploads/$imgges";
+			move_uploaded_file($source, $destinations);
+
+
+			$result = $this->con()->query("UPDATE user SET name='$empname', employeeID='$employeeID', designation='$designation', department='$department', section='$section', costcenter='$companyID', email='$email',  username='$userid', signature='$picname', update_user='$username', update_date='$nowdate' WHERE id='$hiddenID' ");
+
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE user SET name='$empname', employeeID='$employeeID', designation='$designation', department='$department', section='$section', costcenter='$companyID', email='$email',  username='$userid',  update_user='$username', update_date='$nowdate' WHERE id='$hiddenID' ");
+
+			return $result;
+		}
+	}
+
+	public function check_password($userid)
+	{
+		$q = $this->con()->query("select password from user where username = '$userid'");
+		return $q;
+	}
+
+	public function update_password_data($new_password, $userid)
+	{
+		$ss = $this->con()->query("update user set password = '$new_password' where username = '$userid'");
+		return $ss;
+	}
+
+	public function item_qty_add_by_hr($ApprovQTY, $itemremarks, $hdnid, $username)
+	{
+		$itemqtyadd = $this->con()->query("UPDATE canteen_line set  ApprovQTY ='$ApprovQTY', HRremarks='$itemremarks', lastupUser='$username' WHERE id='$hdnid'");
+		return $itemqtyadd;
+	}
+
+	public function item_edit_by_it($PurchaseQTY, $description, $PurUnitPrice, $PurTotalPrice, $itemremarks, $username, $hdnid)
+	{
+
+
+		$date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+
+		$nowdate =  $date->format('Y-m-d H:i:s');
+
+		$itemedit = $this->con()->query("UPDATE canteen_line set description='$description', PurchaseQTY='$PurchaseQTY', PurUnitPrice='$PurUnitPrice', PurTotalPrice='$PurTotalPrice', Reason='$itemremarks', status='2', lastupUser='$username', lastupDate='$nowdate' WHERE id='$hdnid'");
+		return $itemedit;
+	}
+
+	public function from_store($reqfrsid)
+	{
+		$relt = $this->con()->query("UPDATE tbl_accessories set status = '2' where id = '$reqfrsid'");
+		return $relt;
+	}
+
+	public function cancel_stock($cencelid)
+	{
+		$result = $this->con()->query("UPDATE tbl_accessories set status = '1' where id = '$cencelid'");
+		return $result;
+	}
+
+	public function generate_purchase_requisition($generateprid)
+	{
+
+
+		// $no = "no";
+		// $yes = "yes";
+
+		// $result = $this->con()->query("SELECT description FROM tbl_accessories WHERE requisition_id = '$generateprid' and status='1'");
+
+		//$check = $result->num_rows;
+
+		// $check = $result->fetch_assoc();
+
+		//$desp = $check['description'];
+
+		//var_dump($desp);
+
+		// if(!empty($check['description'])) {
+
+		$results = $this->con()->query("UPDATE canteen_header set approvedStatus = '7' where id = '$generateprid'");
+		return $results;
+
+
+		// }else{				
+
+		// 	return $no;
+
+		// }
+
+	}
+
+
+	public function change_it_requst_status($refn)
+	{
+		$results = $this->con()->query("UPDATE canteen_header set approvedStatus = '7' where reference = '$refn'");
+		return $results;
+	}
+
+	// public function sql_requisition_status($username){
+
+	// 	$result = $this->con()->query("SELECT r.id, r.reference, r.requesterID, r.requesterName, r.designation, r.section, r.department, r.costDivision, r.ruqest_date, r.company, ur.category, r.PurchaseFor, r.approvedStatus FROM canteen_header r LEFT JOIN canteen_line a ON r.reference =a.reference LEFT JOIN user_role ur ON ur.category=r.PurchaseFor 
+	// 		WHERE ur.user_name='$username' GROUP BY r.reference");
+	// 	return $result;
+
+	// }
+
+
+
+	public function sql_requisition_status($username)
+	{
+
+		$result = $this->con()->query("SELECT MIN(r.id) AS id, r.reference, MIN(r.requesterID) AS requesterID, MIN(r.requesterName) AS requesterName, MIN(r.designation) AS designation, MIN(r.section) AS section, MIN(r.department) AS department, MIN(r.costDivision) AS costDivision, MIN(r.ruqest_date) AS ruqest_date, MIN(r.company) AS company, ur.category, MIN(r.PurchaseFor) AS PurchaseFor, MIN(r.approvedStatus) AS approvedStatus, MIN(r.rejectUser) AS rejectUser FROM canteen_header r LEFT JOIN canteen_line a ON r.reference = a.reference LEFT JOIN user_role ur ON ur.category = r.PurchaseFor WHERE ur.user_name='$username' GROUP BY r.reference, ur.category ORDER BY id ASC");
+		return $result;
+	}
+
+
+	public function show_all_department_application_role()
+	{
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_type='Application Approval'");
+		return $result;
+	}
+
+
+	public function add_assign_application($roleusername, $employeeID, $companyID, $companyname, $department, $departmentname, $username)
+	{
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_name = '$roleusername' AND companyID='$companyID' AND departmentID='$department' AND user_type='Application Approval'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO user_role (employeeID, user_name, companyID,companyname, departmentID, departmentname, user_type, status, create_user) VALUES ('$employeeID', '$roleusername', '$companyID', '$companyname', '$department', '$departmentname', 'Application Approval', '1', '$username')");
+			return $result;
+		} else {
+
+			return $no;
+		}
+	}
+
+
+	public function edit_assign_application($roleusername, $employeeID, $companyID, $companyname, $department, $departmentname, $username, $hiddenID)
+	{
+
+		$date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+
+		$nowdate =  $date->format('Y-m-d H:i:s');
+
+		$no = "no";
+		$yes = "yes";
+
+		$result = $this->con()->query("SELECT * FROM user_role WHERE user_name = '$roleusername' AND companyID='$companyID' AND departmentID='$department' AND user_type='Application Approval'");
+
+		$check = $result->num_rows;
+		if ($check == 0) {
+
+			$result = $this->con()->query("UPDATE user_role SET employeeID='$employeeID', user_name='$roleusername', companyID='$companyID',companyname='$companyname', departmentID='$department', departmentname='$departmentname',  update_user='$username', update_date='$nowdate' where id='$hiddenID' ");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE user_role SET employeeID='$employeeID', user_name='$roleusername', companyID='$companyID',companyname='$companyname', departmentID='$department', departmentname='$departmentname',  update_user='$username', update_date='$nowdate' where id='$hiddenID' ");
+			return $result;
+		}
+	}
+
+	public function zhohomail_declined($applinemailid)
+	{
+		$relt = $this->con()->query("UPDATE tbl_zohomail set status = '2' where id = '$applinemailid'");
+		return $relt;
+	}
+	public function cancel_zhohomail_declined($mailcancelid)
+	{
+		$relt = $this->con()->query("UPDATE tbl_zohomail set status = '1' where id = '$mailcancelid'");
+		return $relt;
+	}
+
+
+	// public function app_declined($applineid){
+	// 	$relt = $this->con()->query("UPDATE tbl_application_line set status = '2' where id = '$applineid'");
+	// 	return $relt;
+	// }
+
+
+	// public function cancel_declined($cancelid){
+	// 	$result = $this->con()->query("UPDATE tbl_application_line set status = '1' where id = '$cancelid'");
+	// 	return $result;
+	// }
+
+	public function insert_application_approve($requiID, $refcod, $username, $employeeID, $vrfy_code)
+	{
+
+		$result = $this->con()->query("SELECT * FROM app_approve_verify WHERE app_id = '$requiID' and approve_userID = '$employeeID' and username='$username'");
+		$check = $result->num_rows;
+		$row = $result->fetch_assoc();
+
+		$rqiid = $row['app_id'];
+
+		if ($check == 0) {
+
+			$result = $this->con()->query("INSERT INTO app_approve_verify (app_id, refcode, username,approve_userID, verifycode, status) VALUES ('$requiID', '$refcod', '$username', '$employeeID', '$vrfy_code', '1')");
+			return $result;
+		} else {
+
+			$result = $this->con()->query("UPDATE app_approve_verify SET verifycode ='$vrfy_code' WHERE app_id='$requiID' and approve_userID = '$employeeID' and username='$username' and status='1'");
+			return $result;
+		}
+	}
+
+	// public function approve_application_submit_access($hiddenID,$verifycode,$username,$employeeID){
+	// 	$no = "no";
+	// 	$yes = "yes";
+
+
+	// 	$result = $this->con()->query("SELECT * FROM app_approve_verify WHERE app_id='$hiddenID' and approve_userID = '$employeeID' and verifycode ='$verifycode' and status='1' ");
+	// 	$check = $result->num_rows;
+	// 	if($check == 0){
+	// 		return $no;
+	// 	}else{
+
+	// 		 $result = $this->con()->query("UPDATE app_approve_verify SET status ='2' WHERE app_id='$hiddenID' and username='$username' and approve_userID = '$employeeID' and verifycode ='$verifycode'");
+	// 		 $result = $this->con()->query("UPDATE tbl_application SET approved_status ='2' WHERE id='$hiddenID' and status = '1'");
+
+	// 		return $yes;
+
+	// 	}
+	// }
+
+
+	// public function application_reject($appid,$username,$reject){
+
+	// 	$result = $this->con()->query("UPDATE tbl_application SET approved_status ='5', status='0', reject_user='$username', reject_notes='$reject' WHERE id='$appid'");
+	// 	return $result;
+
+
+	// }
+
+	// public function application__zohomail_reject($appid){
+	// $results = $this->con()->query("UPDATE tbl_zohomail SET status ='0' WHERE ap_id='$appid'");
+	// 	return $results;
+	// }
+
+	// public function app_verify_reject($appid){
+
+	// 	$result = $this->con()->query("DELETE FROM app_approve_verify WHERE app_id='$appid'");
+	// 	return $result;
+
+	// }
+
+	// public function add_mdm_code($mdmcode,$hdnid){
+
+	// 	$result = $this->con()->query("UPDATE tbl_zohomail set mdm_code ='$mdmcode' WHERE ap_id='$hdnid'");
+	// 	return $result;
+	// }
+
+	// public function mdmcode_check($refid){
+	// 	$no = "no";
+	// 	$yes = "yes";
+
+	// 	$result = $this->con()->query("SELECT mdm_code FROM tbl_zohomail WHERE ap_id = '$refid' and status='1'");
+
+	// 	//$check = $result->num_rows;
+
+	// 	$check = $result->fetch_assoc();
+
+	// 	//$desp = $check['mdm_code'];
+
+	// 	//var_dump($desp);
+
+	// 	if(!empty($check['mdm_code'])) {
+
+	// 		return $yes;
+
+	// 	}else{				
+
+	// 		return $no;
+
+	// 	}
+
+	// }
+
+
+	public function count_all_it_requisition($username)
+	{
+		// $result = $this->con()->query("SELECT count(id) as total FROM canteen_header ");
+
+		$result = $this->con()->query("SELECT COUNT(DISTINCT c.id) AS total
+					FROM canteen_header AS c
+					LEFT JOIN user_role AS r 
+					    ON c.PurchaseFor = r.category 
+					    AND c.costDivision = r.companyID
+					LEFT JOIN canteen_line AS a 
+					    ON c.reference = a.reference
+					WHERE r.user_name = '$username'");
+
+		return $result;
+	}
+
+	public function count_all_Sum_requisition()
+	{
+		$result = $this->con()->query("SELECT count(id) as total FROM canteen_header ");
+		return $result;
+	}
+
+
+	public function approved_application_list($username)
+	{
+		$result = $this->con()->query("SELECT c.id,  c.reference, c.requesterID, c.requesterName, c.designation, c.department, c.section, c.costDivision, c.PurchaseFor, c.ruqest_date, c.email, c.approvedStatus
+      FROM canteen_header c
+      LEFT JOIN user_role r
+      ON c.PurchaseFor = r.category and c.costDivision=r.companyID LEFT JOIN canteen_line a ON c.reference =a.reference where r.user_name='$username' and c.status='1' and r.user_type='Store' and c.approvedStatus BETWEEN 2 and 7 GROUP BY c.id");
+
+		return $result;
+	}
+
+
+	public function total_Waiting_requisition_approval($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as total_Waiting_approval FROM canteen_header c LEFT JOIN user_role r ON c.PurchaseFor = r.category and c.costDivision=r.companyID where r.user_name='$username' and r.user_type='Store' and c.approvedStatus < 2");
+
+		return $result;
+	}
+
+	public function total_Reject_requisition($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as total_Reject FROM canteen_header c LEFT JOIN user_role r ON c.PurchaseFor = r.category and c.costDivision=r.companyID where r.user_name='$username' and r.user_type='Store' and c.approvedStatus='9'");
+
+		return $result;
+	}
+
+
+	// Admin Reject Requisition
+
+	public function admin_total_Reject_requisition($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as Admin_total_Reject FROM canteen_header c LEFT JOIN user_role r ON c.PurchaseFor = r.category and c.costDivision=r.companyID where r.user_name='$username' and r.user_type='Approval User' and c.approvedStatus='9'");
+
+		return $result;
+	}
+
+	public function sql_Bill_Requisition_waiting($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as bill_total_waiting
+	FROM canteen_header c
+	CROSS JOIN user_role r
+	ON c.PurchaseFor = r.category AND c.costDivision=r.companyID where r.user_name='$username' and c.status='1' and r.user_type='Store' and c.approvedStatus BETWEEN 4 AND 5");
+
+		return $result;
+	}
+
+	public function sql_Bill_Requisition_approved($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as total_bill_approved
+	FROM canteen_header c
+	CROSS JOIN user_role r
+	ON c.PurchaseFor = r.category AND c.costDivision=r.companyID where r.user_name='$username' and c.status='1' and r.user_type='Store' and c.approvedStatus='6'");
+
+		return $result;
+	}
+
+
+	// public function count_all_app_requisition(){
+	// 	$result = $this->con()->query("SELECT count(id) as apptotal FROM tbl_application");
+
+	// 	return $result;
+	// }
+
+
+
+
+	// 	public function sql_application_waiting_approved($username){
+	// 			$result = $this->con()->query("SELECT count(c.id) as app_total
+	// FROM tbl_application c
+	// LEFT JOIN user_role r
+	// ON c.department = r.departmentname and c.costcenter=r.companyname where r.user_name='$username' and c.status='1' and r.user_type='Application Approval'");
+
+	// 			return $result;
+	// 		}
+
+
+	// Admin Concern
+	public function sql_requisition_derpt_tota($username)
+	{
+		$result = $this->con()->query("SELECT count(c.id) as dept_total
+	FROM canteen_header c
+	LEFT JOIN user_role r
+	ON c.PurchaseFor = r.category and c.costDivision=r.companyID where r.user_name='$username' and r.user_type='Approval User'");
+		return $result;
+	}
+
+	// Head of HR
+
+	public function sql_requisition_HRM_tota($username)
+	{
+		$result = $this->con()->query("SELECT COUNT(DISTINCT c.id) as HRM_total
+	FROM canteen_header c
+	LEFT JOIN user_role r
+	ON c.PurchaseFor = r.category and c.costDivision=r.companyID where r.user_name='$username' and c.status='1' and r.user_type='Head of HR'");
+		return $result;
+	}
+
+
+	// Boss 
+
+	public function sql_requisition_Boss_total($username)
+	{
+		$result = $this->con()->query("SELECT count(c.id) as Boss_total
+	FROM canteen_header c
+	LEFT JOIN user_role r
+	ON c.PurchaseFor = r.category and c.costDivision=r.companyID where r.user_name='$username' and c.status='1' and r.user_type='Boss'");
+		return $result;
+	}
+
+
+	public function sql_requisition_Boss_approve_total($username)
+	{
+		$result = $this->con()->query("SELECT count(id) as total_Boss_approved
+				FROM approve_verify where username='$username' and status='1' and approvalType='Boss'");
+
+		return $result;
+	}
+
+	// Audit List
+
+	public function sql_requisition_audit_total($username)
+	{
+		$result = $this->con()->query("SELECT count(c.id) as audit_total
+	FROM canteen_header c
+	LEFT JOIN user_role r
+	ON c.PurchaseFor = r.category and c.costDivision=r.companyID where r.user_name='$username' and c.status='1' and c.approvedStatus BETWEEN 5 and 7 and r.user_type='Internal Audit'");
+		return $result;
+	}
+
+	public function sql_approved_audit_total($username)
+	{
+		$result = $this->con()->query("SELECT count(c.id) as approved_audit_total
+	FROM canteen_header c
+	LEFT JOIN user_role r
+	ON c.PurchaseFor = r.category and c.costDivision=r.companyID where r.user_name='$username' and c.status='1' and c.approvedStatus BETWEEN 6 and 7 and r.user_type='Internal Audit'");
+		return $result;
+	}
+
+	public function sql_requisition_derpt_approved($username)
+	{
+		$result = $this->con()->query("SELECT count(DISTINCT c.id) as dept_total_approved
+FROM canteen_header c
+LEFT JOIN user_role r
+ON c.department = r.departmentname and c.costDivision=r.companyname LEFT JOIN canteen_line a ON c.reference = a.reference where r.user_name='$username' and c.status='1' and r.user_type='Head of department'  and approvedStatus BETWEEN 2 AND 7");
+
+		return $result;
+	}
+
+
+	// public function bulk_count_deprt_f($username){
+	// 		$result = $this->con()->query("SELECT count(DISTINCT c.id) as bulk_dept_total_approved FROM it_requisition c CROSS JOIN user_role r ON c.department = r.departmentname and c.costcenter = r.companyname LEFT JOIN tbl_accessories a ON c.reference = a.reference_id where r.user_name='$username' and r.user_type='Head of department' and a.bulk_id != '' and c.status='1' and c.approved_status BETWEEN 1 and 3");
+
+	// 		return $result;
+	// }
+
+	// public function bulk_count_deprt($username){
+	// 			$result = $this->con()->query("SELECT count(c.id) as bulk_dept_total FROM it_requisition c CROSS JOIN user_role r ON c.department = r.departmentname and c.costcenter = r.companyname LEFT JOIN tbl_accessories a ON c.reference = a.reference_id where r.user_name='$username' and r.user_type='Head of department' and a.bulk_id != '' and c.status='1' and c.approved_status BETWEEN 5 and 7");
+
+	// 			return $result;
+	// 	}
+
+	// Admin Concern
+
+	public function sql_requisition_derpt_waiting_approved($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as dept_total_waiting_approve
+FROM canteen_header c
+LEFT JOIN user_role r
+ON c.PurchaseFor = r.category and c.costDivision=r.companyID where r.user_name='$username' and c.approvedStatus='0' and c.status='1' and r.user_type='Approval User'");
+
+		return $result;
+	}
+
+	// HR Head
+
+	public function sql_requisition_section_waiting_approved($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as section_total_waiting_approve
+	FROM canteen_header c
+	CROSS JOIN user_role r
+	ON c.PurchaseFor = r.category AND c.costDivision=r.companyID where r.user_name='$username' and c.approvedStatus='1' and c.status='1' and r.user_type='Head of HR'");
+
+		return $result;
+	}
+
+
+	public function sql_requisition_HRMHead_approve_tota($username)
+	{
+		$result = $this->con()->query("SELECT count(id) as total_HR_Head_approved
+				FROM approve_verify where username='$username' and status='1' and approvalType='Head of HR' and processName='HR Head Approve' ");
+
+		return $result;
+	}
+
+
+	public function sql_Bill_approve_waiting_approved($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as bill_total_waiting_approve
+	FROM canteen_header c
+	CROSS JOIN user_role r
+	ON c.PurchaseFor = r.category AND c.costDivision=r.companyID where r.user_name='$username' and c.approvedStatus='4' and c.status='1' and r.user_type='Head of HR'");
+
+		return $result;
+	}
+
+	public function sql_admin_Bill_approve_waiting_approved($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as adminbill_total_waiting_approve
+	FROM canteen_header c
+	CROSS JOIN user_role r
+	ON c.PurchaseFor = r.category AND c.costDivision=r.companyID where r.user_name='$username' and c.approvedStatus='7' and c.status='1' and r.user_type='Approval User'");
+
+		return $result;
+	}
+
+
+
+	public function sql_Bill_approve_Audit($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as bill_total_waiting_Audit
+	FROM canteen_header c
+	CROSS JOIN user_role r
+	ON c.PurchaseFor = r.category AND c.costDivision=r.companyID where r.user_name='$username' and c.approvedStatus='5' and c.status='1' and r.user_type='Internal Audit'");
+
+		return $result;
+	}
+
+
+	public function sql_Bill_approve_store($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as bill_total_waiting_store
+	FROM canteen_header c
+	CROSS JOIN user_role r
+	ON c.PurchaseFor = r.category AND c.costDivision=r.companyID where r.user_name='$username' and c.approvedStatus='2' and c.status='1' and r.user_type='Store'");
+
+		return $result;
+	}
+
+
+
+	public function add_price_by_audit($itemremarks, $ApprovUnitPrice, $ApprovTotalPrice, $username, $hdnid)
+	{
+
+
+		$date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+
+		$nowdate =  $date->format('Y-m-d H:i:s');
+
+		$auditPrice = $this->con()->query("UPDATE canteen_line set ApprovUnitPrice='$ApprovUnitPrice', ApprovTotalPrice='$ApprovTotalPrice', auditRemarks='$itemremarks' WHERE id='$hdnid'");
+		return $auditPrice;
+	}
+
+
+	public function sql_requisition_Boss_waiting_approved($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as Boss_total_waiting_approve
+			FROM canteen_header c
+			CROSS JOIN user_role r
+			ON c.PurchaseFor = r.category AND c.costDivision=r.companyID where r.user_name='$username' and c.approvedStatus='3' and c.status='1' and r.user_type='Boss'");
+
+		return $result;
+	}
+
+
+	// 
+
+	// public function sql_requisition_section_tota($username){
+	// 		$result = $this->con()->query("SELECT count(c.id) as section_total_req
+	// 			FROM canteen_header c
+	// 			LEFT JOIN user_role r
+	// 			ON c.department = r.departmentname and c.section = r.scetionname and c.costDivision=r.companyname where r.user_name='$username' and c.status='1' and r.user_type='Head of section'");
+
+	// 		return $result;
+	// 	}
+
+	// admin concern
+
+	public function sql_requisition_admin_tota($username, $employeeID)
+	{
+		// $result = $this->con()->query("SELECT count(id) as total_admin_approved
+		// 	FROM approve_verify where username='$username' and status='1' and approvalType='Admin Concern'");
+
+		$result = $this->con()->query("SELECT COUNT(DISTINCT c.id) AS total_admin_approved FROM canteen_header AS c LEFT JOIN user_role AS r    ON c.PurchaseFor = r.category AND c.costDivision = r.companyID LEFT JOIN canteen_line AS a ON c.reference = a.reference LEFT JOIN approve_verify AS ap ON c.reference = ap.reference AND r.employeeID = ap.userID WHERE r.user_name = '$username' AND c.status = '1' AND r.user_type = 'Approval User' AND ap.userID = '$employeeID' AND c.approvedStatus BETWEEN 1 AND 7");
+
+		return $result;
+	}
+
+	public function sql_requisition_section_approved($username)
+	{
+
+		$result = $this->con()->query("SELECT count(c.id) as section_total_approv
+FROM canteen_header c
+LEFT JOIN user_role r
+ON c.department = r.departmentname and c.section = r.scetionname and c.costDivision=r.companyname where r.user_name='$username' and c.status='1' and r.user_type='Head of section' and approvedStatus BETWEEN 1 AND 7");
+
+		return $result;
+	}
+
+	public function total_deprt_approve_it_requisition()
+	{
+		$result = $this->con()->query("SELECT count(id) as total_approved FROM canteen_header  where approvedStatus BETWEEN 2 AND 7");
+
+		return $result;
+	}
+
+	// Admin bill approved list
+
+	public function sql_Admin_Bill_Requisition_approved($username, $employeeID)
+	{
+
+
+		$result = $this->con()->query("SELECT COUNT(DISTINCT c.id) as admin_total_bill_approved FROM canteen_header c LEFT JOIN user_role r ON c.PurchaseFor = r.category and c.costDivision=r.companyID LEFT JOIN canteen_line a ON c.reference =a.reference LEFT JOIN approve_verify ap ON c.reference = ap.reference and r.employeeID=ap.userID where r.user_name='$username' and c.status='1' and r.user_type='Approval User' and ap.userID='$employeeID' and c.approvedStatus BETWEEN 4 AND 6");
+
+		return $result;
+	}
+
+
+	public function total_admin_concn_requisition()
+	{
+		$result = $this->con()->query("SELECT count(id) as total_admin_approved FROM canteen_header  where approvedStatus BETWEEN 1 AND 7");
+
+		return $result;
+	}
+
+
+	public function total_approved_requisition($username)
+	{
+		$result = $this->con()->query("SELECT count(c.id) as total_rqui_approved
+       FROM canteen_header c
+      LEFT JOIN user_role r
+      ON c.PurchaseFor = r.category and c.costDivision=r.companyID where r.user_name='$username' and c.status='1' and r.user_type='Store' and c.approvedStatus BETWEEN 2 and 7");
+
+		return $result;
+	}
+
+
+	public function total_section_approve_it_requisition()
+	{
+		$result = $this->con()->query("SELECT count(id) as total_section_approved FROM canteen_header where approvedStatus BETWEEN 1 AND 7");
+
+		return $result;
+	}
+
+
+	// public function approve_mail_status_change($name,$mailid){
+
+	// 	$result = $this->con()->query("UPDATE tbl_application SET approved_status='2', update_status_user='$name' where id='$mailid'");
+	// 	return $result;
+	// }
+
+	// Approve by other Head of HR
+	public function sql_requisition_HRMHead_approve_others($username)
+	{
+		$result = $this->con()->query("SELECT COUNT(av.id) as total_req_approved_others_HR
+        FROM approve_verify av
+        INNER JOIN user_role ur ON av.username = ur.user_name
+        INNER JOIN canteen_header c ON av.reference = c.reference
+        WHERE av.username != '$username'
+          AND av.status = '1'
+          AND av.approvalType = 'Head of HR'
+          AND av.processName = 'HR Head Approve'
+          AND ur.user_type = 'Head of HR'
+           AND c.PurchaseFor = ur.category
+          AND EXISTS (
+              SELECT 1
+              FROM user_role loggedin_role
+              WHERE loggedin_role.user_name = '$username'
+                AND loggedin_role.companyname = ur.companyname
+                AND loggedin_role.category = ur.category
+          )");
+
+		return $result;
+	}
+
+
+	//Head of HR bill approval
+	public function HR_bill_approval($username)
+	{
+		$result = $this->con()->query("SELECT count(id) as total_HR_Head_bill_approved
+                FROM approve_verify where username='$username' and status='1' and approvalType='Head of HR' and processName='Bill HRM' ");
+
+		return $result;
+	}
+
+	// Approve by other Head of HR
+	public function HRMHead_bill_approve_others($username)
+	{
+		$result = $this->con()->query("SELECT COUNT(av.id) as total_HR_Head_bill_approved_by_others
+        FROM approve_verify av
+        INNER JOIN user_role ur ON av.username = ur.user_name
+        INNER JOIN canteen_header c ON av.reference = c.reference
+        WHERE av.username != '$username'
+          AND av.status = '1'
+          AND av.approvalType = 'Head of HR'
+          AND av.processName = 'Bill HRM'
+          AND ur.user_type = 'Head of HR'
+           AND c.PurchaseFor = ur.category
+          AND EXISTS (
+              SELECT 1
+              FROM user_role loggedin_role
+              WHERE loggedin_role.user_name = '$username'
+                AND loggedin_role.companyname = ur.companyname
+                AND loggedin_role.category = ur.category
+          )");
+
+		return $result;
+	}
+}
+
+// Company Wise Yearly Cost
+class ChartData
+{
+	private $db;
+	private $username;
+
+	public function __construct($db, $username)
+	{
+		$this->db = $db;
+		$this->username = $username;
+	}
+
+	public function getChartData()
+	{
+		// 1️⃣ Get permission from user_role
+		$sql = "SELECT companyID FROM user_role WHERE user_name = ?";
+		$stmt = $this->db->prepare($sql);
+		$stmt->bind_param("s", $this->username);
+		$stmt->execute();
+		$permissions = $stmt->get_result();
+
+		$data = [];
+
+		// 2️⃣ Loop through allowed company/category pairs
+		while ($perm = $permissions->fetch_assoc()) {
+			$query = "SELECT 
+                        ch.costDivision AS costCompany,
+                        YEAR(ch.ruqest_date) AS year,
+                        SUM(cl.PurTotalPrice) AS total
+                    FROM canteen_header ch
+                    JOIN canteen_line cl ON ch.id = cl.canteenHeaderID
+					WHERE ch.approvedStatus BETWEEN 4 AND 7
+                    AND ch.costDivision = ?
+                      AND YEAR(ch.ruqest_date) BETWEEN YEAR(CURDATE()) - 4 AND YEAR(CURDATE())
+                    GROUP BY costCompany, year
+                    ORDER BY year ASC";
+
+			$stmt2 = $this->db->prepare($query);
+			$stmt2->bind_param("s", $perm['companyID']);
+			$stmt2->execute();
+			$result = $stmt2->get_result();
+
+			while ($row = $result->fetch_assoc()) {
+				$data[$row['costCompany']][$row['year']] = $row['total'];
+			}
+		}
+
+		// Build last 5 years
+		$years = range(date('Y') - 4, date('Y'));
+
+		// Check if each year has ANY value from ANY company
+		$isFullData = true;
+
+		foreach ($years as $yr) {
+			$yearHasValue = false;
+
+			foreach ($data as $company => $yearData) {
+				if (isset($yearData[$yr]) && $yearData[$yr] > 0) {
+					$yearHasValue = true;
+					break;
+				}
+			}
+
+			if (!$yearHasValue) {
+				$isFullData = false;
+				break;
+			}
+		}
+
+		// Sort years
+		if ($isFullData) {
+			sort($years);  // ascending
+		} else {
+			rsort($years); // descending
+		}
+
+		return [
+			'data'  => $data,
+			'years' => $years
+		];
+	}
+}
+
+
+class YearlyCanteenChart
+{
+	private $db;
+	private $username;
+	private $division;
+
+	public function __construct($db, $username, $division)
+	{
+		$this->db = $db;
+		$this->username = $username;
+		$this->division = $division;
+	}
+
+	public function getData()
+	{
+		$currentYear = (int)date('Y');
+		$years = range($currentYear - 4, $currentYear);
+
+		// 1️⃣ Check if the user has permission for this division/companyID
+		$sql = "SELECT 1 FROM user_role 
+                WHERE user_name = ? AND companyID = ?";
+		$stmt = $this->db->prepare($sql);
+		$stmt->bind_param("ss", $this->username, $this->division);
+		$stmt->execute();
+		$res = $stmt->get_result();
+
+		// ❗ If user has no permission for this division → return empty
+		if ($res->num_rows == 0) {
+			return ["years" => [], "canteens" => [], "chart" => []];
+		}
+
+		// 2️⃣ Get ALL categories under this division (no filter by role anymore)
+		$query = "
+            SELECT 
+                ch.PurchaseFor AS canteen,
+                YEAR(ch.ruqest_date) AS year,
+                SUM(cl.PurTotalPrice) AS total
+            FROM canteen_header ch
+            JOIN canteen_line cl ON ch.id = cl.canteenHeaderID
+            WHERE ch.approvedStatus BETWEEN 4 AND 7
+              AND ch.costDivision = ?
+              AND YEAR(ch.ruqest_date) BETWEEN ? AND ?
+            GROUP BY ch.PurchaseFor, YEAR(ch.ruqest_date)
+            ORDER BY ch.PurchaseFor, YEAR(ch.ruqest_date)
+        ";
+
+		$stmt2 = $this->db->prepare($query);
+		$fromYear = $currentYear - 4;
+		$toYear   = $currentYear;
+
+		$stmt2 = $this->db->prepare($query);
+		$stmt2->bind_param("sii", $this->division, $fromYear, $toYear);
+		$stmt2->execute();
+
+		$result = $stmt2->get_result();
+
+		$data = [];
+		$canteens = [];
+
+		while ($row = $result->fetch_assoc()) {
+			$canteen = $row['canteen'];
+			$year = (int)$row['year'];
+
+			if (!isset($data[$canteen])) {
+				$data[$canteen] = [];
+				$canteens[] = $canteen;
+			}
+			$data[$canteen][$year] = (float)$row['total'];
+		}
+
+		// Fill missing year slots
+		foreach ($data as $canteen => $values) {
+			foreach ($years as $y) {
+				if (!isset($data[$canteen][$y])) {
+					$data[$canteen][$y] = 0;
+				}
+			}
+			ksort($data[$canteen]);
+		}
+
+		sort($canteens);
+
+		// Determine year sorting direction
+		$isFullData = true;
+
+		foreach ($years as $yr) {
+			$hasValue = false;
+
+			foreach ($data as $canteen => $yearData) {
+				if (isset($yearData[$yr]) && $yearData[$yr] > 0) {
+					$hasValue = true;
+					break;
+				}
+			}
+
+			if (!$hasValue) {
+				$isFullData = false;
+				break;
+			}
+		}
+
+		// Sort
+		if ($isFullData) {
+			sort($years);
+		} else {
+			rsort($years);
+		}
+
+		return [
+			"years" => $years,
+			"canteens" => $canteens,
+			"chart" => $data
+		];
+	}
+}
+
+
+// Monthly Canteen Wise Cost for Lida
+class MonthlyCanteenCost
+{
+	private $db;
+	private $username;
+	private $division = "LTD";   // FIXED: Only LTD
+
+	public function __construct($db, $username)
+	{
+		$this->db = $db;
+		$this->username = $username;
+	}
+
+	public function getMonthlyData()
+	{
+		// 1️⃣ Get allowed categories (PurchaseFor) for this user
+		$sql = "SELECT 1 FROM user_role WHERE user_name = ? AND companyID = ?";
+		$stmt = $this->db->prepare($sql);
+		$stmt->bind_param("ss", $this->username, $this->division);
+		$stmt->execute();
+		$res = $stmt->get_result();
+
+		// No permission → return empty
+		if ($res->num_rows == 0) {
+			return [];
+		}
+
+		// 2️⃣ Fetch monthly totals only for LTD + allowed PurchaseFor
+		$query = "
+            SELECT 
+                ch.PurchaseFor AS canteen,
+                MONTH(ch.ruqest_date) AS month,
+                SUM(cl.PurTotalPrice) AS total
+            FROM canteen_header ch
+            JOIN canteen_line cl ON ch.id = cl.canteenHeaderID
+            WHERE ch.approvedStatus BETWEEN 4 AND 7
+              AND ch.costDivision = ?
+              AND YEAR(ch.ruqest_date) = YEAR(CURDATE())
+            GROUP BY canteen, month
+            ORDER BY canteen, month
+        ";
+		$stmt2 = $this->db->prepare($query);
+		$stmt2->bind_param("s", $this->division);
+		$stmt2->execute();
+		$result = $stmt2->get_result();;
+
+		// 3️⃣ Build result: canteen → month → total
+		$data = [];
+		while ($row = $result->fetch_assoc()) {
+			$canteen = $row['canteen'];
+			$month = (int)$row['month'];
+			$total = (float)$row['total'];
+
+			if (!isset($data[$canteen])) {
+				$data[$canteen] = [];
+			}
+			$data[$canteen][$month] = $total;
+		}
+
+		// 4️⃣ Ensure missing months = 0
+		foreach ($data as $canteen => $months) {
+			for ($m = 1; $m <= 12; $m++) {
+				if (!isset($data[$canteen][$m])) {
+					$data[$canteen][$m] = 0;
+				}
+			}
+			ksort($data[$canteen]);
+		}
+
+		return $data;
+	}
+}
+
+class YearlyCanteenChartLiz
+{
+	private $db;
+	private $username;
+	private $divisionLiz;
+
+	public function __construct($db, $username, $divisionLiz)
+	{
+		$this->db = $db;
+		$this->username = $username;
+		$this->divisionLiz = $divisionLiz;
+	}
+
+	public function getDataLiz()
+	{
+		$currentYear = (int)date('Y');
+		$years = range($currentYear - 4, $currentYear);
+
+		// 1️⃣ Check if user has permission to view this division
+		$sql = "SELECT 1 FROM user_role 
+                WHERE user_name = ? AND companyID = ?";
+		$stmt = $this->db->prepare($sql);
+		$stmt->bind_param("ss", $this->username, $this->divisionLiz);
+		$stmt->execute();
+		$res = $stmt->get_result();
+
+		if ($res->num_rows == 0) {
+			return ["yearsLiz" => [], "canteensLiz" => [], "chartLiz" => []];
+		}
+
+		// 2️⃣ Query ALL categories under this division (no category filter)
+		$query = "
+            SELECT 
+                ch.PurchaseFor AS canteen,
+                YEAR(ch.ruqest_date) AS year,
+                SUM(cl.PurTotalPrice) AS total
+            FROM canteen_header ch
+            JOIN canteen_line cl 
+                ON ch.id = cl.canteenHeaderID
+            WHERE ch.approvedStatus BETWEEN 4 AND 7
+              AND ch.costDivision = ?
+              AND YEAR(ch.ruqest_date) BETWEEN ? AND ?
+            GROUP BY ch.PurchaseFor, YEAR(ch.ruqest_date)
+            ORDER BY ch.PurchaseFor, YEAR(ch.ruqest_date)
+        ";
+
+		$stmt2 = $this->db->prepare($query);
+
+		$fromYear = $currentYear - 4;
+		$toYear   = $currentYear;
+
+		$stmt2->bind_param("sii", $this->divisionLiz, $fromYear, $toYear);
+		$stmt2->execute();
+		$result = $stmt2->get_result();
+
+		$data = [];
+		$canteens = [];
+
+		while ($row = $result->fetch_assoc()) {
+			$canteen = $row['canteen'];
+			$year = (int)$row['year'];
+
+			if (!isset($data[$canteen])) {
+				$data[$canteen] = [];
+				$canteens[] = $canteen;
+			}
+			$data[$canteen][$year] = (float)$row['total'];
+		}
+
+		// Fill missing years
+		foreach ($data as $canteen => $values) {
+			foreach ($years as $y) {
+				if (!isset($data[$canteen][$y])) {
+					$data[$canteen][$y] = 0;
+				}
+			}
+			ksort($data[$canteen]);
+		}
+
+		sort($canteens);
+
+		// Determine order
+		$isFullData = true;
+
+		foreach ($years as $yr) {
+			$found = false;
+			foreach ($data as $canteen => $yData) {
+				if (!empty($yData[$yr])) {
+					$found = true;
+					break;
+				}
+			}
+			if (!$found) {
+				$isFullData = false;
+				break;
+			}
+		}
+
+		if ($isFullData) {
+			sort($years);
+		} else {
+			rsort($years);
+		}
+
+		return [
+			"yearsLiz" => $years,
+			"canteensLiz" => $canteens,
+			"chartLiz" => $data
+		];
+	}
+}
+
+
+class MonthlyCanteenCostLFI
+{
+	private $db;
+	private $username;
+	private $division = "LFI";   // FIXED: Only LFI
+
+	public function __construct($db, $username)
+	{
+		$this->db = $db;
+		$this->username = $username;
+	}
+
+	public function getMonthlyData()
+	{
+		// 1️⃣ Check if the user has ANY permission for LFI
+		$sql = "SELECT 1 FROM user_role WHERE user_name = ? AND companyID = ?";
+		$stmt = $this->db->prepare($sql);
+		$stmt->bind_param("ss", $this->username, $this->division);
+		$stmt->execute();
+		$res = $stmt->get_result();
+
+		// No permission → return empty
+		if ($res->num_rows == 0) {
+			return [];
+		}
+
+		// 2️⃣ Fetch ALL categories under LFI (no category filtering)
+		$query = "
+            SELECT 
+                ch.PurchaseFor AS canteen,
+                MONTH(ch.ruqest_date) AS month,
+                SUM(cl.PurTotalPrice) AS total
+            FROM canteen_header ch
+            JOIN canteen_line cl 
+                ON ch.id = cl.canteenHeaderID
+            WHERE ch.approvedStatus BETWEEN 4 AND 7
+              AND ch.costDivision = ?
+              AND YEAR(ch.ruqest_date) = YEAR(CURDATE())
+            GROUP BY canteen, month
+            ORDER BY canteen, month
+        ";
+
+		$stmt2 = $this->db->prepare($query);
+		$stmt2->bind_param("s", $this->division);
+		$stmt2->execute();
+		$result = $stmt2->get_result();
+
+		// 3️⃣ Structure: canteen → month → total
+		$data = [];
+		while ($row = $result->fetch_assoc()) {
+			$canteen = $row['canteen'];
+			$month   = (int)$row['month'];
+			$total   = (float)$row['total'];
+
+			if (!isset($data[$canteen])) {
+				$data[$canteen] = [];
+			}
+			$data[$canteen][$month] = $total;
+		}
+
+		// 4️⃣ Fill all 12 months with 0 if missing
+		foreach ($data as $canteen => $months) {
+			for ($m = 1; $m <= 12; $m++) {
+				if (!isset($data[$canteen][$m])) {
+					$data[$canteen][$m] = 0;
+				}
+			}
+			ksort($data[$canteen]);
+		}
+
+		return $data;
+	}
+}
+
+//Top 10purchased Items
+
+class TopItems
+{
+    private $db;
+    private $username;
+ 
+    public function __construct($db, $username)
+    {
+        $this->db = $db;
+        $this->username = $username;
+    }
+ 
+    public function getTop10Items()
+    {
+        $sql = "SELECT DISTINCT companyID FROM user_role WHERE user_name = ?";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bind_param("s", $this->username);
+        $stmt->execute();
+        $result = $stmt->get_result();
+ 
+        $companyIDs = [];
+        while ($row = $result->fetch_assoc()) {
+            $companyIDs[] = $row['companyID'];
+        }
+        $stmt->close();
+ 
+        if (empty($companyIDs)) {
+            return [];
+        }
+ 
+        $placeholders = implode(',', array_fill(0, count($companyIDs), '?'));
+ 
+        $query = "
+            SELECT
+                cl.ItemName,
+                SUM(cl.PurchaseQTY) AS total_qty,
+                SUM(cl.PurTotalPrice) AS total_value
+            FROM canteen_line cl
+            JOIN canteen_header ch ON cl.canteenHeaderID = ch.id
+            WHERE ch.approvedStatus BETWEEN 4 AND 7
+              AND ch.costDivision IN ($placeholders)
+            GROUP BY cl.ItemName
+            ORDER BY total_value DESC
+            LIMIT 10
+        ";
+ 
+        $stmt2 = $this->db->prepare($query);
+ 
+        $types = str_repeat('s', count($companyIDs));
+        $stmt2->bind_param($types, ...$companyIDs);
+ 
+        $stmt2->execute();
+        $result2 = $stmt2->get_result();
+ 
+        $topItems = [];
+        while ($row = $result2->fetch_assoc()) {
+            $topItems[] = [
+                'ItemName' => $row['ItemName'],
+                'Qty'      => (float)$row['total_qty'],
+                'Value'    => (float)$row['total_value']
+            ];
+        }
+ 
+        $stmt2->close();
+ 
+        return $topItems;
+    }
+}
