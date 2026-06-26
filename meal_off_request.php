@@ -700,11 +700,11 @@ if(isset($_POST['submit_meal_off'])) {
 
                                     <div class="col-md-8 top-div">
                                         <div class="form-group">
-                                            <label for="joindate" class="col-sm-4 col-form-label">I have No Email:</label>
+                                            <!-- <label for="joindate" class="col-sm-4 col-form-label">I have No Email:</label>
                                             <div class="col-sm-8">
                                                 <input class="form-check-input" id="newemail" type="checkbox" name="newemail" value="Yes">
                                                 <label class="form-check-label" for="flexRadioDefault1"></label>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
