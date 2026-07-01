@@ -48,11 +48,15 @@ if(isset($_POST['ajax_action'])) {
         if(!empty($employee_id)) {
             $employee_query = $connect->query("
                 SELECT ca.*, 
-                       u.name as user_name,
-                       u.designation as user_designation,
-                       u.department as user_department
+                    ei.name,
+                    ei.designation,
+                    ei.department,
+                    ei.section,
+                    ei.phone as mobile,
+                    ei.email,
+                    ei.joiningdate as joining_date
                 FROM canteen_application ca
-                LEFT JOIN user u ON ca.employee_id = u.employeeID
+                LEFT JOIN employee_info ei ON ca.employee_id = ei.employeeID
                 WHERE ca.employee_id = '$employee_id'
             ");
             
@@ -195,9 +199,16 @@ if(isset($_POST['submit_meal_off'])) {
             
             // Get employee details for the insert
             $empData = $connect->query("
-                SELECT ca.*, u.name as user_name, u.designation, u.department 
+                SELECT ca.*, 
+                    ei.name,
+                    ei.designation,
+                    ei.department,
+                    ei.section,
+                    ei.phone as mobile,
+                    ei.email,
+                    ei.joiningdate as joining_date
                 FROM canteen_application ca
-                LEFT JOIN user u ON ca.employee_id = u.employeeID
+                LEFT JOIN employee_info ei ON ca.employee_id = ei.employeeID
                 WHERE ca.employee_id = '$employee_id'
             ")->fetch_assoc();
             
@@ -207,9 +218,9 @@ if(isset($_POST['submit_meal_off'])) {
                 VALUES (
                     '$employee_id',
                     '{$connect->real_escape_string($empData['name'])}',
-                    '{$connect->real_escape_string($empData['designations'])}',
-                    '{$connect->real_escape_string($empData['section_or_department'])}',
-                    '', 
+                    '{$connect->real_escape_string($empData['designation'])}',
+                    '{$connect->real_escape_string($empData['department'])}',
+                    '{$connect->real_escape_string($empData['section'])}',
                     '{$connect->real_escape_string($empData['employer_factory'])}',
                     '$meal_off_date',
                     '$currentDateTimeStr',
@@ -909,8 +920,9 @@ $(document).ready(function() {
                 // Update employee info
                 if(response.employee_data) {
                     $('#f1-first-name').val(response.employee_data.name || '');
-                    $('#f1-designation').val(response.employee_data.designations || '');
-                    $('#f1-department').val(response.employee_data.section_or_department || '');
+                    $('#f1-designation').val(response.employee_data.designation || '');
+                    $('#f1-department').val(response.employee_data.department || '');
+                    $('#f1-section').val(response.employee_data.section || '');
                     $('#f1-contact_number').val(response.employee_data.mobile || '');
                     $('#email').val(response.employee_data.email || '');
                     $('#f1-joindate').val(response.employee_data.joining_date || '');

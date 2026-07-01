@@ -6,6 +6,9 @@ $all_meal_off = $cls_meassage->getAllMealOffRequests($username);
 
 // Get current month statistics
 $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username);
+
+// Get current month name for display
+$currentMonthName = date('F Y');
 ?>
 
 <style>
@@ -57,6 +60,32 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
         background: #218838;
     }
 
+    .toggle-btn {
+        background: #6c757d;
+        border: none;
+        color: white;
+        padding: 6px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 13px;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+        background: #5a6268;
+    }
+
+    .toggle-btn.active {
+        background: #007bff;
+    }
+
+    .toggle-btn.active:hover {
+        background: #0056b3;
+    }
+
     .dataTables_wrapper .dataTables_filter {
         display: none;
     }
@@ -91,6 +120,11 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
     .badge-cancelled {
         background: #dc3545;
         color: white;
+    }
+
+    .badge-passed {
+        background: #ffc107;
+        color: #856404;
     }
 
     .meal-off-summary {
@@ -138,6 +172,7 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
         margin-left: auto;
         display: flex;
         align-items: center;
+        gap: 10px;
     }
 
     .summary-label {
@@ -156,6 +191,20 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
     .dataTables_wrapper .dataTables_info {
         clear: both;
     }
+
+    .month-indicator {
+        font-size: 14px;
+        font-weight: 500;
+        color: #495057;
+        padding: 6px 15px;
+        background: #e9ecef;
+        border-radius: 4px;
+        display: inline-block;
+    }
+
+    .month-indicator i {
+        margin-right: 5px;
+    }
 </style>
 
 <div class="main-content">
@@ -163,7 +212,11 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
         <div class="panel panel-headline">
             <div class="panel-heading">
                 <h3 class="panel-title">Meal Off Requests</h3>
-                <p class="panel-subtitle">Current Month: <?= date('F Y'); ?></p>
+                <p class="panel-subtitle" id="monthDisplay">
+                    <span class="month-indicator">
+                        <i class="fa fa-calendar"></i> Current Month: <?= $currentMonthName; ?>
+                    </span>
+                </p>
             </div>
 
             <div class="panel-body">
@@ -184,11 +237,14 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
                     <div class="summary-item">
                         <span class="label">Used</span>
                         <span class="value used" id="usedRequests">
-                            <?= $current_month_stats['used'] ?? 0; ?>
+                            <?= ($current_month_stats['used'] ?? 0) + ($current_month_stats['passed'] ?? 0); ?>
                         </span>
                     </div>
                     
                     <div class="export-wrapper">
+                        <button class="toggle-btn active" id="toggleView">
+                            <i class="fa fa-eye"></i> <span id="toggleLabel">View All Meal Off</span>
+                        </button>
                         <button class="export-btn" id="exportExcel">
                             <i class="fa fa-file-excel-o"></i> Export to Excel
                         </button>
@@ -241,6 +297,7 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
                                         <option value="">All</option>
                                         <option value="Active">Active</option>
                                         <option value="Used">Used</option>
+                                        <option value="Passed">Passed</option>
                                     </select>
                                 </th>
                                 <th><input type="text" class="filter-input" data-col="9" placeholder="Search"></th>
@@ -250,24 +307,38 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
                         <tbody style="font-size:12px;">
                             <?php 
                             $i = 1; 
+                            $today = date('Y-m-d');
                             if ($all_meal_off && $all_meal_off->num_rows > 0) {
                                 while ($data = $all_meal_off->fetch_assoc()) { 
+                                    $mealOffDate = $data['meal_off_date'];
                                     $status = $data['status'];
+                                    
+                                    // Check if meal off date has passed and status is Active
+                                    if ($status === 'Active' && $mealOffDate < $today) {
+                                        $status = 'Passed';
+                                    }
+                                    
                                     $badgeClass = 'badge-active';
                                     if ($status === 'Used') {
                                         $badgeClass = 'badge-used';
                                     } elseif ($status === 'Cancelled') {
                                         $badgeClass = 'badge-cancelled';
+                                    } elseif ($status === 'Passed') {
+                                        $badgeClass = 'badge-passed';
                                     }
+                                    
+                                    // Add data-month attribute for filtering
+                                    $mealOffMonth = date('Y-m', strtotime($mealOffDate));
+                                    $currentMonth = date('Y-m');
                             ?>
-                                <tr>
+                                <tr data-month="<?= $mealOffMonth; ?>" data-status="<?= $status; ?>">
                                     <td><?= $i++; ?></td>
                                     <td><?= htmlspecialchars($data['employee_id']); ?></td>
                                     <td><?= htmlspecialchars($data['employee_name']); ?></td>
                                     <td><?= htmlspecialchars($data['designation']); ?></td>
                                     <td><?= htmlspecialchars($data['department']); ?></td>
                                     <td><?= htmlspecialchars($data['employer_factory']); ?></td>
-                                    <td><?= date('d-m-Y', strtotime($data['meal_off_date'])); ?></td>
+                                    <td><?= date('d-m-Y', strtotime($mealOffDate)); ?></td>
                                     <td><?= date('d-m-Y H:i', strtotime($data['request_date'])); ?></td>
                                     <td>
                                         <span class="badge-status <?= $badgeClass; ?>">
@@ -304,9 +375,20 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
         var mealOffEnd = '';
         var requestStart = '';
         var requestEnd = '';
+        var viewMode = 'current'; // 'current' or 'all'
+        var currentMonth = '<?= date('Y-m'); ?>';
 
         // Custom filtering function for DataTable
         $.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
+            // Get the row element
+            var row = $('#mealOffTable tbody tr').eq(dataIndex);
+            var rowMonth = row.data('month');
+            
+            // Apply month filter based on view mode
+            if (viewMode === 'current' && rowMonth && rowMonth !== currentMonth) {
+                return false;
+            }
+
             // Meal Off Date Range (Column 6)
             if (mealOffStart && mealOffEnd && data[6]) {
                 var rowDate = moment(data[6], 'DD-MM-YYYY');
@@ -335,6 +417,26 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
             drawCallback: function() {
                 updateSummary();
             }
+        });
+
+        // Toggle View Function
+        $('#toggleView').on('click', function() {
+            if (viewMode === 'current') {
+                viewMode = 'all';
+                $('#toggleLabel').text('View Current Month Meal Off');
+                $('#toggleView').removeClass('active');
+                $('#monthDisplay').html('<span class="month-indicator"><i class="fa fa-calendar"></i> All Meal Off Requests</span>');
+                $(this).html('<i class="fa fa-eye"></i> <span id="toggleLabel">View Current Month Meal Off</span>');
+            } else {
+                viewMode = 'current';
+                $('#toggleLabel').text('View All Meal Off');
+                $('#toggleView').addClass('active');
+                $('#monthDisplay').html('<span class="month-indicator"><i class="fa fa-calendar"></i> Current Month: <?= $currentMonthName; ?></span>');
+                $(this).html('<i class="fa fa-eye"></i> <span id="toggleLabel">View All Meal Off</span>');
+            }
+            
+            // Redraw table with new filter
+            table.draw();
         });
 
         // Status filter
@@ -403,6 +505,7 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
             var total = 0;
             var active = 0;
             var used = 0;
+            var passed = 0;
 
             $('#mealOffTable tbody tr:visible').each(function() {
                 total++;
@@ -413,12 +516,16 @@ $current_month_stats = $cls_meassage->getCurrentMonthMealOffStatistics($username
                     active++;
                 } else if (statusText === 'Used') {
                     used++;
+                } else if (statusText === 'Passed') {
+                    passed++;
                 }
             });
 
+            var usedTotal = used + passed;
+            
             $('#totalRequests').text(total);
             $('#activeRequests').text(active);
-            $('#usedRequests').text(used);
+            $('#usedRequests').text(usedTotal);
         }
 
         // Single Export Function - Exports ALL visible data (filtered or unfiltered)
