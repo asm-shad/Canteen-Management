@@ -54,7 +54,8 @@ if(isset($_POST['ajax_action'])) {
                     ei.section,
                     ei.phone as mobile,
                     ei.email,
-                    ei.joiningdate as joining_date
+                    ei.joiningdate as joining_date,
+                    ca.allotted_seat 
                 FROM canteen_application ca
                 LEFT JOIN employee_info ei ON ca.employee_id = ei.employeeID
                 WHERE ca.employee_id = '$employee_id'
@@ -64,10 +65,12 @@ if(isset($_POST['ajax_action'])) {
             
             if (!$employee_data) {
                 $response['message'] = 'Employee not found in the system.';
-            } elseif ($employee_data['status'] != 'Accepted') {
-                $response['message'] = 'Only Accepted employees can request meal off. Your status: ' . $employee_data['status'];
-            } elseif (strpos($employee_data['category'], 'VIP') === false) {
-                $response['message'] = 'Only VIP category employees can request meal off. Your category: ' . $employee_data['category'];
+            } 
+            // Updated eligibility check: allotted_seat == "VIP" AND (status == "Accepted" OR status == "Transfer")
+            elseif (!in_array($employee_data['status'], ['Accepted', 'Transfer'])) {
+                $response['message'] = 'Only Accepted or Transfer employees can request meal off. Your status: ' . $employee_data['status'];
+            } elseif ($employee_data['allotted_seat'] != 'VIP') {
+                $response['message'] = 'Only VIP allotted seat employees can request meal off. Your allotted seat: ' . $employee_data['allotted_seat'];
             } else {
                 $response['is_eligible'] = true;
                 $response['message'] = 'Eligible';
@@ -146,17 +149,20 @@ $maxDate = date('Y-m-d', strtotime('+30 days'));
 if(isset($_POST['submit_meal_off'])) {
     $meal_off_dates = isset($_POST['meal_off_date']) ? $_POST['meal_off_date'] : array();
     $remarks_array = isset($_POST['remarks']) ? $_POST['remarks'] : array();
+    $meal_off_phone = isset($_POST['phone']) ? $_POST['phone'] : array();
+    $meal_off_email = isset($_POST['email']) ? $_POST['email'] : array();
     $employee_id = $connect->real_escape_string($_POST['employee_id']);
     
-    // Get employee details for eligibility check
+    // Get employee details for eligibility check (updated)
     $check_eligibility = $connect->query("
-        SELECT ca.status, ca.category 
+        SELECT ca.status, ca.allotted_seat 
         FROM canteen_application ca 
         WHERE ca.employee_id = '$employee_id'
     ");
     $eligibility_check = $check_eligibility->fetch_assoc();
     
-    if($eligibility_check['status'] != 'Accepted' || strpos($eligibility_check['category'], 'VIP') === false) {
+    // Updated eligibility check: allotted_seat == "VIP" AND (status == "Accepted" OR status == "Transfer")
+    if(!in_array($eligibility_check['status'], ['Accepted', 'Transfer']) || $eligibility_check['allotted_seat'] != 'VIP') {
         $_SESSION['meal_off_error'] = "You are not eligible for meal off request.";
         header('Location: meal_off_request.php');
         exit();
@@ -206,64 +212,99 @@ if(isset($_POST['submit_meal_off'])) {
                     ei.section,
                     ei.phone as mobile,
                     ei.email,
-                    ei.joiningdate as joining_date
+                    ei.joiningdate as joining_date,
+                    ca.allotted_seat
                 FROM canteen_application ca
                 LEFT JOIN employee_info ei ON ca.employee_id = ei.employeeID
                 WHERE ca.employee_id = '$employee_id'
             ")->fetch_assoc();
             
-            // Insert meal off request
+            // Get phone and email from POST (they can be updated)
+            $phone = isset($meal_off_phone[$index]) ? $connect->real_escape_string($meal_off_phone[$index]) : 
+                    (isset($empData['mobile']) ? $connect->real_escape_string($empData['mobile']) : '');
+            $email = isset($meal_off_email[$index]) ? $connect->real_escape_string($meal_off_email[$index]) : 
+                    (isset($empData['email']) ? $connect->real_escape_string($empData['email']) : '');
+            $allotted_seat = isset($empData['allotted_seat']) ? $connect->real_escape_string($empData['allotted_seat']) : '';
+
             $insertQuery = "INSERT INTO meal_off_requests 
-                (employee_id, employee_name, designation, department, section, employer_factory, meal_off_date, request_date, remarks) 
+                (employee_id, employee_name, designation, department, section, phone, email, employer_factory, allotted_seat, meal_off_date, request_date, remarks, status) 
                 VALUES (
                     '$employee_id',
                     '{$connect->real_escape_string($empData['name'])}',
                     '{$connect->real_escape_string($empData['designation'])}',
                     '{$connect->real_escape_string($empData['department'])}',
                     '{$connect->real_escape_string($empData['section'])}',
+                    '$phone',
+                    '$email',
                     '{$connect->real_escape_string($empData['employer_factory'])}',
+                    '$allotted_seat',
                     '$meal_off_date',
                     '$currentDateTimeStr',
-                    '$remarks'
+                    '$remarks',
+                    'Active'
                 )";
             
             if($connect->query($insertQuery)) {
                 $success_count++;
                 $submitted_dates[] = date('d-m-Y', strtotime($meal_off_date));
+                $last_inserted_id = $connect->insert_id; // Get the inserted ID
                 
-                // Update meal_off_count in canteen_application table
                 $updateCountQuery = "UPDATE canteen_application 
-                                     SET meal_off_count = meal_off_count + 1 
-                                     WHERE employee_id = '$employee_id'";
+                                    SET meal_off_count = meal_off_count + 1 
+                                    WHERE employee_id = '$employee_id'";
                 $connect->query($updateCountQuery);
             } else {
                 $error_count++;
             }
         }
         
-        // Determine the appropriate message based on results
+        // Determine the appropriate message and redirect
         if($success_count > 0) {
-            // Some or all requests were successful
-            $_SESSION['meal_off_success'] = true;
+            // Get ALL the request IDs submitted in this batch
+            $requestIds = array();
             
-            if($existing_count > 0 && $error_count == 0) {
-                // Mixed: some successful, some existing
-                $_SESSION['meal_off_message'] = "Some dates were already requested and have been skipped.";
-            } elseif($existing_count > 0 && $error_count > 0) {
-                // Mixed: successful, existing, and errors
-                $_SESSION['meal_off_message'] = "Partial success. Some dates were already requested or invalid.";
-            } else {
-                // All successful
-                $_SESSION['meal_off_message'] = "Meal off request submitted successfully!";
+            // Get all requests for this employee made at the same time (within the same minute)
+            $batchQuery = $connect->query("
+                SELECT id FROM meal_off_requests 
+                WHERE employee_id = '$employee_id' 
+                AND DATE(request_date) = DATE('$currentDateTimeStr')
+                AND HOUR(request_date) = HOUR('$currentDateTimeStr')
+                AND MINUTE(request_date) = MINUTE('$currentDateTimeStr')
+                ORDER BY meal_off_date ASC
+            ");
+            
+            if($batchQuery && $batchQuery->num_rows > 0) {
+                while($row = $batchQuery->fetch_assoc()) {
+                    $requestIds[] = $row['id'];
+                }
             }
             
-            $_SESSION['meal_off_details'] = array(
-                'success' => $success_count,
-                'existing' => $existing_count,
-                'errors' => $error_count,
-                'dates' => $submitted_dates,
-                'existing_dates' => $existing_dates
-            );
+            // If no batch found, use the last inserted ID
+            if(empty($requestIds) && isset($last_inserted_id)) {
+                $requestIds[] = $last_inserted_id;
+            }
+            
+            // Create comma-separated list of IDs for URL
+            $idsString = implode(',', $requestIds);
+            
+            // Store success message in session for the view page
+            $_SESSION['meal_off_view_success'] = true;
+            $_SESSION['meal_off_view_message'] = "Your meal off request has been submitted successfully!";
+            $_SESSION['meal_off_submitted_dates'] = $submitted_dates;
+            
+            // Check if any dates were skipped
+            if($existing_count > 0) {
+                $_SESSION['meal_off_view_warning'] = "Note: " . $existing_count . " date(s) were already requested and skipped.";
+                $_SESSION['meal_off_warning'] = "Some dates were already requested and have been skipped.";
+                $_SESSION['meal_off_existing_dates'] = $existing_dates;
+            }
+            
+            // Redirect to the view page with ALL IDs in the URL
+            $redirectUrl = "view_meal_off_request.php?ids=" . urlencode($idsString);
+            
+            header('Location: ' . $redirectUrl);
+            exit();
+            
         } else {
             // No successful requests
             if($existing_count > 0 && $error_count == 0) {
@@ -278,10 +319,10 @@ if(isset($_POST['submit_meal_off'])) {
                 // All errors
                 $_SESSION['meal_off_error'] = "Request failed. Please check the dates and try again.";
             }
+            
+            header('Location: meal_off_request.php');
+            exit();
         }
-        
-        header('Location: meal_off_request.php');
-        exit();
     }
 }
 ?>
@@ -618,12 +659,7 @@ if(isset($_POST['submit_meal_off'])) {
                                         <div class="form-group">
                                             <label for="name" class="col-sm-4 col-form-label">Name:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" 
-                                                       name="emp_name" 
-                                                       placeholder="Enter name..." 
-                                                       class="f1-first-name form-control" 
-                                                       id="f1-first-name"
-                                                       readonly>
+                                                <input type="text" name="emp_name" placeholder="Enter name..." class="f1-first-name form-control" id="f1-first-name" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -632,11 +668,7 @@ if(isset($_POST['submit_meal_off'])) {
                                         <div class="form-group">
                                             <label for="designation" class="col-sm-4 col-form-label">Designation:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" 
-                                                       class="form-control" 
-                                                       name="designation" 
-                                                       id="f1-designation"
-                                                       readonly>
+                                                <input type="text" class="form-control" name="designation" id="f1-designation" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -645,11 +677,7 @@ if(isset($_POST['submit_meal_off'])) {
                                         <div class="form-group">
                                             <label for="department" class="col-sm-4 col-form-label">Department:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" 
-                                                       class="form-control" 
-                                                       name="department" 
-                                                       id="f1-department"
-                                                       readonly>
+                                                <input type="text" class="form-control" name="department" id="f1-department" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -658,39 +686,29 @@ if(isset($_POST['submit_meal_off'])) {
                                         <div class="form-group">
                                             <label for="section" class="col-sm-4 col-form-label">User Section:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" 
-                                                       class="form-control" 
-                                                       name="section" 
-                                                       id="f1-section"
-                                                       readonly>
+                                                <input type="text" class="form-control" name="section" id="f1-section" readonly>
                                             </div>
                                         </div>
                                     </div>
                                     
+                                    <!-- Phone Number - Now Editable (No +88 prefix) -->
                                     <div class="col-md-6 top-div">
                                         <div class="form-group">
-                                            <label for="name" class="col-sm-4 col-form-label">Contact Number:</label>
+                                            <label for="phone" class="col-sm-4 col-form-label">Contact Number:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" 
-                                                       name="contact_number" 
-                                                       placeholder="+880" 
-                                                       class="f1-contact_number form-control" 
-                                                       id="f1-contact_number"
-                                                       readonly>
+                                                <input type="text" name="phone[]" placeholder="Enter phone number" class="form-control" id="f1-phone" 
+                                                    value="" style="background-color:#ffffff;" onkeypress="return isNumberKey(event)" readonly>
                                             </div>
                                         </div>
                                     </div>
                                     
+                                    <!-- Email - Now Editable -->
                                     <div class="col-md-6 top-div">
                                         <div class="form-group">
-                                            <label for="name" class="col-sm-4 col-form-label">Email:</label>
+                                            <label for="email" class="col-sm-4 col-form-label">Email:</label>
                                             <div class="col-sm-8">
-                                                <input type="email" 
-                                                       name="email" 
-                                                       id="email" 
-                                                       placeholder="email@example.com" 
-                                                       class="form-control"
-                                                       readonly>
+                                                <input type="email" name="email[]" id="f1-email" placeholder="email@example.com" 
+                                                    class="form-control" value="" style="background-color:#ffffff;" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -699,12 +717,7 @@ if(isset($_POST['submit_meal_off'])) {
                                         <div class="form-group">
                                             <label for="joindate" class="col-sm-4 col-form-label">Join Date:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" 
-                                                       name="joindate" 
-                                                       readonly 
-                                                       placeholder="dd-mm-yyyy" 
-                                                       class="f1-twitter form-control" 
-                                                       id="f1-joindate">
+                                                <input type="text" name="joindate" readonly placeholder="dd-mm-yyyy" class="f1-twitter form-control" id="f1-joindate">
                                             </div>
                                         </div>
                                     </div>
@@ -852,6 +865,15 @@ $(document).ready(function() {
         }
     });
 
+    // Phone number validation - only numbers (no + sign)
+    function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        return true;
+    }
+
     // "I have No Email" checkbox
     $("#newemail").click(function () {
         $('#email').attr("disabled", $(this).is(":checked"));
@@ -889,8 +911,9 @@ $(document).ready(function() {
         $('#f1-first-name').val('');
         $('#f1-designation').val('');
         $('#f1-department').val('');
-        $('#f1-contact_number').val('');
-        $('#email').val('');
+        $('#f1-section').val('');
+        $('#f1-phone').val('');
+        $('#f1-email').val('');
         $('#f1-joindate').val('');
         $('#hidden_employee_id').val('');
         $('#eligibility_status').hide();
@@ -901,6 +924,9 @@ $(document).ready(function() {
         $('#mealRowAdder').prop('disabled', true).css('opacity', '0.5').css('cursor', 'not-allowed');
         $('#btnSubmit').prop('disabled', true);
         $('#submit_status').html('Enter Employee ID to check eligibility').css('color', '#6c757d');
+        // Disable phone and email editing
+        $('#f1-phone').prop('readonly', true).css('background-color', '#f5f5f5');
+        $('#f1-email').prop('readonly', true).css('background-color', '#f5f5f5');
     }
 
     // Function to check eligibility via AJAX
@@ -917,21 +943,23 @@ $(document).ready(function() {
                 // Update hidden employee ID
                 $('#hidden_employee_id').val(employeeID);
                 
-                // Update employee info
                 if(response.employee_data) {
                     $('#f1-first-name').val(response.employee_data.name || '');
                     $('#f1-designation').val(response.employee_data.designation || '');
                     $('#f1-department').val(response.employee_data.department || '');
                     $('#f1-section').val(response.employee_data.section || '');
-                    $('#f1-contact_number').val(response.employee_data.mobile || '');
-                    $('#email').val(response.employee_data.email || '');
+                    // Phone - editable, pre-filled with existing value
+                    $('#f1-phone').val(response.employee_data.mobile || '');
+                    // Email - editable, pre-filled with existing value
+                    $('#f1-email').val(response.employee_data.email || '');
                     $('#f1-joindate').val(response.employee_data.joining_date || '');
                 } else {
                     $('#f1-first-name').val('');
                     $('#f1-designation').val('');
                     $('#f1-department').val('');
-                    $('#f1-contact_number').val('');
-                    $('#email').val('');
+                    $('#f1-section').val('');
+                    $('#f1-phone').val('');
+                    $('#f1-email').val('');
                     $('#f1-joindate').val('');
                 }
                 
@@ -965,6 +993,10 @@ $(document).ready(function() {
                         $('#meal_off_history_container').html('');
                     }
                     
+                    // Enable phone and email editing
+                    $('#f1-phone').prop('readonly', false).css('background-color', '#ffffff');
+                    $('#f1-email').prop('readonly', false).css('background-color', '#ffffff');
+                    
                 } else {
                     eligibilityBox.addClass('not-eligible');
                     textSpan.html('<span style="color:#dc3545;">✗ Not Eligible - ' + response.message + '</span>');
@@ -979,6 +1011,10 @@ $(document).ready(function() {
                     // Clear upcoming and history
                     $('#upcoming_meals_container').html('');
                     $('#meal_off_history_container').html('');
+
+                    // Disable phone and email editing
+                    $('#f1-phone').prop('readonly', true).css('background-color', '#f5f5f5');
+                    $('#f1-email').prop('readonly', true).css('background-color', '#f5f5f5');
                 }
             },
             error: function() {
@@ -1013,7 +1049,6 @@ $(document).ready(function() {
         // The form will submit and the page will reload with success/error messages
     });
 
-    // Check if we have a success message and clear the form
     <?php if($meal_off_success): ?>
         // Only clear if at least one new request was successful
         <?php if($meal_off_details['success'] > 0): ?>
@@ -1022,8 +1057,9 @@ $(document).ready(function() {
             $('#f1-first-name').val('');
             $('#f1-designation').val('');
             $('#f1-department').val('');
-            $('#f1-contact_number').val('');
-            $('#email').val('');
+            $('#f1-section').val('');
+            $('#f1-phone').val('');
+            $('#f1-email').val('');
             $('#f1-joindate').val('');
             $('#hidden_employee_id').val('');
             $('#eligibility_status').hide();
@@ -1033,6 +1069,8 @@ $(document).ready(function() {
             $('textarea[name="remarks[]"]').prop('disabled', true);
             $('#mealRowAdder').prop('disabled', true).css('opacity', '0.5').css('cursor', 'not-allowed');
             $('#btnSubmit').prop('disabled', true);
+            $('#f1-phone').prop('readonly', true).css('background-color', '#f5f5f5');
+            $('#f1-email').prop('readonly', true).css('background-color', '#f5f5f5');
             
             // Remove any extra rows added
             $('#newMealRow').html('');
