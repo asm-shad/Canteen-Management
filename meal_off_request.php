@@ -103,11 +103,20 @@ if(isset($_POST['ajax_action'])) {
                     
                     $count = 1;
                     while($history = $meal_off_history->fetch_assoc()) {
-                        $status_class = strtolower($history['status']);
+                        $status = $history['status'];
+                        // Set badge class based on status
+                        if($status == 'Meal Off') {
+                            $badge_class = 'badge-meal-off';
+                        } elseif($status == 'Meal On') {
+                            $badge_class = 'badge-meal-on';
+                        } else {
+                            $badge_class = 'badge-' . strtolower($status);
+                        }
+                        
                         $response['history'] .= '<tr>
                             <td>' . $count++ . '</td>
                             <td>' . date('d-m-Y', strtotime($history['meal_off_date'])) . '</td>
-                            <td><span class="badge-status badge-' . $status_class . '">' . $history['status'] . '</span></td>
+                            <td><span class="badge-status ' . $badge_class . '">' . $status . '</span></td>
                             <td>' . date('d-m-Y H:i', strtotime($history['request_date'])) . '</td>
                             <td>' . htmlspecialchars($history['remarks']) . '</td>
                         </tr>';
@@ -194,7 +203,7 @@ if(isset($_POST['submit_meal_off'])) {
                 SELECT id FROM meal_off_requests 
                 WHERE employee_id = '$employee_id' 
                 AND meal_off_date = '$meal_off_date' 
-                AND status = 'Active'
+                AND status IN ('Meal Off', 'Meal On')
             ");
             
             if($checkQuery->num_rows > 0) {
@@ -241,7 +250,7 @@ if(isset($_POST['submit_meal_off'])) {
                     '$meal_off_date',
                     '$currentDateTimeStr',
                     '$remarks',
-                    'Active'
+                    'Meal Off'
                 )";
             
             if($connect->query($insertQuery)) {
@@ -457,17 +466,27 @@ if(isset($_POST['submit_meal_off'])) {
             font-size: 11px;
             font-weight: 600;
         }
-        
+
+        .badge-meal-off{
+            background: #dc3545; /* Red */
+            color: white;
+        }
+
+        .badge-meal-on{
+            background: #28a745; /* Green */
+            color: white;
+        }
+
         .badge-active{
             background: #28a745;
             color: white;
         }
-        
+
         .badge-used{
             background: #6c757d;
             color: white;
         }
-        
+
         .badge-cancelled{
             background: #dc3545;
             color: white;

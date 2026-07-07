@@ -178,20 +178,40 @@ $firstRequest = $allRequests[0];
             font-size: 11px;
             display: inline-block;
         }
-        
+
+        .status-meal-off {
+            background: #dc3545; /* Red */
+            color: white;
+        }
+
+        .status-meal-on {
+            background: #28a745; /* Green */
+            color: white;
+        }
+
+        .status-meal-off {
+            background: #dc3545 !important;
+            color: white !important;
+        }
+
+        .status-meal-on {
+            background: #28a745 !important;
+            color: white !important;
+        }
+
         .status-active {
-            background: #28a745;
-            color: white;
+            background: #28a745 !important;
+            color: white !important;
         }
-        
+
         .status-completed {
-            background: #17a2b8;
-            color: white;
+            background: #17a2b8 !important;
+            color: white !important;
         }
-        
+
         .status-cancelled {
-            background: #dc3545;
-            color: white;
+            background: #dc3545 !important;
+            color: white !important;
         }
         
         .btn-custom {
@@ -464,8 +484,18 @@ $firstRequest = $allRequests[0];
                             <td style="text-align:center;"><?php echo $count++; ?></td>
                             <td><strong><?php echo date('d-m-Y', strtotime($req['meal_off_date'])); ?></strong></td>
                             <td>
-                                <span class="status-badge status-<?php echo strtolower($req['status']); ?>">
-                                    <?php echo htmlspecialchars($req['status']); ?>
+                                <?php 
+                                $status = $req['status'];
+                                if($status == 'Meal Off') {
+                                    $badge_class = 'status-meal-off';
+                                } elseif($status == 'Meal On') {
+                                    $badge_class = 'status-meal-on';
+                                } else {
+                                    $badge_class = 'status-' . strtolower($status);
+                                }
+                                ?>
+                                <span class="status-badge <?php echo $badge_class; ?>">
+                                    <?php echo htmlspecialchars($status); ?>
                                 </span>
                             </td>
                             <td><?php echo nl2br(htmlspecialchars($req['remarks'])); ?></td>
