@@ -1,0 +1,186 @@
+=== 2026-07-07 07:26:36 ===
+POST: Array
+(
+    [request_id] => 56
+    [status] => Meal On
+    [remarks] => fdsfsdf dsafsaf adsf
+)
+
+SESSION: Array
+(
+    [login_id] => 45
+    [user_name] => md.farhad
+    [name] => Md. Farhad Hosen
+    [employeeID] => LH2539
+    [email] => shohag.mia@lizfashion.com
+    [user_role] => 1
+    [tokenn] => 6a4c84b9d5a662.30537907
+    [expiryTimee] => 1783402609
+)
+
+ERROR: User not logged in
+=== 2026-07-07 07:27:56 ===
+Session ID: ug4e2sbdk7eh6cq3e5p578v02s
+Session Data: Array
+(
+    [login_id] => 45
+    [user_name] => md.farhad
+    [name] => Md. Farhad Hosen
+    [employeeID] => LH2539
+    [email] => shohag.mia@lizfashion.com
+    [user_role] => 1
+    [tokenn] => 6a4c84b9d5a662.30537907
+    [expiryTimee] => 1783402609
+)
+
+POST Data: Array
+(
+    [request_id] => 56
+    [status] => Meal On
+    [remarks] => sdgadf adsfdsf
+)
+
+COOKIE Data: Array
+(
+    [__clerk_db_jwt] => dvb_3DFdTM5afo8CrLHyxFYiqWSDUVd
+    [__clerk_db_jwt_q6WkL_aE] => dvb_3DFdTM5afo8CrLHyxFYiqWSDUVd
+    [__refresh_q6WkL_aE] => d345zkZbDgIZDHVy0RkG
+    [__session] => eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zREZSQ04xa2lGdlRuTG5ISFNtR2xEWFVaWUoiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzgzODUxOTMsImZ2YSI6WzgzODksLTFdLCJpYXQiOjE3NzgzODUxMzMsImlzcyI6Imh0dHBzOi8vYXBwYXJlbnQtdGVycmFwaW4tOTcuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzc4Mzg1MTIzLCJzaWQiOiJzZXNzXzNERmRYTmlRSkJPQVNJb1Q0dmZZZ1hyMEt0USIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0RGZFhISVBvT3BGeEpORjJuNTA2emg5eEk4IiwidiI6Mn0.Bv1s4WEU-pChajmN7TAysIE9IigQUItqfn8HjyvEzLIdHvqh_b6_Fm5kGxvfLoMi0q8AJmD9JffPch1-cyPJqjkA2CzvaPxn9x5OycaT81jiARwdWf1HM-xLdZSxX5ZwdEsObLBq6VmSAPQA8hDKcnhMvvyMm_6lPpF9r74r9HxCTeJGr8HQVfE-B6Guzbs7DWLf0Vbilcrh0OWC_AZ_f8K8KP19grG9Ldh22CiuMojuSo1wZk-zZtVlyPjAm9WICAYSY5MyE38uDkntlphmtEZsMZfcmZUHdH8KojE48PIeOAMaTHc6KOEYxrAbToxmYtxiG8s1YEf2SCpdF92zZQ
+    [__session_q6WkL_aE] => eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18zREZSQ04xa2lGdlRuTG5ISFNtR2xEWFVaWUoiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJleHAiOjE3NzgzODUxOTMsImZ2YSI6WzgzODksLTFdLCJpYXQiOjE3NzgzODUxMzMsImlzcyI6Imh0dHBzOi8vYXBwYXJlbnQtdGVycmFwaW4tOTcuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzc4Mzg1MTIzLCJzaWQiOiJzZXNzXzNERmRYTmlRSkJPQVNJb1Q0dmZZZ1hyMEt0USIsInN0cyI6ImFjdGl2ZSIsInN1YiI6InVzZXJfM0RGZFhISVBvT3BGeEpORjJuNTA2emg5eEk4IiwidiI6Mn0.Bv1s4WEU-pChajmN7TAysIE9IigQUItqfn8HjyvEzLIdHvqh_b6_Fm5kGxvfLoMi0q8AJmD9JffPch1-cyPJqjkA2CzvaPxn9x5OycaT81jiARwdWf1HM-xLdZSxX5ZwdEsObLBq6VmSAPQA8hDKcnhMvvyMm_6lPpF9r74r9HxCTeJGr8HQVfE-B6Guzbs7DWLf0Vbilcrh0OWC_AZ_f8K8KP19grG9Ldh22CiuMojuSo1wZk-zZtVlyPjAm9WICAYSY5MyE38uDkntlphmtEZsMZfcmZUHdH8KojE48PIeOAMaTHc6KOEYxrAbToxmYtxiG8s1YEf2SCpdF92zZQ
+    [__client_uat_q6WkL_aE] => 1777881790
+    [__client_uat] => 1777881790
+    [ajs_anonymous_id] => e4fc01d3-e709-47a7-b543-916da4583886
+    [PHPSESSID] => ug4e2sbdk7eh6cq3e5p578v02s
+)
+
+ERROR: User not logged in - Session username not set
+Session cookie exists: ug4e2sbdk7eh6cq3e5p578v02s
+=== 2026-07-07 07:29:28 ===
+Session Data: Array
+(
+    [login_id] => 45
+    [user_name] => md.farhad
+    [name] => Md. Farhad Hosen
+    [employeeID] => LH2539
+    [email] => shohag.mia@lizfashion.com
+    [user_role] => 1
+    [tokenn] => 6a4c84b9d5a662.30537907
+    [expiryTimee] => 1783402609
+)
+
+POST Data: Array
+(
+    [request_id] => 56
+    [status] => Meal On
+    [remarks] => fdsf adsfdsfads dsfads fdsf
+)
+
+=== 2026-07-07 07:29:38 ===
+Session Data: Array
+(
+    [login_id] => 45
+    [user_name] => md.farhad
+    [name] => Md. Farhad Hosen
+    [employeeID] => LH2539
+    [email] => shohag.mia@lizfashion.com
+    [user_role] => 1
+    [tokenn] => 6a4c84b9d5a662.30537907
+    [expiryTimee] => 1783402609
+)
+
+POST Data: Array
+(
+    [request_id] => 56
+    [status] => Meal On
+    [remarks] => fdsf adsfdsfads dsfads fdsf
+)
+
+=== 2026-07-07 07:39:19 ===
+Session Data: Array
+(
+    [login_id] => 45
+    [user_name] => md.farhad
+    [name] => Md. Farhad Hosen
+    [employeeID] => LH2539
+    [email] => shohag.mia@lizfashion.com
+    [user_role] => 1
+    [tokenn] => 6a4c91023263f6.91246723
+    [expiryTimee] => 1783405754
+)
+
+POST Data: Array
+(
+    [request_id] => 56
+    [status] => Meal On
+    [remarks] => DGFDSG DFGDFG DGDG
+)
+
+ERROR: Could not find db_connection.php
+Current directory: C:\xampp\htdocs\canteen-management\admin
+Checked paths: ../config/db_connection.php, config/db_connection.php, ../includes/config/db_connection.php, ../../config/db_connection.php
+=== 2026-07-07 07:41:51 ===
+Current directory: C:\xampp\htdocs\canteen-management\admin
+Session Data: Array
+(
+    [login_id] => 45
+    [user_name] => md.farhad
+    [name] => Md. Farhad Hosen
+    [employeeID] => LH2539
+    [email] => shohag.mia@lizfashion.com
+    [user_role] => 1
+    [tokenn] => 6a4c91023263f6.91246723
+    [expiryTimee] => 1783405754
+)
+
+POST Data: Array
+(
+    [request_id] => 56
+    [status] => Meal On
+    [remarks] => dsfds sdfadsf sadfsd fadsf
+)
+
+Database connection created
+Database connected successfully
+Request ID: 56, Status: Meal On, Remarks: dsfds sdfadsf sadfsd fadsf
+Username: md.farhad, User ID: 45, Employee ID: LH2539
+Query executed, rows: 1
+Current status: Meal Off
+Checking clickable: Today=2026-07-07, CurrentTime=07:41:51, MealOffDate=2026-07-26
+Executing update query...
+Update executed, affected rows: 1
+SUCCESS: Status updated
+=== END ===
+
+=== 2026-07-07 07:42:22 ===
+Current directory: C:\xampp\htdocs\canteen-management\admin
+Session Data: Array
+(
+    [login_id] => 45
+    [user_name] => md.farhad
+    [name] => Md. Farhad Hosen
+    [employeeID] => LH2539
+    [email] => shohag.mia@lizfashion.com
+    [user_role] => 1
+    [tokenn] => 6a4c91023263f6.91246723
+    [expiryTimee] => 1783405754
+)
+
+POST Data: Array
+(
+    [request_id] => 55
+    [status] => Meal On
+    [remarks] => dsf asfs fdsaf sadfs
+)
+
+Database connection created
+Database connected successfully
+Request ID: 55, Status: Meal On, Remarks: dsf asfs fdsaf sadfs
+Username: md.farhad, User ID: 45, Employee ID: LH2539
+Query executed, rows: 1
+Current status: Meal Off
+Checking clickable: Today=2026-07-07, CurrentTime=07:42:22, MealOffDate=2026-07-18
+Executing update query...
+Update executed, affected rows: 1
+SUCCESS: Status updated
+=== END ===
+

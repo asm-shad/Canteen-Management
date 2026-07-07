@@ -15,7 +15,163 @@ class cls_meassage
 
 
 	// write your code
+	/**
+	 * Get all meal off requests with proper ordering
+	 * Now uses company_library to map employer_factory to companyID
+	 */
+	public function getAllMealOffRequests($username)
+	{
+		// First, let's check if there's any data at all
+		$checkSql = "SELECT COUNT(*) as total FROM meal_off_requests";
+		$checkResult = $this->con()->query($checkSql);
+		$totalCount = 0;
+		if ($checkResult && $checkResult->num_rows > 0) {
+			$row = $checkResult->fetch_assoc();
+			$totalCount = $row['total'];
+		}
+		
+		// If no data at all, return empty result
+		if ($totalCount == 0) {
+			return $this->con()->query("SELECT * FROM meal_off_requests WHERE 1=0");
+		}
+		
+		// Get user's company access with company names mapping
+		$companyCheck = $this->con()->query("
+			SELECT DISTINCT ur.companyID, cl.company_name 
+			FROM user_role ur
+			LEFT JOIN company_library cl ON ur.companyID = cl.companymdm
+			WHERE ur.user_name = '$username'
+		");
+		
+		$companyIds = [];
+		$companyNames = [];
+		if ($companyCheck) {
+			while ($row = $companyCheck->fetch_assoc()) {
+				$companyIds[] = $row['companyID'];
+				if ($row['company_name']) {
+					$companyNames[] = $row['company_name'];
+				}
+			}
+		}
+		
+		// If user has no company access, show all (admin)
+		if (empty($companyIds)) {
+			$sql = "
+				SELECT m.* 
+				FROM meal_off_requests m
+				ORDER BY 
+					CASE WHEN m.status = 'Active' THEN 0 ELSE 1 END,
+					m.meal_off_date DESC,
+					m.request_date DESC
+			";
+		} else {
+			// Build WHERE clause with both companyID AND company_name
+			$whereConditions = [];
+			
+			// Add companyID condition (for LFI, LTD, etc.)
+			if (!empty($companyIds)) {
+				$idList = implode("','", $companyIds);
+				$whereConditions[] = "m.employer_factory IN ('$idList')";
+			}
+			
+			// Add company_name condition (for full names like "Liz Fashion Industry Limited")
+			if (!empty($companyNames)) {
+				$nameList = implode("','", $companyNames);
+				$whereConditions[] = "m.employer_factory IN ('$nameList')";
+			}
+			
+			$whereClause = implode(" OR ", $whereConditions);
+			
+			$sql = "
+				SELECT m.* 
+				FROM meal_off_requests m
+				WHERE ($whereClause)
+				ORDER BY 
+					m.request_date DESC,
+					CASE WHEN m.status = 'Active' THEN 0 ELSE 1 END,
+					m.meal_off_date DESC
+			";
+		}
+		
+		$result = $this->con()->query($sql);
+		
+		if (!$result) {
+			return $this->con()->query("SELECT * FROM meal_off_requests WHERE 1=0");
+		}
+		
+		return $result;
+	}
 
+	/**
+	 * Get current month statistics only
+	 * Returns total, active, used counts for current month
+	 */
+	public function getCurrentMonthMealOffStatistics($username)
+	{
+		$currentMonth = date('Y-m');
+		$startDate = $currentMonth . '-01';
+		$endDate = date('Y-m-t', strtotime($currentMonth));
+		
+		// Get user's company access with company names mapping
+		$companyCheck = $this->con()->query("
+			SELECT DISTINCT ur.companyID, cl.company_name 
+			FROM user_role ur
+			LEFT JOIN company_library cl ON ur.companyID = cl.companymdm
+			WHERE ur.user_name = '$username'
+		");
+		
+		$companyIds = [];
+		$companyNames = [];
+		if ($companyCheck) {
+			while ($row = $companyCheck->fetch_assoc()) {
+				$companyIds[] = $row['companyID'];
+				if ($row['company_name']) {
+					$companyNames[] = $row['company_name'];
+				}
+			}
+		}
+		
+		$whereConditions = ["meal_off_date BETWEEN '$startDate' AND '$endDate'"];
+		
+		if (!empty($companyIds) || !empty($companyNames)) {
+			$factoryConditions = [];
+			
+			if (!empty($companyIds)) {
+				$idList = implode("','", $companyIds);
+				$factoryConditions[] = "employer_factory IN ('$idList')";
+			}
+			
+			if (!empty($companyNames)) {
+				$nameList = implode("','", $companyNames);
+				$factoryConditions[] = "employer_factory IN ('$nameList')";
+			}
+			
+			$whereConditions[] = "(" . implode(" OR ", $factoryConditions) . ")";
+		}
+		
+		$whereClause = implode(" AND ", $whereConditions);
+		
+		$sql = "
+			SELECT 
+				COUNT(*) as total,
+				SUM(CASE WHEN status = 'Active' THEN 1 ELSE 0 END) as active,
+				SUM(CASE WHEN status = 'Used' THEN 1 ELSE 0 END) as used
+			FROM meal_off_requests
+			WHERE $whereClause
+		";
+		
+		$result = $this->con()->query($sql);
+		
+		if ($result && $result->num_rows > 0) {
+			return $result->fetch_assoc();
+		}
+		
+		return [
+			'total' => 0,
+			'active' => 0,
+			'used' => 0
+		];
+	}
 	
 
 	// section !=''
